@@ -1,0 +1,2982 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#140D08;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<title>Carta de eventos Jonnier</title>
+<meta name="theme-color" content="#140D08">
+<meta name="description" content="Jonnier, campeón nacional de parrilleros ancestrales: mira cada plato de crudo a servido y cotiza tu evento por WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:title" content="Jonnier · Carta de eventos">
+<meta property="og:description" content="Campeón Nacional de Parrilleros Ancestrales 2024. Asados al barril desde 2015: mira cada plato de crudo a servido y cotiza tu evento por WhatsApp.">
+<link rel="canonical" href="https://jonnier-eventos.pages.dev/">
+<meta property="og:url" content="https://jonnier-eventos.pages.dev/">
+<meta property="og:image" content="https://jonnier-eventos.pages.dev/marca/compartir.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Medalla de Jonnier entre dos platos servidos y «Arma tu evento»">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="marca/icono-32.png">
+<link rel="apple-touch-icon" href="marca/icono-180.png">
+<link rel="preload" as="font" type="font/woff2" href="fuentes/oswald.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="fuentes/montserrat.woff2" crossorigin>
+<style>
+@font-face{font-family:"Rye";font-style:normal;font-weight:400;font-display:swap;src:url("fuentes/rye.woff2") format("woff2")}
+@font-face{font-family:"Oswald";font-style:normal;font-weight:200 700;font-display:swap;src:url("fuentes/oswald.woff2") format("woff2")}
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:100 900;font-display:swap;src:url("fuentes/montserrat.woff2") format("woff2")}
+@font-face{font-family:"Caveat Brush";font-style:normal;font-weight:400;font-display:swap;src:url("fuentes/caveat-brush.woff2") format("woff2")}
+</style>
+<link rel="preload" as="image" href="marca/medalla.webp">
+</head>
+<body>
+<style>
+/* Layout: carta de asadero de lujo en una sola columna. Fondo carbón con filetes dorados;
+   arriba la vitrina giratoria de cortes crudos, abajo los platos servidos; el visor es una
+   vitrina iluminada sobre un escenario oscuro. Un solo look (negro y dorado) a propósito. */
+:root{
+  --carbon:#140D08;
+  --carbon-2:#1C130C;
+  --carbon-3:#271A10;
+  --hollin:#0A0604;
+  --oro:#D4A12A;
+  --oro-brillo:#F2CD6B;
+  --oro-hondo:#8A6418;
+  --brasa:#C4521E;
+  --madera:#5B3A22;
+  --arepa:#F4E8D0;
+  --texto:#F1E6D2;
+  --texto-2:#C9B89C;
+  --texto-3:#9A8a72;
+  --linea:rgba(212,161,42,.30);
+  --linea-suave:rgba(241,230,210,.10);
+  --estudio:#140D08;          /* el piso de las fotos y videos: el mismo carbón de la carta */
+  --fundido-h:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);
+  --fundido-v:linear-gradient(180deg,transparent,#000 8%,#000 90%,transparent);
+  --f-titulo:"Rye","Rockwell Extra Bold","Rockwell",Georgia,serif;
+  --f-dato:"Oswald","Arial Narrow","Roboto Condensed","Helvetica Neue",sans-serif;
+  --f-texto:"Montserrat","Helvetica Neue",Arial,system-ui,sans-serif;
+  --f-mano:"Caveat Brush","Segoe Print","Bradley Hand",cursive;
+  --foil:linear-gradient(100deg,#8A6418 0%,#D4A12A 20%,#F7DC8A 36%,#D4A12A 50%,#A77A1B 66%,#F2CD6B 82%,#8A6418 100%);
+  --foil-boton:linear-gradient(180deg,#F7DC8A 0%,#E2B544 45%,#C08A1E 100%);
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --col:36rem;
+  --bar-h:56px;
+  --cats-h:48px;
+  --grano:none;
+  --vw:1vw;
+  --vh:1vh;
+  color-scheme:dark;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{height:100%;-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;min-height:100%;
+  background-color:var(--carbon);
+  color:var(--texto);
+  font-family:var(--f-texto);
+  font-size:1rem;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+body.quieto{overflow:hidden}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+a{color:inherit}
+img{max-width:100%;display:block;-webkit-user-drag:none;user-select:none;-webkit-user-select:none}
+:focus-visible{outline:2px solid var(--oro-brillo);outline-offset:3px;border-radius:10px}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{font-weight:400;text-wrap:balance}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+[hidden]{display:none!important}
+
+.ceja{
+  font-family:var(--f-dato);font-weight:500;font-size:.74rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--oro);
+}
+.foil{
+  background:var(--foil);background-size:160% 100%;background-position:30% 50%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.mano{font-family:var(--f-mano);color:var(--oro-brillo);font-size:1.55rem;line-height:1.1;transform:rotate(-4deg)}
+.punto-brasa{width:7px;height:7px;border-radius:50%;background:var(--brasa);box-shadow:0 0 10px 2px rgba(196,82,30,.75);flex:none}
+.ic-btn{
+  width:40px;height:40px;border-radius:50%;display:grid;place-items:center;flex:none;
+  border:1px solid var(--linea);color:var(--oro-brillo);background:rgba(10,6,4,.5);
+}
+.ic-btn svg{width:19px;height:19px}
+.btn-oro{
+  text-decoration:none;
+  display:inline-flex;align-items:center;justify-content:center;gap:.6em;
+  padding:.95em 1.6em;border-radius:999px;
+  background:var(--foil-boton);color:#1A0F06;
+  font-family:var(--f-dato);font-weight:600;font-size:1.02rem;letter-spacing:.08em;text-transform:uppercase;
+  box-shadow:0 1px 0 rgba(255,240,200,.6) inset,0 -2px 0 rgba(90,55,10,.45) inset,0 14px 40px -12px rgba(212,161,42,.55);
+  transition:transform .2s var(--ease);
+}
+.btn-oro:active{transform:scale(.97)}
+.btn-oro svg{width:20px;height:20px}
+.btn-linea{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  padding:.72em 1.15em;border-radius:999px;border:1px solid var(--linea);
+  font-family:var(--f-dato);font-weight:500;font-size:.88rem;letter-spacing:.1em;text-transform:uppercase;color:var(--oro-brillo);
+}
+.btn-linea svg{width:16px;height:16px}
+.btn-linea:disabled,.btn-oro:disabled{opacity:.4}
+.link-suave{color:var(--texto-2);font-size:.92rem;text-decoration:underline;text-underline-offset:4px;padding:.4em .6em}
+.lienzo{position:absolute;top:0;right:0;bottom:0;left:0;inset:0;width:100%;height:100%;display:block;pointer-events:none}
+.pantalla{position:fixed;top:0;right:0;bottom:0;left:0;inset:0;overflow:hidden;background:var(--hollin)}
+
+/* ================= Bienvenida ================= */
+#bienvenida{z-index:80;transition:opacity .7s ease,visibility 0s .7s;
+  background:radial-gradient(90% 55% at 50% 42%,#2b1a0e 0%,#140D08 55%,#0A0604 100%)}
+#bienvenida.fuera{opacity:0;visibility:hidden}
+.bv{
+  position:relative;height:100%;
+  display:grid;grid-template-rows:auto 1fr auto;justify-items:center;gap:14px;text-align:center;
+  padding:calc(env(safe-area-inset-top,0px) + 16px) 22px calc(env(safe-area-inset-bottom,0px) + 18px);
+}
+.chip-mesa{
+  display:inline-flex;align-items:center;gap:.6em;padding:.42em 1em;border-radius:999px;
+  border:1px solid var(--linea);background:rgba(10,6,4,.45);
+  font-family:var(--f-dato);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--texto-2);
+}
+.chip-mesa b{color:var(--oro-brillo);font-weight:600}
+.bv > .chip-mesa{grid-row:1}
+.bv > .bv-centro{grid-row:2}
+.bv > .bv-botones{grid-row:3;align-content:end}
+.bv-centro{align-self:center;display:grid;justify-items:center;gap:12px;min-height:0}
+.bv-centro .bv-lema{margin-top:14px}
+.bv-lema{font-family:var(--f-dato);font-size:.86rem;letter-spacing:.32em;text-transform:uppercase;color:var(--oro)}
+.bv-texto{max-width:21rem;color:var(--texto-2);font-size:1rem}
+.bv-pista{display:inline-flex;align-items:center;gap:.5em;color:var(--texto-3);font-size:.8rem;transition:opacity .6s ease}
+.bv-pista svg{width:16px;height:16px}
+.bv-botones{display:grid;justify-items:center;gap:10px}
+.bv-pie{font-family:var(--f-dato);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(241,230,210,.35)}
+
+/* ================= Medalla 3D ================= */
+.medalla-escena{
+  --d:min(calc(72 * var(--vw)),calc(36 * var(--vh)),320px);
+  position:relative;width:var(--d);height:var(--d);
+  perspective:calc(var(--d) * 3.2);
+  touch-action:none;cursor:grab;
+}
+.medalla-escena:active{cursor:grabbing}
+.medalla-halo{
+  position:absolute;top:-22%;right:-22%;bottom:-22%;left:-22%;inset:-22%;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(242,205,107,.28) 0%,rgba(212,161,42,.10) 38%,transparent 68%);
+  animation:halo 4s ease-in-out infinite alternate;
+}
+@keyframes halo{from{opacity:.65;transform:scale(.96)}to{opacity:1;transform:scale(1.04)}}
+.medalla{position:absolute;top:0;right:0;bottom:0;left:0;inset:0;transform-style:preserve-3d;will-change:transform}
+.medalla .cara{
+  position:absolute;top:0;right:0;bottom:0;left:0;inset:0;border-radius:50%;overflow:hidden;
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  background:radial-gradient(circle at 50% 42%,#2a1b0f 0%,#120b06 62%,#070403 100%);
+}
+.medalla .cara img{position:absolute;top:0;right:0;bottom:0;left:0;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none;-webkit-user-drag:none;user-select:none}
+.medalla .dorso{box-shadow:inset 0 0 0 calc(var(--d) * .028) #B8862A,inset 0 0 0 calc(var(--d) * .036) #5c400c}
+.medalla .dorso img{top:12%;right:12%;bottom:12%;left:12%;inset:12%;width:76%;height:76%}
+.medalla .brillo{
+  position:absolute;top:0;right:0;bottom:0;left:0;inset:0;border-radius:50%;pointer-events:none;mix-blend-mode:screen;
+  background:linear-gradient(115deg,transparent 30%,rgba(255,236,180,.0) 38%,rgba(255,240,200,.45) 47%,rgba(255,236,180,0) 56%,transparent 64%);
+  background-size:260% 100%;background-position:var(--brillo,50%) 50%;
+}
+.medalla .canto{
+  position:absolute;left:50%;top:50%;
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  background:repeating-linear-gradient(90deg,#7a5612 0 2px,#e9c461 2px 3px,#b8862a 3px 5px);
+  filter:brightness(var(--luz,1));
+}
+.bombillo{
+  position:absolute;width:7%;height:7%;margin:-3.5% 0 0 -3.5%;border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(255,252,235,1) 0%,rgba(255,226,150,.85) 22%,rgba(255,190,80,.25) 48%,transparent 70%);
+  mix-blend-mode:screen;opacity:.15;
+  animation:bombillo 1.8s linear infinite;animation-delay:calc(var(--i) * -0.12s);
+}
+@keyframes bombillo{0%,100%{opacity:.12}8%{opacity:1}30%{opacity:.35}}
+
+/* ================= Intro ================= */
+#intro{z-index:70;transition:opacity .7s ease,visibility 0s .7s;
+  background:radial-gradient(100% 60% at 50% 45%,#24160c 0%,#110a06 60%,#070403 100%)}
+#intro.fuera{opacity:0;visibility:hidden}
+.in-arriba{
+  position:absolute;left:0;right:0;top:0;z-index:3;
+  display:flex;align-items:center;gap:10px;
+  padding:calc(env(safe-area-inset-top,0px) + 12px) 16px 0;
+}
+.barras{flex:1;display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+.barras i{position:relative;height:3px;border-radius:3px;background:rgba(241,230,210,.18);overflow:hidden}
+.barras i::after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;inset:0;background:var(--oro-brillo);transform-origin:left;transform:scaleX(0)}
+.barras i.hecha::after{transform:scaleX(1)}
+.barras i.va::after{animation:barra var(--t,3s) linear forwards}
+@keyframes barra{to{transform:scaleX(1)}}
+.saltar{
+  display:inline-flex;align-items:center;gap:.35em;padding:.5em .95em;border-radius:999px;
+  border:1px solid var(--linea);background:rgba(10,6,4,.5);
+  font-family:var(--f-dato);font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oro-brillo);
+}
+.saltar svg{width:14px;height:14px}
+.tiempos{position:absolute;top:0;right:0;bottom:0;left:0;inset:0;display:grid;place-items:center;padding:84px 24px calc(env(safe-area-inset-bottom,0px) + 40px)}
+.tiempo{
+  grid-area:1/1;width:min(100%,30rem);display:grid;justify-items:center;gap:22px;text-align:center;
+  opacity:0;visibility:hidden;transition:opacity .45s ease,visibility 0s .45s;
+}
+.tiempo.on{opacity:1;visibility:visible;transition:opacity .3s ease}
+.frase{font-family:var(--f-titulo);font-size:clamp(1.85rem,calc(8.2 * var(--vw)),2.9rem);line-height:1.1;color:var(--texto)}
+.frase em{font-style:normal;color:var(--oro-brillo)}
+.sub{color:var(--texto-2);font-size:1.02rem;max-width:22rem}
+.w{
+  display:inline-block;opacity:0;transform:translateY(.35em);filter:blur(8px);
+  transition:opacity .7s var(--ease),transform .7s var(--ease),filter .7s var(--ease);
+  transition-delay:calc(var(--i) * 70ms + var(--d,0ms));
+}
+.tiempo.on .w{opacity:1;transform:none;filter:none}
+.in-logo{width:min(calc(70 * var(--vw)),330px);aspect-ratio:1;position:relative}
+.in-logo img{width:100%;height:100%;object-fit:contain;transform:scale(.6) rotateX(70deg);opacity:0;filter:drop-shadow(0 20px 40px rgba(0,0,0,.7))}
+.tiempo.on .in-logo img{animation:logoEntra 1.4s var(--ease) .1s forwards}
+@keyframes logoEntra{0%{transform:scale(.6) rotateX(70deg);opacity:0}60%{opacity:1}100%{transform:none;opacity:1}}
+.in-logo::after{
+  content:"";position:absolute;top:0;right:0;bottom:0;left:0;inset:0;pointer-events:none;mix-blend-mode:screen;opacity:0;
+  background:linear-gradient(110deg,transparent 35%,rgba(255,244,210,.75) 48%,transparent 60%);background-size:300% 100%;
+  -webkit-mask:url("marca/logo.webp") center/contain no-repeat;mask:url("marca/logo.webp") center/contain no-repeat;
+}
+.tiempo.on .in-logo::after{animation:barrido 1.6s ease 1.1s forwards}
+@keyframes barrido{0%{opacity:1;background-position:100% 0}100%{opacity:1;background-position:0% 0}}
+.in-lema{font-family:var(--f-dato);font-size:.86rem;letter-spacing:.3em;text-transform:uppercase;color:var(--oro)}
+.mini-vitrina{
+  position:relative;width:min(calc(78 * var(--vw)),300px);border-radius:16px;overflow:hidden;
+  transform:rotate(-3deg);background:var(--estudio);
+}
+.mini-vitrina img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.mini-vitrina .rotulo{
+  position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:10px 12px;background:linear-gradient(transparent,rgba(10,6,4,.92) 45%);
+}
+.rotulo b{font-family:var(--f-dato);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:1.05rem}
+.toque{position:absolute;left:46%;top:44%;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;border:2px solid var(--oro-brillo);opacity:0}
+.tiempo.on .toque{animation:toque 1.3s .9s var(--ease) 2}
+@keyframes toque{0%{transform:scale(.3);opacity:0}25%{opacity:1}100%{transform:scale(1.7);opacity:0}}
+.coccion{position:relative;width:min(calc(88 * var(--vw)),360px);aspect-ratio:16/9;border-radius:14px;overflow:hidden}
+.coccion img{position:absolute;top:0;right:0;bottom:0;left:0;inset:0;width:100%;height:100%;object-fit:cover}
+.coccion .servido{opacity:0}
+.tiempo.on .coccion .servido{animation:aparece .9s ease 1.5s forwards}
+@keyframes aparece{to{opacity:1}}
+.coccion .llama{
+  position:absolute;top:0;right:0;bottom:0;left:0;inset:0;opacity:0;mix-blend-mode:screen;
+  background:radial-gradient(60% 70% at 50% 75%,rgba(255,170,60,.95),rgba(255,90,20,.6) 40%,transparent 70%);
+}
+.tiempo.on .coccion .llama{animation:llama 1.4s ease .6s forwards}
+@keyframes llama{0%{opacity:0}35%{opacity:1}100%{opacity:0}}
+.estados-in{display:grid;gap:6px;justify-items:start;font-size:.98rem;color:var(--texto-2)}
+.estados-in p{display:flex;align-items:center;gap:.6em}
+.estados-in b{font-family:var(--f-dato);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--texto)}
+.dedo{position:relative;width:170px;height:40px}
+.dedo::before{content:"";position:absolute;left:10px;right:10px;top:19px;border-top:1.5px dashed rgba(241,230,210,.35)}
+.dedo i{position:absolute;left:4px;top:4px;width:32px;height:32px;border-radius:50%;background:rgba(242,205,107,.15);border:2px solid var(--oro-brillo)}
+.tiempo.on .dedo i{animation:dedo 1.6s .4s ease-in-out infinite alternate}
+@keyframes dedo{to{transform:translateX(126px)}}
+.naipes-in{position:relative;width:220px;height:156px;perspective:600px}
+.naipes-in .n{
+  position:absolute;left:50%;top:4px;width:104px;height:146px;margin-left:-52px;border-radius:12px;
+  background:#120b06;border:1px solid var(--oro);
+  box-shadow:inset 0 0 0 5px #120b06,inset 0 0 0 6px rgba(212,161,42,.55),0 18px 30px -16px #000;
+  display:grid;place-items:center;transition:transform 1s var(--ease) .5s;
+}
+.naipes-in .n img{width:72%;opacity:.95}
+.naipes-in .n b{position:absolute;bottom:12px;left:0;right:0;text-align:center;font-family:var(--f-dato);font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro)}
+.tiempo.on .naipes-in .n:nth-child(1){transform:translateX(-60px) rotate(-12deg) rotateY(18deg)}
+.tiempo.on .naipes-in .n:nth-child(2){transform:translateX(60px) rotate(11deg) rotateY(-18deg)}
+.final{font-family:var(--f-mano);font-size:2rem;color:var(--oro-brillo);transform:rotate(-4deg)}
+
+/* Fotos y videos: el piso es el mismo carbón de la carta y los bordes se funden (sin marco) */
+.plato-foto img,.plato-foto::after,.tarjeta .foto img,.tarjeta .foto::after,.v-vitrina video,.v-vitrina .v-poster,.v-vuelo,.mini-vitrina img,.coccion img{
+  -webkit-mask-image:var(--fundido-h),var(--fundido-v);-webkit-mask-composite:source-in;
+  mask-image:var(--fundido-h),var(--fundido-v);mask-composite:intersect;
+}
+
+/* ================= Carta ================= */
+#carta{
+  min-height:100vh;
+  background-color:var(--carbon);
+  background-image:radial-gradient(120% 900px at 50% -120px,rgba(196,82,30,.16),transparent 70%),var(--grano);
+  background-repeat:no-repeat,repeat;
+}
+.borrador{
+  display:flex;align-items:center;justify-content:center;gap:.6em;text-align:center;
+  padding:calc(env(safe-area-inset-top,0px) + 7px) 16px 7px;
+  background:repeating-linear-gradient(135deg,#2a1a0d 0 14px,#24160b 14px 28px);
+  border-bottom:1px solid var(--linea);
+  font-family:var(--f-dato);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--oro);
+}
+.barra{
+  position:sticky;top:env(safe-area-inset-top,0px);z-index:20;height:var(--bar-h);
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;padding-inline:14px;
+  background:rgba(14,9,5,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--linea);
+}
+.barra .mesa{display:inline-flex;align-items:center;gap:.5em;font-family:var(--f-dato);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--texto-2)}
+.barra .mesa b{color:var(--oro-brillo);font-weight:600}
+.barra .marca{height:30px;width:auto}
+.barra .herr{justify-self:end;display:flex;gap:8px}
+.barra .ic-btn{width:38px;height:38px}
+.cats{
+  position:sticky;top:calc(env(safe-area-inset-top,0px) + var(--bar-h));z-index:19;height:var(--cats-h);
+  display:flex;align-items:center;gap:6px;overflow-x:auto;padding-inline:14px;scrollbar-width:none;
+  background:rgba(14,9,5,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--linea-suave);
+}
+.cats::-webkit-scrollbar{display:none}
+.cats a{
+  flex:none;padding:.38em .95em;border-radius:999px;text-decoration:none;
+  font-family:var(--f-dato);font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;color:var(--texto-2);
+  transition:background .25s ease,color .25s ease;
+}
+.cats a.on{background:var(--foil-boton);color:#1A0F06}
+.hoja{max-width:var(--col);margin:0 auto;padding-inline:18px;padding-block:24px 10px}
+
+.portada{display:grid;gap:12px;padding-bottom:6px}
+.portada h1{font-family:var(--f-titulo);font-size:clamp(2.35rem,calc(10.5 * var(--vw)),3.3rem);line-height:1.02}
+.portada .entrada{color:var(--texto-2);font-size:1rem;max-width:32rem}
+.portada .mano{justify-self:end;margin-top:-6px;margin-right:6px}
+/* Sello de campeón: al tocarlo se vuelve a ver la historia */
+.palmares{
+  justify-self:start;max-width:100%;display:inline-flex;align-items:center;gap:.55em;margin-bottom:4px;
+  padding:.45em .7em .45em .6em;border-radius:999px;border:1px solid var(--linea);
+  background:linear-gradient(90deg,rgba(212,161,42,.16),rgba(212,161,42,.04));
+  box-shadow:inset 0 1px 0 rgba(242,205,107,.12);
+  font-family:var(--f-dato);font-weight:500;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--texto-2);
+}
+.palmares b{font-weight:600;color:var(--oro-brillo)}
+.palmares span{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.palmares .copa{width:17px;height:17px;flex:none;color:var(--oro-brillo)}
+.palmares .ver{width:13px;height:13px;flex:none;color:var(--oro)}
+@media (max-width:360px){.palmares{letter-spacing:.08em;font-size:.7rem}}
+
+/* Vitrina giratoria (carrusel 3D) */
+.vitrina-marco{
+  position:relative;margin-inline:-18px;overflow:hidden;
+  padding-block:6px 4px;touch-action:pan-y;user-select:none;-webkit-user-select:none;
+}
+.vitrina{position:relative;height:calc(min(calc(60 * var(--vw)),250px) * .75 + 58px);perspective:1100px;perspective-origin:50% 40%}
+.anillo{position:absolute;left:50%;top:10px;width:0;height:0;transform-style:preserve-3d;will-change:transform}
+.tarjeta{
+  --w:min(calc(60 * var(--vw)),250px);
+  position:absolute;width:var(--w);left:calc(var(--w) / -2);top:0;
+  backface-visibility:hidden;-webkit-backface-visibility:hidden;
+  display:grid;gap:10px;justify-items:center;text-align:center;
+  opacity:var(--op,1);
+}
+.tarjeta .foto{
+  position:relative;width:100%;aspect-ratio:4/3;border-radius:16px;overflow:hidden;
+  filter:brightness(var(--luz,1));
+}
+.tarjeta .foto img{width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
+.tarjeta .foto::after{
+  content:"";position:absolute;top:0;right:0;bottom:0;left:0;inset:0;pointer-events:none;
+  background:linear-gradient(115deg,transparent 35%,rgba(255,250,235,.32) 48%,transparent 60%);
+  background-size:300% 100%;background-position:var(--sheen,120%) 0;
+}
+.tarjeta .nombre{font-family:var(--f-dato);font-weight:600;font-size:1.05rem;letter-spacing:.06em;text-transform:uppercase;line-height:1.15;max-width:100%}
+.tarjeta .ver{
+  position:absolute;right:10px;bottom:10px;display:inline-flex;align-items:center;gap:.4em;
+  padding:.32em .7em;border-radius:999px;background:rgba(10,6,4,.82);color:var(--oro-brillo);
+  font-family:var(--f-dato);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
+  opacity:0;transform:translateY(6px);transition:opacity .3s ease,transform .3s var(--ease);
+}
+.tarjeta.frente .ver{opacity:1;transform:none}
+.vitrina-ctrl{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:2px}
+.vitrina-ctrl p{font-size:.84rem;color:var(--texto-3);text-align:center;min-width:0}
+.vitrina-ctrl .ic-btn{width:36px;height:36px}
+
+.leyenda{display:flex;gap:10px;align-items:center;justify-content:center;font-size:.84rem;color:var(--texto-3);margin-top:8px}
+.sello3d{
+  display:inline-flex;align-items:center;gap:.45em;flex:none;
+  padding:.3em .72em .3em .6em;border-radius:999px;background:rgba(10,6,4,.82);border:1px solid var(--linea);
+  font-family:var(--f-dato);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-brillo);
+}
+.sello3d .punto-brasa{width:6px;height:6px;position:relative}
+.sello3d .punto-brasa::after{content:"";position:absolute;top:-1px;right:-1px;bottom:-1px;left:-1px;inset:-1px;border-radius:50%;border:2px solid var(--brasa);opacity:0;animation:aro 2.4s ease-out infinite}
+@keyframes aro{0%{transform:scale(.6);opacity:.8}70%,100%{transform:scale(2.6);opacity:0}}
+
+.seccion{padding-block:30px 4px;scroll-margin-top:calc(env(safe-area-inset-top,0px) + var(--bar-h) + var(--cats-h) + 6px)}
+.seccion-cab{display:grid;gap:6px;margin-bottom:6px}
+.seccion-cab h2{font-family:var(--f-titulo);font-size:clamp(2rem,calc(8.6 * var(--vw)),2.5rem);line-height:1.05}
+.seccion-cab .nota{color:var(--texto-2);font-size:.92rem;max-width:32rem}
+.filete{display:flex;align-items:center;gap:10px;color:var(--oro);margin-block:18px 4px}
+.filete span{flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--linea) 30%,var(--linea) 70%,transparent)}
+.filete svg{width:16px;height:16px}
+
+.plato{display:grid;gap:14px;padding-block:22px;border-top:1px dashed rgba(212,161,42,.22)}
+.plato:first-of-type{border-top:0}
+.plato-foto{
+  position:relative;display:block;width:100%;aspect-ratio:16/9;border-radius:16px;overflow:hidden;
+  transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));
+  transition:transform .5s var(--ease);
+}
+.plato-foto.presionada{transition:transform .12s ease}
+.plato-foto img{width:100%;height:100%;object-fit:cover}
+.plato-foto::after{
+  content:"";position:absolute;top:0;right:0;bottom:0;left:0;inset:0;pointer-events:none;
+  background:linear-gradient(115deg,transparent 35%,rgba(255,250,235,.28) 48%,transparent 60%);
+  background-size:300% 100%;background-position:var(--sheen,130%) 0;transition:background-position .6s var(--ease);
+}
+.plato-foto .sello3d{position:absolute;left:12px;bottom:12px}
+.plato-info{display:grid;gap:8px;min-width:0}
+.plato-top{display:flex;align-items:baseline;gap:10px;min-width:0}
+.plato-nombre{font-family:var(--f-dato);font-weight:600;font-size:1.32rem;letter-spacing:.04em;text-transform:uppercase;line-height:1.15;text-align:left;min-width:0}
+.plato-nombre button{text-align:left;text-transform:inherit;letter-spacing:inherit}
+.plato-nombre small{display:block;font-weight:400;font-size:.72em;letter-spacing:.1em;color:var(--texto-2)}
+.lider{flex:1;min-width:1rem;border-bottom:2px dotted rgba(212,161,42,.45);transform:translateY(-.3em)}
+.precio{font-family:var(--f-dato);font-weight:500;font-size:1.12rem;letter-spacing:.04em;color:var(--oro-brillo);white-space:nowrap;font-variant-numeric:tabular-nums}
+.precio.pendiente{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro);opacity:.85}
+.plato-desc{color:var(--texto-2);font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:.28em .75em;border-radius:999px;border:1px solid var(--linea);font-size:.78rem;color:var(--texto)}
+.chip b{font-family:var(--f-dato);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.7rem;color:var(--oro);margin-right:.35em}
+
+.pie{
+  max-width:var(--col);margin:34px auto 0;padding-inline:18px;padding-block:26px calc(env(safe-area-inset-bottom,0px) + 40px);
+  display:grid;gap:16px;justify-items:center;text-align:center;border-top:1px solid var(--linea);
+}
+.pie .sello{width:120px;height:120px}
+.pie h2{font-family:var(--f-titulo);font-size:1.9rem;line-height:1.1}
+.pie p{color:var(--texto-2);font-size:.92rem;max-width:28rem}
+.wa{display:grid;gap:10px;justify-items:center}
+.numero{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-dato);font-size:1.25rem;letter-spacing:.08em;color:var(--texto)}
+.numero button{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);border:1px solid var(--linea);border-radius:999px;padding:.3em .8em}
+.pie .creditos{font-family:var(--f-dato);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--texto-3)}
+
+
+/* Enlace de Instagram integrado a la carta, sin dependencias externas. */
+.ig-carta{display:inline-flex;align-items:center;justify-content:center;gap:9px;max-width:100%;min-height:44px;padding:10px 17px;border:1px solid var(--linea);border-radius:999px;background:rgba(212,161,42,.07);color:var(--oro-brillo);font:600 .79rem var(--f-texto);letter-spacing:.01em;text-decoration:none;transition:background .2s ease,border-color .2s ease}
+.ig-carta svg{height:19px;width:19px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ig-carta:hover{background:rgba(212,161,42,.15);border-color:var(--oro)}
+.ig-carta:focus-visible{outline:2px solid var(--oro-brillo);outline-offset:3px}
+.ig-portada{margin:16px auto 4px}
+.pie .ig-carta{margin:0 auto}
+
+/* ================= Visor ================= */
+#visor{
+  position:fixed;top:0;right:0;bottom:0;left:0;inset:0;z-index:60;overflow:hidden;opacity:0;
+  background:radial-gradient(120% 80% at 50% 42%,#1a110a 0%,#140D08 42%,#0b0705 78%,#060403 100%);
+  transition:opacity .35s ease;
+  display:grid;grid-template-rows:auto 1fr auto auto auto auto;
+  padding-bottom:calc(env(safe-area-inset-bottom,0px) + 10px);
+}
+#visor.abierto{opacity:1}
+.v-top{position:relative;z-index:3;display:grid;gap:8px;padding:calc(env(safe-area-inset-top,0px) + 4px) 16px 0}
+.v-agarre{justify-self:center;width:72px;height:22px;display:grid;place-items:center;touch-action:none}
+.v-agarre::before{content:"";width:44px;height:5px;border-radius:3px;background:rgba(241,230,210,.3)}
+.v-titulo{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.v-nombre{font-family:var(--f-dato);font-weight:700;font-size:clamp(1.55rem,calc(7.2 * var(--vw)),2.3rem);letter-spacing:.03em;text-transform:uppercase;line-height:1.05;margin-top:2px}
+.v-acciones{display:flex;gap:8px;flex:none}
+.v-cerrar{width:46px;height:46px}
+.v-estado{
+  justify-self:start;display:inline-flex;align-items:center;gap:.6em;padding:.38em .85em;border-radius:999px;
+  border:1px solid var(--linea);background:rgba(10,6,4,.5);
+  font-family:var(--f-dato);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;
+}
+.v-estado span{font-family:var(--f-texto);letter-spacing:0;text-transform:none;font-size:.84rem;color:var(--texto-2)}
+.v-punto{width:8px;height:8px;border-radius:50%;background:#D2453F;transition:background .4s ease;flex:none}
+#visor[data-estado="fuego"] .v-punto{background:var(--brasa);box-shadow:0 0 10px 2px rgba(196,82,30,.8)}
+#visor[data-estado="servido"] .v-punto{background:var(--oro-brillo)}
+.v-escena{position:relative;z-index:1;display:grid;place-items:center;perspective:1000px;touch-action:none;cursor:ew-resize;min-height:0}
+.v-vitrina{
+  position:relative;width:100%;aspect-ratio:16/9;max-height:100%;overflow:hidden;
+  transform-style:preserve-3d;will-change:transform;
+}
+.v-vitrina video,.v-vitrina .v-poster{position:absolute;top:0;right:0;bottom:0;left:0;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
+.v-vitrina .v-poster{z-index:2;transition:opacity .35s ease}
+.v-vitrina .v-poster.ido{opacity:0}
+.v-destello{position:absolute;top:0;right:0;bottom:0;left:0;inset:0;z-index:3;pointer-events:none;opacity:0;mix-blend-mode:screen;background:radial-gradient(70% 80% at 50% 60%,rgba(255,180,90,.75),rgba(255,110,30,.35) 45%,transparent 75%)}
+.v-destello.va{animation:destello 1.1s ease}
+@keyframes destello{0%{opacity:0}25%{opacity:1}100%{opacity:0}}
+.v-carga{position:absolute;top:0;right:0;bottom:0;left:0;inset:0;z-index:4;display:grid;place-items:center;pointer-events:none;color:var(--texto-3);font-family:var(--f-dato);font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;transition:opacity .3s ease}
+.v-carga.ido{opacity:0}
+.v-brasas{z-index:2}
+.v-pista{
+  position:relative;z-index:3;justify-self:center;display:inline-flex;align-items:center;gap:.55em;white-space:nowrap;
+  padding:.45em .95em;border-radius:999px;background:rgba(10,6,4,.6);border:1px solid var(--linea-suave);
+  font-size:.8rem;color:var(--texto-2);transition:opacity .6s ease;margin-bottom:6px;
+}
+.v-pista svg{width:17px;height:17px;fill:none;stroke:var(--oro-brillo);stroke-width:1.8;stroke-linecap:round}
+.v-pista.ido{opacity:0}
+.v-linea{position:relative;z-index:3;padding:10px 26px 4px;touch-action:none;outline:none}
+.v-riel{position:relative;height:6px;border-radius:6px;background:rgba(241,230,210,.12)}
+.v-lleno{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:6px;background:linear-gradient(90deg,#8A6418,#D4A12A 60%,#F2CD6B)}
+.v-perilla{
+  position:absolute;top:50%;left:0;width:22px;height:22px;margin:-11px 0 0 -11px;border-radius:50%;
+  background:var(--foil-boton);box-shadow:0 0 0 4px rgba(242,205,107,.18),0 4px 10px rgba(0,0,0,.6);
+}
+.v-linea:focus-visible .v-perilla{box-shadow:0 0 0 4px var(--oro-brillo)}
+.v-paradas{position:relative;height:30px;margin-top:8px}
+.v-parada{
+  position:absolute;top:0;transform:translateX(-50%);white-space:nowrap;
+  font-family:var(--f-dato);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--texto-3);padding:.3em .4em;
+}
+.v-parada::before{content:"";position:absolute;left:50%;top:-12px;width:1px;height:8px;background:rgba(241,230,210,.35)}
+.v-parada:first-child{transform:none;left:-6px!important}
+.v-parada:first-child::before{left:6px}
+.v-parada:last-child{transform:none;left:auto!important;right:-6px}
+.v-parada:last-child::before{left:auto;right:6px}
+.v-parada.on{color:var(--oro-brillo)}
+.v-desc{position:relative;z-index:3;padding:4px 20px 0;color:var(--texto-2);font-size:.9rem;max-width:34rem;justify-self:center;text-align:center}
+.v-fila{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px 0;max-width:34rem;width:100%;justify-self:center}
+.v-precio{display:grid;gap:2px;flex:1;min-width:0}
+.v-fila .btn-linea{white-space:nowrap;flex:none}
+.v-precio > span{font-family:var(--f-dato);font-weight:500;font-size:1.25rem;letter-spacing:.04em;color:var(--oro-brillo)}
+.v-precio > span.pendiente{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro)}
+.v-precio small{color:var(--texto-3);font-size:.78rem}
+.v-volver{position:relative;z-index:3;justify-self:center;color:var(--texto-2);font-size:.9rem;text-decoration:underline;text-underline-offset:4px;padding:.5em .8em;margin-top:2px}
+.v-vuelo{position:fixed;z-index:65;border-radius:16px;overflow:hidden;pointer-events:none;background:transparent center/cover no-repeat}
+@media (max-height:700px){
+  .v-desc{display:none}
+  .v-pista{margin-bottom:0}
+}
+@container telefono (max-height:700px){
+  .v-desc{display:none}
+  .v-pista{margin-bottom:0}
+}
+
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .medalla-halo,.bombillo,.sello3d .punto-brasa::after{animation:none}
+  .w{filter:none;transform:none;transition:opacity .4s ease}
+  .tiempo.on .in-logo img{animation:none;transform:none;opacity:1}
+  .tiempo.on .dedo i,.tiempo.on .toque{animation:none}
+}
+
+/* ================= Marco de celular (computador y tablet) =================
+   La carta siempre se ve en formato celular: en pantallas grandes va dentro de un teléfono. */
+.leyenda-tel{display:none}
+@media (min-width:600px) and (min-height:500px){
+  html,body{height:100%;overflow:hidden}
+  body{
+    display:grid;place-items:center;align-content:center;gap:14px;
+    background:radial-gradient(55% 65% at 50% 42%,#2b1a0d 0%,#120b07 55%,#060403 100%);
+  }
+  .marco-tel{
+    position:relative;padding:11px;border-radius:56px;
+    background:linear-gradient(155deg,#2d2219 0%,#120d09 45%,#070504 100%);
+    box-shadow:0 0 0 1px rgba(242,205,107,.55),0 0 0 2px #050302,0 0 70px -10px rgba(212,161,42,.28),0 50px 120px -30px rgba(0,0,0,.95);
+  }
+  .marco-tel::before{
+    content:"";position:absolute;right:-3px;top:150px;width:3px;height:70px;border-radius:0 3px 3px 0;
+    background:linear-gradient(#8A6418,#D4A12A,#8A6418);
+  }
+  .marco-tel::after{
+    content:"";position:absolute;left:-3px;top:130px;width:3px;height:44px;border-radius:3px 0 0 3px;
+    background:linear-gradient(#8A6418,#D4A12A,#8A6418);box-shadow:0 60px 0 #B8862A;
+  }
+  .telefono{
+    --vw:3.9px;
+    --alto:min(844px,calc(100vh - 86px));
+    --vh:calc(var(--alto) / 100);
+    position:relative;width:390px;height:var(--alto);overflow:hidden;border-radius:45px;
+    transform:translateZ(0);container:telefono / size;background:var(--carbon);
+  }
+  .desliza{height:100%;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:none}
+  .desliza::-webkit-scrollbar{display:none}
+  body.quieto{overflow:hidden}
+  body.quieto .desliza{overflow:hidden}
+  #carta{min-height:100%}
+  .leyenda-tel{
+    display:block;font-family:var(--f-dato);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(242,205,107,.55);
+  }
+}
+
+/* Celular acostado: la carta está hecha para verla con el celular derecho */
+.girar{display:none}
+@media (orientation:landscape) and (max-height:500px) and (pointer:coarse){
+  .girar{
+    position:fixed;top:0;right:0;bottom:0;left:0;inset:0;z-index:200;display:grid;place-content:center;justify-items:center;gap:10px;text-align:center;padding:24px;
+    background:radial-gradient(70% 90% at 50% 40%,#2b1a0d 0%,#110a06 60%,#070403 100%);color:var(--oro-brillo);
+  }
+  .girar svg{width:64px;height:64px;animation:girar 2.4s ease-in-out infinite}
+  .girar-t{font-family:var(--f-titulo);font-size:1.7rem;color:var(--texto)}
+  .girar-s{color:var(--texto-2);font-size:.95rem}
+}
+@keyframes girar{0%,20%{transform:rotate(-90deg)}50%,80%{transform:rotate(0deg)}100%{transform:rotate(-90deg)}}
+@media (prefers-reduced-motion:reduce){.girar svg{animation:none}}
+
+/* Navegadores sin aspect-ratio (iPhone con iOS 14 o menos, Android viejos) */
+@supports not (aspect-ratio:1/1){
+  .plato-foto{height:0;padding-top:56.25%}
+  .plato-foto img{position:absolute;top:0;left:0}
+  .tarjeta .foto{height:0;padding-top:75%}
+  .tarjeta .foto img{position:absolute;top:0;left:0}
+  .v-vitrina{height:0;padding-top:56.25%}
+  .lupa{height:0;padding-top:75%}
+  .coccion{height:calc(min(calc(88 * var(--vw)),360px) * .5625)}
+  .in-logo{height:min(calc(70 * var(--vw)),330px)}
+  .t-gancho .in-logo{height:min(calc(62 * var(--vw)),calc(34 * var(--vh)),300px)}
+  .mesa-giro{height:min(calc(84 * var(--vw)),310px)}
+}
+
+/* Celulares pequeños */
+.bv{grid-template-columns:minmax(0,1fr)}
+@media (max-width:400px){
+  .bv-lema{letter-spacing:.22em}
+}
+@media (max-width:360px){
+  .bv-lema{letter-spacing:.2em;font-size:.76rem}
+  .bv-texto{font-size:.94rem}
+  .bv .btn-oro{padding-inline:1.2em;font-size:.94rem}
+}
+/* Pantallas bajitas (iPhone SE, iPhone 8 y Android de 360 × 740): la medalla se achica pa’ que todo quepa */
+@media (max-height:760px){
+  .medalla-escena{--d:min(calc(72 * var(--vw)),calc(31 * var(--vh)),320px)}
+  .bv-pista{display:none}
+  .bv-centro{gap:10px}
+  .bv-centro .bv-lema{margin-top:6px}
+}
+@media (max-height:620px){
+  .bv-pista{display:none}
+  .bv{gap:10px}
+}
+
+
+/* ================= Carta de eventos =================
+   Va al final para mandar sobre la base. Los platos reales se grabaron desde arriba,
+   girando en la base: se ven en círculo, como un plato que flota sobre el carbón. */
+:root{
+  --plato-mask:radial-gradient(circle closest-side,#000 82%,rgba(0,0,0,.55) 93%,transparent 100%);
+  --aro:0 0 0 1px rgba(212,161,42,.55),0 0 0 6px rgba(10,6,4,.9),0 0 0 7px rgba(212,161,42,.2);
+  --aviso:#F0B27A;
+}
+.plato-foto img,.tarjeta .foto img,.v-vitrina video,.v-vitrina .v-poster,.v-vuelo,.mini-vitrina img,.coccion img,.ev-img img{
+  -webkit-mask-image:var(--plato-mask);mask-image:var(--plato-mask);
+  -webkit-mask-composite:source-over;mask-composite:add;
+}
+.plato-foto::after,.tarjeta .foto::after{-webkit-mask-image:none;mask-image:none}
+
+/* Encabezado: el botón de «tu evento» con su contador */
+.ic-evento{position:relative}
+.badge{
+  position:absolute;top:-5px;right:-5px;min-width:19px;height:19px;padding:0 5px;border-radius:999px;
+  background:var(--brasa);color:#fff;box-shadow:0 0 0 2px var(--carbon);
+  font-family:var(--f-dato);font-weight:600;font-size:.72rem;line-height:19px;text-align:center;font-variant-numeric:tabular-nums;
+}
+
+/* Vitrina (18 de noviembre): los cortes en tarjetas altas 4:5, como el visor, con las esquinas redondeadas,
+   el borde con la línea de la bandera de Colombia (amarillo, azul y rojo, en la proporción de la bandera)
+   y dos filetes dorados a cada lado. Muestran la tabla entera. */
+:root{
+  --borde-bandera:0 0 0 2px #FCD116,0 0 0 3.5px #1747A6,0 0 0 5px #CE1126;
+  --filete-mask:linear-gradient(transparent,#000 22%,#000 78%,transparent);
+}
+.tarjeta{--w:min(calc(46 * var(--vw)),200px)}
+.vitrina{height:calc(min(calc(46 * var(--vw)),200px) * 1.25 + 74px)}
+.tarjeta .foto{
+  width:var(--w);height:calc(var(--w) * 1.25);aspect-ratio:auto;padding-top:0;border-radius:18px;
+  background:var(--carbon-2);box-shadow:var(--borde-bandera),0 22px 34px -20px #000;
+}
+.tarjeta .foto img{-webkit-mask-image:none;mask-image:none}
+.tarjeta::before,.tarjeta::after{
+  content:"";position:absolute;top:calc(var(--w) * .14);height:calc(var(--w) * .97);width:4px;pointer-events:none;
+  -webkit-mask-image:var(--filete-mask);mask-image:var(--filete-mask);
+}
+.tarjeta::before{left:-12px;border-left:1.5px solid var(--oro-brillo);border-right:1px solid rgba(212,161,42,.55)}
+.tarjeta::after{right:-12px;border-right:1.5px solid var(--oro-brillo);border-left:1px solid rgba(212,161,42,.55)}
+.tarjeta .ver{right:auto;left:50%;bottom:12px;transform:translate(-50%,6px);white-space:nowrap}
+.tarjeta.frente .ver{transform:translate(-50%,0)}
+
+/* Así cotizas: los tres pasos, en orden */
+.pasos{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.paso{display:grid;align-content:start;gap:6px;padding:12px 10px 13px;border-radius:14px;border:1px solid var(--linea-suave);background:rgba(241,230,210,.03)}
+.paso b{font-family:var(--f-titulo);font-weight:400;font-size:1.35rem;line-height:1;color:var(--oro-brillo)}
+.paso span{font-size:.78rem;line-height:1.3;color:var(--texto-2)}
+
+/* Platos: círculo a la izquierda, datos a la derecha */
+.plato{grid-template-columns:auto minmax(0,1fr);align-items:center;column-gap:16px;row-gap:10px;padding-block:20px}
+.plato-foto{
+  --t:clamp(100px,calc(30 * var(--vw)),128px);
+  width:var(--t);height:var(--t);aspect-ratio:auto;padding-top:0;border-radius:50%;
+  background:radial-gradient(circle at 50% 42%,#2a1b0f 0%,var(--carbon-2) 72%);box-shadow:var(--aro);
+}
+.plato-foto img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
+.plato-foto .sello3d{left:50%;bottom:7px;transform:translateX(-50%);padding:.24em .6em .24em .5em;font-size:.6rem;letter-spacing:.12em;white-space:nowrap}
+.plato-foto.sin-video img{object-fit:contain;padding:17%;opacity:.2;-webkit-mask-image:none;mask-image:none}
+.plato-foto .pronto{
+  position:absolute;left:8%;right:8%;top:50%;transform:translateY(-50%);text-align:center;
+  font-family:var(--f-dato);font-size:.62rem;letter-spacing:.16em;line-height:1.35;text-transform:uppercase;color:var(--oro);
+}
+.plato-info{gap:6px;align-self:center}
+.plato-nombre{font-size:1.14rem}
+.plato-desc{font-size:.88rem;line-height:1.45}
+.opciones-p{display:flex;flex-wrap:wrap;gap:6px}
+.opciones-p span{padding:.16em .62em;border-radius:999px;border:1px solid var(--linea);font-size:.74rem;color:var(--texto-2)}
+.plato-pie{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 10px;margin-top:4px}
+.precio-pp{display:grid;line-height:1.2}
+.precio-pp small{font-size:.7rem;color:var(--texto-3);letter-spacing:.03em}
+.agregar{
+  display:inline-flex;align-items:center;gap:.42em;padding:.52em .95em;border-radius:999px;
+  border:1px solid rgba(212,161,42,.6);color:var(--oro-brillo);white-space:nowrap;
+  font-family:var(--f-dato);font-weight:500;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;
+  transition:background .25s ease,color .25s ease,border-color .25s ease,transform .2s var(--ease);
+}
+.agregar:active{transform:scale(.96)}
+.agregar svg{width:15px;height:15px;flex:none}
+.agregar[aria-pressed="true"]{background:var(--foil-boton);color:#1A0F06;border-color:transparent}
+.agregar.grande{padding:.85em 1.25em;font-size:.9rem}
+
+/* Barra de abajo: lo que lleva el evento */
+.barra-evento{
+  position:sticky;bottom:0;z-index:25;display:flex;align-items:center;gap:12px;
+  padding:10px 14px calc(env(safe-area-inset-bottom,0px) + 10px);
+  background:rgba(14,9,5,.95);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-top:1px solid var(--linea);animation:subeBarra .45s var(--ease);
+}
+@keyframes subeBarra{from{transform:translateY(100%)}to{transform:none}}
+.be-info{flex:1;min-width:0;display:grid;gap:1px}
+.be-k{font-family:var(--f-dato);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--oro)}
+.be-t{font-size:.9rem;color:var(--texto);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}
+.barra-evento .btn-oro{flex:none;padding:.78em 1.25em;font-size:.9rem}
+
+/* Intro: el plato en la misma tarjeta alta de la vitrina (línea de la bandera y filetes dorados), sin llama
+   dibujada encima, y el ticket del evento */
+.mini-vitrina,.coccion{
+  --m:min(calc(52 * var(--vw)),220px);
+  width:var(--m);height:calc(var(--m) * 1.25);aspect-ratio:auto;overflow:visible;border-radius:18px;
+  background:var(--carbon-2);box-shadow:var(--borde-bandera),0 24px 40px -22px #000;
+}
+.coccion .llama{display:none}
+.mini-vitrina img,.coccion img,.coccion .llama{border-radius:18px}
+.mini-vitrina img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
+.mini-vitrina img,.coccion img{-webkit-mask-image:none;mask-image:none}
+.mini-vitrina::before,.mini-vitrina::after,.coccion::before,.coccion::after{
+  content:"";position:absolute;top:calc(var(--m) * .14);height:calc(var(--m) * .97);width:4px;pointer-events:none;
+  -webkit-mask-image:var(--filete-mask);mask-image:var(--filete-mask);
+}
+.mini-vitrina::before,.coccion::before{left:-12px;border-left:1.5px solid var(--oro-brillo);border-right:1px solid rgba(212,161,42,.55)}
+.mini-vitrina::after,.coccion::after{right:-12px;border-right:1.5px solid var(--oro-brillo);border-left:1px solid rgba(212,161,42,.55)}
+.mini-vitrina .rotulo{
+  left:50%;right:auto;bottom:-16px;transform:translateX(-50%);gap:10px;white-space:nowrap;
+  padding:6px 8px 6px 14px;border-radius:999px;background:rgba(10,6,4,.94);border:1px solid var(--linea);
+}
+.ticket-in{
+  width:min(calc(74 * var(--vw)),280px);display:grid;gap:9px;text-align:left;
+  padding:18px 18px 16px;border-radius:14px;background:#120b06;border:1px solid var(--oro);
+  box-shadow:inset 0 0 0 5px #120b06,inset 0 0 0 6px rgba(212,161,42,.45),0 24px 40px -24px #000;
+  opacity:0;transform:rotate(-2deg) translateY(18px);transition:transform .8s var(--ease) .25s,opacity .6s ease .25s;
+}
+.tiempo.on .ticket-in{opacity:1;transform:rotate(-2deg)}
+.ticket-in .tk{font-family:var(--f-dato);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--oro)}
+.ticket-in p{display:flex;justify-content:space-between;gap:10px;font-size:.95rem;color:var(--texto-2)}
+.ticket-in b{font-family:var(--f-dato);font-weight:600;color:var(--texto);font-variant-numeric:tabular-nums}
+.ticket-in .tt{border-top:1px dashed rgba(212,161,42,.4);padding-top:9px;color:var(--texto)}
+.ticket-in .tt b{color:var(--oro-brillo)}
+
+/* ================= Intro: la historia del campeón =================
+   Gancho → Campeón Nacional (la medalla de la marca colgada de una cinta tricolor) → Top 5 en el
+   Mundial (el marcador sube del puesto 45 al 5) → la carta viva → cotizar. Tocar adelanta, como las historias. */
+.tiempos{cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none}
+.frase.chica{font-size:clamp(1.6rem,calc(7.2 * var(--vw)),2.4rem)}
+.frase,.sub,.final{text-wrap:balance}
+.t-nacional,.t-mundial{gap:16px}
+.t-gancho .in-logo{width:min(calc(62 * var(--vw)),calc(34 * var(--vh)),300px)}
+
+.sello-fecha{
+  display:grid;justify-items:center;gap:3px;padding:.5em 1.15em .58em;border-radius:6px;
+  border:1px solid var(--oro);background:rgba(10,6,4,.6);
+  box-shadow:inset 0 0 0 3px var(--hollin),inset 0 0 0 4px rgba(212,161,42,.45),0 14px 24px -16px #000;
+  font-family:var(--f-dato);text-transform:uppercase;line-height:1.2;
+  opacity:0;transform:rotate(-2.5deg);
+}
+.sello-fecha b{font-weight:600;font-size:1rem;letter-spacing:.2em;color:var(--oro-brillo)}
+.sello-fecha span{font-size:.68rem;letter-spacing:.22em;color:var(--texto-2)}
+.tiempo.on .sello-fecha{animation:sellar .55s cubic-bezier(.3,1.5,.5,1) .1s forwards}
+@media (max-width:360px){.sello-fecha b{font-size:.92rem;letter-spacing:.16em}.sello-fecha span{letter-spacing:.16em}}
+@keyframes sellar{0%{opacity:0;transform:rotate(-2.5deg) scale(1.5)}60%{opacity:1}100%{opacity:1;transform:rotate(-2.5deg) scale(1)}}
+
+/* La medalla de la marca, colgada de una cinta con los colores de Colombia, entra columpiándose */
+.medalla-in{
+  --m:min(calc(40 * var(--vw)),calc(23 * var(--vh)),180px);
+  position:relative;width:var(--m);height:calc(var(--m) * 1.48);
+  transform-origin:50% 0;opacity:0;
+}
+.tiempo.on .medalla-in{animation:colgar 1.7s var(--ease) .15s forwards}
+@keyframes colgar{
+  0%{opacity:0;transform:translateY(-35%) rotate(-18deg)}
+  22%{opacity:1}
+  42%{transform:translateY(0) rotate(10deg)}
+  62%{transform:rotate(-5deg)}
+  80%{transform:rotate(2deg)}
+  100%{opacity:1;transform:none}
+}
+.medalla-in img{position:absolute;left:0;bottom:0;width:var(--m);height:var(--m);filter:drop-shadow(0 18px 26px rgba(0,0,0,.7))}
+.medalla-in .cinta{position:absolute;left:50%;top:0;width:0;height:calc(var(--m) * .56)}
+.medalla-in .cinta::before,.medalla-in .cinta::after{
+  content:"";position:absolute;bottom:0;left:calc(var(--m) * -.1);width:calc(var(--m) * .2);height:calc(var(--m) * .64);
+  transform-origin:50% 100%;
+  background:linear-gradient(90deg,rgba(0,0,0,.3),transparent 24%,transparent 76%,rgba(0,0,0,.3)),linear-gradient(90deg,#FCD116 0 50%,#1747A6 50% 75%,#CE1126 75%);
+  -webkit-mask-image:linear-gradient(0deg,#000 60%,transparent);mask-image:linear-gradient(0deg,#000 60%,transparent);
+}
+.medalla-in .cinta::before{transform:rotate(21deg)}
+.medalla-in .cinta::after{transform:rotate(-21deg) scaleX(-1)}
+.medalla-in .destello{
+  position:absolute;left:calc(var(--m) * -.5);bottom:calc(var(--m) * -.5);width:calc(var(--m) * 2);height:calc(var(--m) * 2);
+  border-radius:50%;pointer-events:none;opacity:0;
+  background:radial-gradient(circle,rgba(255,236,170,.5) 0%,rgba(242,205,107,.16) 36%,transparent 66%);
+}
+.tiempo.on .medalla-in .destello{animation:destelloMedalla 1.3s ease .75s forwards}
+@keyframes destelloMedalla{0%{opacity:0;transform:scale(.4)}30%{opacity:1}100%{opacity:.4;transform:scale(1.08)}}
+.medalla-in::after{
+  content:"";position:absolute;left:0;bottom:0;width:var(--m);height:var(--m);pointer-events:none;mix-blend-mode:screen;opacity:0;
+  background:linear-gradient(110deg,transparent 35%,rgba(255,244,210,.8) 48%,transparent 60%);background-size:300% 100%;
+  -webkit-mask:url("marca/medalla.webp") center/contain no-repeat;mask:url("marca/medalla.webp") center/contain no-repeat;
+}
+.tiempo.on .medalla-in::after{animation:barrido 1.4s ease 1.15s forwards}
+
+/* El marcador del Mundial: del puesto 45 al 5 */
+.marcador{
+  display:flex;align-items:flex-start;justify-content:center;
+  font-family:var(--f-titulo);line-height:.92;font-size:clamp(5.4rem,calc(30 * var(--vw)),8.2rem);
+  background:var(--foil);background-size:160% 100%;background-position:30% 50%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 10px 22px rgba(0,0,0,.6));
+  opacity:0;transform:scale(.8);transition:opacity .4s ease .3s,transform .6s var(--ease) .3s;
+}
+.tiempo.on .marcador{opacity:1;transform:none}
+.marcador b{font-weight:400;font-variant-numeric:tabular-nums}
+.marcador sup{font-size:.42em;line-height:1;margin:.1em 0 0 -.03em}
+.marcador.fin{animation:golpe .55s cubic-bezier(.3,1.6,.5,1)}
+@keyframes golpe{0%{transform:scale(1)}40%{transform:scale(1.15)}100%{transform:scale(1)}}
+.marcador-pie{
+  margin-top:-8px;font-family:var(--f-dato);font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:var(--texto-2);
+  opacity:0;transition:opacity .5s ease .6s;
+}
+.tiempo.on .marcador-pie{opacity:1}
+
+/* La carta viva: el plato pasa de crudo a servido en la tarjeta alta */
+.t-carta .coccion{margin-bottom:12px}
+.t-carta.on .coccion .servido{animation-delay:1s}
+.t-carta.on .toque{animation:toque 1s .3s var(--ease) 1}
+.coccion .rotulo{
+  position:absolute;left:50%;bottom:-16px;z-index:2;transform:translateX(-50%);
+  display:flex;align-items:center;gap:10px;white-space:nowrap;
+  padding:6px 8px 6px 14px;border-radius:999px;background:rgba(10,6,4,.94);border:1px solid var(--linea);
+}
+@media (prefers-reduced-motion:reduce){
+  .tiempo.on .medalla-in,.tiempo.on .sello-fecha{animation:none;opacity:1}
+  .tiempo.on .medalla-in .destello,.tiempo.on .medalla-in::after,.marcador.fin{animation:none}
+  .marcador,.marcador-pie{transition:none}
+}
+
+/* Visor: el plato en un círculo que flota */
+.v-vitrina{
+  --d:min(calc(84 * var(--vw)),calc(46 * var(--vh)),400px);
+  width:var(--d);height:var(--d);aspect-ratio:auto;padding-top:0;max-height:none;border-radius:50%;
+  background:radial-gradient(circle at 50% 42%,#2a1b0f 0%,var(--carbon-2) 72%);
+  box-shadow:0 0 0 1px rgba(212,161,42,.4),0 0 70px -12px rgba(212,161,42,.28),0 40px 60px -30px #000;
+}
+.v-vuelo{border-radius:50%}
+/* Platos sin clip de parrilla: brillo de brasa que titila mientras pasan por el fuego */
+.v-vitrina::after{
+  content:"";position:absolute;top:0;right:0;bottom:0;left:0;inset:0;z-index:2;pointer-events:none;opacity:0;transition:opacity .45s ease;mix-blend-mode:screen;
+  background:radial-gradient(90% 62% at 50% 104%,rgba(255,150,50,.62),rgba(226,78,22,.28) 46%,transparent 76%);
+}
+/* Las brasas que flotan en el visor quedan detrás del plato, nunca encima de la comida */
+.v-brasas{z-index:0}
+@keyframes titila{from{filter:brightness(1)}to{filter:brightness(1.3)}}
+.v-pendiente{position:absolute;top:0;right:0;bottom:0;left:0;inset:0;z-index:3;display:grid;place-content:center;justify-items:center;gap:10px;text-align:center;padding:14%}
+.v-pendiente img{width:62%;height:auto;opacity:.3}
+.v-pendiente p{font-family:var(--f-dato);font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--oro)}
+#visor[data-modo="pendiente"] .v-linea,#visor[data-modo="pendiente"] .v-pista,#visor[data-modo="pendiente"] .js-v-otra{visibility:hidden}
+#visor[data-modo="crudo"] .v-parada[data-parada="fuego"],#visor[data-modo="crudo"] .v-parada[data-parada="servido"]{display:none}
+.v-fila{align-items:center}
+.v-fila .ic-btn{flex:none}
+.v-precio small{font-size:.74rem}
+
+/* Visor con los videos de IA (18 de noviembre): vienen en vertical, con la tabla en 3/4 y las guarniciones
+   alrededor, así que el plato se ve entero en un cuadro 4:5, sin aro, con los bordes fundidos en el carbón
+   (el fondo de los videos es casi el mismo de la carta). El cuadro se ajusta al alto que deja el visor. */
+:root{
+  --tabla-mask:linear-gradient(180deg,transparent 0,#000 11%,#000 87%,transparent 100%),linear-gradient(90deg,transparent 0,#000 8%,#000 92%,transparent 100%);
+}
+.v-escena{container-type:size}
+.v-vitrina{
+  --alto:min(calc(50 * var(--vh)),calc(108 * var(--vw)),560px);
+  width:calc(var(--alto) * .8);height:var(--alto);border-radius:0;background:none;box-shadow:none;
+}
+@supports (height:1cqh){
+  .v-vitrina{--alto:min(100cqh,calc(108 * var(--vw)),560px)}
+}
+.v-vitrina video,.v-vitrina .v-poster{
+  -webkit-mask-image:var(--tabla-mask);mask-image:var(--tabla-mask);
+  -webkit-mask-composite:source-in;mask-composite:intersect;
+}
+.v-vitrina::after{background:radial-gradient(60% 30% at 50% 82%,rgba(255,150,50,.55),rgba(226,78,22,.22) 50%,transparent 80%)}
+.v-vuelo.tabla{border-radius:18px;-webkit-mask-image:none;mask-image:none}
+.v-pendiente{background:radial-gradient(closest-side at 50% 46%,rgba(212,161,42,.1),transparent)}
+.v-pendiente img{width:min(62%,240px)}
+
+/* Hoja de cotización */
+#cotizador{
+  position:fixed;top:0;right:0;bottom:0;left:0;inset:0;z-index:55;overflow-y:auto;overscroll-behavior:contain;background:var(--carbon);
+  background-image:radial-gradient(120% 50% at 50% 0%,rgba(196,82,30,.14),transparent 60%),var(--grano);
+  transform:translateY(100%);visibility:hidden;transition:transform .5s var(--ease),visibility 0s .5s;
+}
+#cotizador.abierto{transform:none;visibility:visible;transition:transform .5s var(--ease)}
+.j-cab{
+  position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:12px;
+  padding:calc(env(safe-area-inset-top,0px) + 10px) 16px 10px;
+  background:rgba(14,9,5,.95);border-bottom:1px solid var(--linea);
+}
+.j-cab h2{font-family:var(--f-titulo);font-size:1.6rem;line-height:1.05}
+.j-cuerpo{max-width:30rem;margin:0 auto;padding:18px 18px calc(env(safe-area-inset-bottom,0px) + 36px);display:grid;gap:18px}
+.ev-lleno{display:grid;gap:18px}
+.como{color:var(--texto-2);font-size:.94rem}
+.ev-lista{display:grid}
+.ev-linea{display:grid;grid-template-columns:56px minmax(0,1fr);gap:10px 12px;align-items:center;padding-block:14px;border-top:1px dashed rgba(212,161,42,.22)}
+.ev-linea:first-child{border-top:0;padding-top:4px}
+.ev-img{position:relative;width:56px;height:56px;border-radius:50%;overflow:hidden;background:var(--carbon-2);box-shadow:0 0 0 1px rgba(212,161,42,.5)}
+.ev-img img{width:100%;height:100%;object-fit:cover}
+.ev-img.sin img{object-fit:contain;padding:16%;opacity:.4;-webkit-mask-image:none;mask-image:none}
+.ev-info{display:grid;gap:4px;min-width:0}
+.ev-nombre{font-family:var(--f-dato);font-weight:600;font-size:1.02rem;letter-spacing:.04em;text-transform:uppercase;line-height:1.15}
+.ev-pp{font-size:.8rem;color:var(--texto-3)}
+.ev-opcion{
+  justify-self:start;max-width:100%;margin-top:2px;padding:.4em 2.1em .4em .8em;border-radius:999px;border:1px solid var(--linea);
+  background:rgba(241,230,210,.04) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5l5 5 5-5' fill='none' stroke='%23F2CD6B' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right .8em center/10px;
+  color:var(--texto);font-family:var(--f-texto);font-size:.84rem;-webkit-appearance:none;appearance:none;
+}
+.ev-ctrl{grid-column:2;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 12px}
+.ev-cant{display:inline-flex;align-items:center;gap:2px;border:1px solid var(--linea);border-radius:999px;background:rgba(10,6,4,.5)}
+.ev-cant button{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;color:var(--oro-brillo)}
+.ev-cant button svg{width:16px;height:16px}
+.ev-cant input{
+  width:3.3em;height:40px;border:0;background:transparent;color:var(--texto);text-align:center;
+  font-family:var(--f-dato);font-weight:500;font-size:1.15rem;font-variant-numeric:tabular-nums;-moz-appearance:textfield;appearance:textfield;
+}
+.ev-cant input::-webkit-outer-spin-button,.ev-cant input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.ev-cant-l{font-size:.78rem;color:var(--texto-3);padding-right:12px}
+.ev-quitar{display:inline-flex;align-items:center;gap:.35em;color:var(--texto-3);font-size:.82rem;padding:.4em .2em;text-decoration:underline;text-underline-offset:3px}
+.ev-quitar svg{width:13px;height:13px}
+.ev-mas{justify-self:start}
+.ev-resumen{
+  display:grid;gap:10px;padding:16px 18px;border-radius:16px;background:#120b06;border:1px solid var(--oro);
+  box-shadow:inset 0 0 0 5px #120b06,inset 0 0 0 6px rgba(212,161,42,.4);
+}
+.ev-fila{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.ev-fila span{font-family:var(--f-dato);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--texto-2)}
+.ev-fila b{font-family:var(--f-dato);font-weight:600;font-size:1.35rem;color:var(--texto);font-variant-numeric:tabular-nums;text-align:right}
+.ev-fila b.total{color:var(--oro-brillo);font-size:1.6rem}
+.ev-fila b.pendiente{font-size:.82rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--oro)}
+.ev-aviso{color:var(--aviso);font-size:.88rem}
+.ev-nota{font-size:.8rem;color:var(--texto-3)}
+.ev-campos{border:0;margin:0;padding:0;min-width:0;display:grid;gap:14px}
+.ev-campos legend{padding:0;margin-bottom:12px}
+.campo{display:grid;gap:7px;min-width:0}
+.campo > label,.campo > .etq{font-family:var(--f-dato);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--texto-2)}
+.campo input{
+  width:100%;min-width:0;min-height:46px;padding:.75em .95em;border-radius:12px;border:1px solid var(--linea);
+  background:rgba(241,230,210,.04);color:var(--texto);font-family:var(--f-texto);font-size:16px;
+}
+.campo input::placeholder{color:var(--texto-3)}
+.campo select{
+  width:100%;min-width:0;min-height:46px;padding:.75em 2.6em .75em .95em;border-radius:12px;border:1px solid var(--linea);
+  background:rgba(241,230,210,.04) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%23F2CD6B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right .85em center/18px;
+  color:var(--texto);font-family:var(--f-texto);font-size:16px;-webkit-appearance:none;appearance:none;
+}
+.campo select option,.campo select optgroup{background:#1a110a;color:#F1E6D2}
+.ev-lugar{margin-top:4px}
+.ev-lugar-nota{font-size:.78rem;line-height:1.45;color:var(--texto-3)}
+.ev-viat{font-size:.8rem;line-height:1.4;color:var(--texto-2);margin-top:-4px}
+/* Nota de viáticos en la portada */
+.viaticos{
+  display:flex;align-items:flex-start;gap:10px;margin-top:12px;padding:12px 14px;border-radius:14px;
+  border:1px solid var(--linea-suave);background:rgba(241,230,210,.03);font-size:.84rem;line-height:1.45;color:var(--texto-2);
+}
+.viaticos svg{width:20px;height:20px;flex:none;color:var(--oro-brillo);margin-top:1px}
+.viaticos b{color:var(--texto);font-weight:600}
+.tipos{display:flex;flex-wrap:wrap;gap:8px}
+.tipo-btn{padding:.5em .95em;border-radius:999px;border:1px solid var(--linea);font-size:.86rem;color:var(--texto);transition:background .2s ease,color .2s ease}
+.tipo-btn[aria-pressed="true"]{background:var(--foil-boton);color:#1A0F06;border-color:transparent;font-weight:600}
+.ev-enviar{width:100%}
+.ev-enviar[aria-disabled="true"]{opacity:.42;filter:saturate(.4);box-shadow:none}
+.ev-numero{text-align:center;color:var(--texto-3);font-size:.86rem}
+.ev-numero b{color:var(--texto);font-family:var(--f-dato);font-weight:500;letter-spacing:.06em}
+.ev-vacio{display:grid;justify-items:center;gap:14px;text-align:center;padding:24px 8px 6px;color:var(--texto-2)}
+.ev-vacio img{width:110px;height:auto;opacity:.55}
+.ev-vacio p{max-width:22rem}
+
+/* Aviso que sube al agregar o quitar un plato */
+.aviso-flota{
+  position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 88px);z-index:90;
+  display:inline-flex;align-items:center;gap:.55em;max-width:calc(100% - 32px);
+  padding:.65em 1.1em;border-radius:999px;background:rgba(18,11,6,.97);border:1px solid var(--oro);
+  color:var(--texto);font-size:.88rem;box-shadow:0 14px 30px -12px #000;pointer-events:none;
+  opacity:0;transform:translate(-50%,12px);transition:opacity .25s ease,transform .3s var(--ease);
+}
+.aviso-flota.va{opacity:1;transform:translate(-50%,0)}
+.aviso-flota svg{width:16px;height:16px;flex:none;color:var(--oro-brillo)}
+.aviso-flota span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Platos con opciones de proteína (filet mignon, asado llanero): una fila por opción con su precio */
+.variantes{list-style:none;margin:2px 0 0;padding:0;display:grid;gap:0}
+.variantes li{display:flex;align-items:center;gap:8px;min-height:44px}
+.var-nombre{font-family:var(--f-dato);font-weight:500;font-size:.92rem;letter-spacing:.08em;text-transform:uppercase;color:var(--texto);white-space:nowrap}
+.variantes .lider{align-self:center;transform:translateY(5px)}
+.variantes .precio{font-size:1.02rem}
+.agregar.mini{width:38px;height:38px;padding:0;justify-content:center;flex:none;border-radius:50%}
+.agregar.mini svg{width:16px;height:16px}
+/* Celulares de menos de 390 px: las filas de cerdo, mixto y res se salían por la derecha y la página bailaba de lado */
+@media (max-width:389px){
+  .variantes li{gap:6px}
+  .variantes .lider{min-width:.4rem}
+  .var-nombre{letter-spacing:.04em;font-size:.86rem}
+  .variantes .precio{font-size:.96rem}
+  .agregar.mini{width:34px;height:34px}
+}
+@media (max-width:359px){
+  .plato-foto{--t:88px}
+  .var-nombre{white-space:normal;line-height:1.1}
+}
+.pp-nota{font-size:.7rem;color:var(--texto-3);letter-spacing:.03em}
+
+/* Visor: escoger la proteína */
+.v-variantes{position:relative;z-index:3;display:flex;justify-content:center;flex-wrap:wrap;gap:8px;padding:12px 18px 0}
+.v-var{
+  display:grid;justify-items:center;gap:1px;min-width:94px;padding:.45em .9em;border-radius:14px;border:1px solid var(--linea);
+  background:rgba(10,6,4,.5);color:var(--texto-2);transition:background .2s ease,color .2s ease,border-color .2s ease;
+}
+.v-var b{font-family:var(--f-dato);font-weight:600;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--texto)}
+.v-var span{font-family:var(--f-dato);font-size:.88rem;letter-spacing:.04em;font-variant-numeric:tabular-nums}
+.v-var[aria-checked="true"]{background:var(--foil-boton);border-color:transparent;color:#1A0F06}
+.v-var[aria-checked="true"] b{color:#1A0F06}
+.v-var.en-evento b::after{content:"";display:inline-block;width:6px;height:6px;margin:0 0 .15em .45em;border-radius:50%;background:var(--brasa);vertical-align:middle}
+
+/* Sin video: manda la descripción (se ve siempre, aun en celulares bajitos) */
+#visor[data-modo="pendiente"] .v-linea,#visor[data-modo="pendiente"] .v-pista{display:none}
+#visor[data-modo="pendiente"] .v-desc{display:block;padding-top:14px}
+/* Solo servido (el asado al barril): la cámara va y viene sobre la tabla; no hay crudo ni fuego que marcar */
+#visor[data-modo="servido"] .v-linea{display:none}
+#visor[data-modo="servido"] .js-v-otra{visibility:hidden}
+
+/* Aviso de temporada, arriba de la carta */
+.temporada{
+  display:flex;align-items:center;gap:12px;margin-top:14px;padding:12px 14px;border-radius:16px;text-decoration:none;
+  border:1px solid rgba(212,161,42,.55);background:linear-gradient(100deg,rgba(196,82,30,.22),rgba(212,161,42,.08) 60%,rgba(10,6,4,.4));
+}
+.temporada > svg{width:24px;height:24px;flex:none;color:var(--oro-brillo)}
+.t-texto{flex:1;min-width:0;display:grid;gap:2px}
+.t-k{font-family:var(--f-dato);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--oro)}
+.t-t{font-size:.92rem;color:var(--texto);line-height:1.3}
+.t-t b{font-family:var(--f-dato);font-weight:600;letter-spacing:.04em;color:var(--oro-brillo)}
+.temporada .t-ir{width:18px;height:18px;color:var(--oro-brillo)}
+
+/* Cotización: subtotal de cada plato y comentarios */
+.ev-pp b{font-family:var(--f-dato);font-weight:500;color:var(--texto-2);font-variant-numeric:tabular-nums}
+.campo textarea{
+  width:100%;min-width:0;min-height:76px;padding:.75em .95em;border-radius:12px;border:1px solid var(--linea);resize:vertical;
+  background:rgba(241,230,210,.04);color:var(--texto);font-family:var(--f-texto);font-size:16px;line-height:1.4;
+}
+.campo textarea::placeholder{color:var(--texto-3)}
+.ev-sin{font-size:.8rem;line-height:1.4;color:var(--texto-3);margin-top:-4px}
+
+/* Pasabocas y bebidas: renglones con precio por unidad (sin foto) */
+.lista{margin-top:12px}
+.lista li{padding-block:8px;border-top:1px dashed rgba(212,161,42,.2)}
+.lista li:first-child{border-top:0}
+.fl-nombre{display:grid;gap:1px;min-width:0}
+.fl-nombre b{font-family:var(--f-dato);font-weight:600;font-size:1.04rem;letter-spacing:.05em;text-transform:uppercase;line-height:1.2;color:var(--texto)}
+.fl-nombre small{font-size:.8rem;line-height:1.3;color:var(--texto-2)}
+.lista .precio{font-size:1.04rem}
+.lista .precio.pendiente{font-size:.72rem}
+
+/* La mesa de pasabocas: recuadro de alquiler */
+.caja{
+  display:grid;gap:10px;margin-top:16px;padding:16px 16px 14px;border-radius:16px;
+  background:#120b06;border:1px solid var(--oro);box-shadow:inset 0 0 0 5px #120b06,inset 0 0 0 6px rgba(212,161,42,.4);
+}
+.caja .plato-nombre{font-size:1.22rem}
+.caja .chips{list-style:none;margin:0;padding:0}
+.caja .plato-pie{margin-top:2px}
+
+/* Toque colombiano: banderitas de Colombia y sombrero paisa (aguadeño), nada más */
+.emblema{display:block;width:112px;height:69px;flex:none}
+.bv-centro .emblema{width:104px;height:64px;margin-top:2px}
+.ceja-flag{display:flex;align-items:center;gap:.65em}
+.ceja-flag svg{width:22px;height:17px;flex:none;transform:translateY(-1px)}
+.mano svg{display:inline-block;width:42px;height:24px;margin-left:.3em;vertical-align:-3px;transform:rotate(10deg)}
+.pie .emblema{width:128px;height:79px;margin-top:-4px}
+@media (max-height:640px){.bv-centro .emblema{display:none}}
+@container telefono (max-height:640px){.bv-centro .emblema{display:none}}
+
+@media (max-width:360px){
+  .pasos{gap:6px}
+  .paso{padding:10px 8px 11px}
+  .paso span{font-size:.72rem}
+  .plato{column-gap:12px}
+  .agregar{padding:.5em .8em;letter-spacing:.08em}
+}
+@media (prefers-reduced-motion:reduce){
+  #cotizador{transition:visibility 0s}
+  .barra-evento{animation:none}
+  .ticket-in{transition:none}
+}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-sonido" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16.5 8.5a5 5 0 0 1 0 7"/><path d="M19 6a8.5 8.5 0 0 1 0 12"/></g></symbol>
+    <symbol id="i-mudo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M17 9.5l5 5M22 9.5l-5 5"/></g></symbol>
+    <symbol id="i-cerrar" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-atras" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sig" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-repetir" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12a8.5 8.5 0 1 0 2.8-6.3"/><path d="M3.5 4.5v4.8h4.8"/></g></symbol>
+    <symbol id="i-dedo" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12a7.5 7.5 0 0 1 13-5.1"/><path d="M18 3.5v4h-4"/><path d="M19.5 12a7.5 7.5 0 0 1-13 5.1"/><path d="M6 20.5v-4h4"/></g></symbol>
+    <symbol id="i-llama" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5c1 4 5.5 6.3 5.5 11.8A5.5 5.5 0 0 1 12 20a5.5 5.5 0 0 1-5.5-5.7c0-3 1.6-4.6 2.8-6 0 2.3.9 3.4 2.1 3.9-.6-3.2-.4-6.4.6-9.7z"/></g></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.3-4.2A8 8 0 1 1 8.4 19z"/><path d="M9 8.6c0 3.2 3.2 6.4 6.4 6.4l1.2-1.5-2-1-.9.9a4.6 4.6 0 0 1-2.2-2.2l.9-.9-1-2L9.9 7.6z"/></g></symbol>
+    <symbol id="i-mas" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-menos" viewBox="0 0 24 24"><path d="M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-listo" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <!-- Toque colombiano: banderita (con palito largo para el emblema y corto para las cejas), sombrero paisa (aguadeño) y el emblema con las dos banderitas detrás del sombrero -->
+    <symbol id="i-bandera" viewBox="0 0 34 60"><path d="M2 59V3" stroke="#D4A12A" stroke-width="2" stroke-linecap="round"/><circle cx="2" cy="2.4" r="2" fill="#F2CD6B"/><path d="M3 4c10-3 20 3 30 0v9c-10 3-20-3-30 0z" fill="#FCD116"/><path d="M3 13c10-3 20 3 30 0v4.5c-10 3-20-3-30 0z" fill="#1747A6"/><path d="M3 17.5c10-3 20 3 30 0V22c-10 3-20-3-30 0z" fill="#CE1126"/><path d="M3 4c10-3 20 3 30 0v18c-10 3-20-3-30 0z" fill="none" stroke="#F4E8D0" stroke-width=".7" stroke-opacity=".45"/></symbol>
+    <symbol id="i-banderita" viewBox="0 0 34 26"><path d="M2 25V3" stroke="#D4A12A" stroke-width="2.2" stroke-linecap="round"/><circle cx="2" cy="2.4" r="2" fill="#F2CD6B"/><path d="M3 4c10-3 20 3 30 0v9c-10 3-20-3-30 0z" fill="#FCD116"/><path d="M3 13c10-3 20 3 30 0v4.5c-10 3-20-3-30 0z" fill="#1747A6"/><path d="M3 17.5c10-3 20 3 30 0V22c-10 3-20-3-30 0z" fill="#CE1126"/><path d="M3 4c10-3 20 3 30 0v18c-10 3-20-3-30 0z" fill="none" stroke="#F4E8D0" stroke-width=".7" stroke-opacity=".45"/></symbol>
+    <symbol id="i-sombrero" viewBox="0 0 64 36"><ellipse cx="32" cy="27.8" rx="30.5" ry="7.4" fill="#B9A783"/><ellipse cx="32" cy="26.3" rx="30.5" ry="7.2" fill="#F4E8D0"/><path d="M6.5 27.4c6.4 2.5 15.6 3.8 25.5 3.8s19.1-1.3 25.5-3.8M11 25.4c5.4 1.9 12.6 2.9 21 2.9s15.6-1 21-2.9" fill="none" stroke="#D3C19C" stroke-width=".8"/><path d="M19.2 25.6C19 15.5 22.6 6.2 32 6.2s13 9.3 12.8 19.4c-3.6 1.4-8 2-12.8 2s-9.2-.6-12.8-2z" fill="#F4E8D0"/><path d="M37.6 7.3c4.6 2.4 7.3 9 7.2 18.3-1.6.6-3.4 1-5.3 1.3.7-7.8 0-14.5-1.9-19.6z" fill="#D9C8A5" opacity=".8"/><path d="M26.3 8.9c3.7 1.7 7.7 1.7 11.4 0" fill="none" stroke="#C3B08A" stroke-width="1" stroke-linecap="round"/><path d="M19.4 19.6c3.8 1.5 8.1 2.2 12.6 2.2s8.8-.7 12.6-2.2l.2 5.2c-3.8 1.5-8.2 2.2-12.8 2.2s-9-.7-12.8-2.2z" fill="#0A0604"/><ellipse cx="22.6" cy="22.7" rx="2.3" ry="1.7" fill="#2A211A"/><path d="M1.6 26.5c.4 4.2 13.8 7.6 30.4 7.6s30-3.4 30.4-7.6" fill="none" stroke="#8A6418" stroke-width=".7" opacity=".8"/></symbol>
+    <symbol id="i-colombia" viewBox="0 0 120 74"><use href="#i-bandera" width="34" height="60" transform="translate(60 70) rotate(-30) scale(-1 1) translate(-2 -59)"/><use href="#i-bandera" width="34" height="60" transform="translate(60 70) rotate(30) translate(-2 -59)"/><use href="#i-sombrero" x="26" y="36" width="68" height="38"/></symbol>
+    <symbol id="i-estrella" viewBox="0 0 24 24"><path d="M12 2.8l2.7 5.6 6.1.8-4.5 4.2 1.2 6.1L12 16.6l-5.5 2.9 1.2-6.1-4.5-4.2 6.1-.8z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+    <symbol id="i-copa" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7.2 3.8h9.6v5.1a4.8 4.8 0 0 1-9.6 0z"/><path d="M7.2 5.6H4.6v1.3a3.6 3.6 0 0 0 3.3 3.6M16.8 5.6h2.6v1.3a3.6 3.6 0 0 1-3.3 3.6"/><path d="M12 13.7v3.6M8.4 20.6h7.2l-.7-3.3H9.1z"/></g></symbol>
+    <symbol id="i-ruta" viewBox="0 0 24 24"><path d="M12 21.2s-6.6-5.7-6.6-11.1a6.6 6.6 0 0 1 13.2 0c0 5.4-6.6 11.1-6.6 11.1z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10.1" r="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-evento" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-2.2-1.5-2.2 1.5-1.6-1.5-1.6 1.5-2.2-1.5L6 21z"/><path d="M9 8h6M9 12h6M9 16h3.5"/></g></symbol>
+  </defs>
+</svg>
+
+<div class="marco-tel">
+<div class="telefono" id="telefono">
+<div class="desliza" id="desliza">
+<!-- ===================== Carta ===================== -->
+<div id="carta">
+  <p class="borrador js-borrador" hidden>Borrador · precios y textos por confirmar</p>
+  <header class="barra">
+    <span class="mesa"><span class="punto-brasa"></span>Eventos</span>
+    <img class="marca" src="marca/palabra.webp" alt="Jonnier" width="420" height="146">
+    <span class="herr">
+      <button class="ic-btn js-sonido" type="button" aria-label="Silenciar el sonido" aria-pressed="false"><svg><use href="#i-sonido"/></svg></button>
+      <button class="ic-btn ic-evento js-abrir-evento" type="button" aria-label="Ver tu evento"><svg><use href="#i-evento"/></svg><b class="badge js-badge" hidden>0</b></button>
+    </span>
+  </header>
+  <nav class="cats js-cats" aria-label="Secciones de la carta"></nav>
+
+  <main class="hoja">
+    <section class="portada" aria-labelledby="portada-t">
+      <button class="palmares js-ver-intro" type="button" aria-label="Campeón Nacional de Parrilleros Ancestrales 2024 y Top 5 en el Mundial de Asadores 2024. Ver la historia.">
+        <svg class="copa" aria-hidden="true"><use href="#i-copa"/></svg>
+        <span><b>Campeón Nacional</b> · Top 5 Mundial</span>
+        <svg class="ver" aria-hidden="true"><use href="#i-sig"/></svg>
+      </button>
+      <p class="ceja ceja-flag"><svg aria-hidden="true"><use href="#i-banderita"/></svg>Carta de eventos</p>
+      <h1 id="portada-t" class="foil">Arma tu evento</h1>
+      <p class="entrada">Gira la vitrina y toca el corte que te antoje: lo ves crudo, pasando por el fuego y llegando servido. Agrega los platos que quieras y cotiza por WhatsApp.</p>
+      <a class="ig-carta ig-portada" href="https://www.instagram.com/jonniercatering/" target="_blank" rel="noopener noreferrer" aria-label="Visita el Instagram de Jonnier Catering (se abre en una pestaña nueva)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.8" cy="6.3" r=".85" fill="currentColor" stroke="none"/></svg><span>Conoce más en Instagram · @jonniercatering</span></a>
+      <p class="mano" aria-hidden="true">¡uff, qué delicia!<svg><use href="#i-sombrero"/></svg></p>
+      <div class="vitrina-marco js-vitrina-marco">
+        <div class="vitrina js-vitrina" aria-roledescription="carrusel" aria-label="Vitrina de cortes">
+          <div class="anillo js-anillo"></div>
+        </div>
+      </div>
+      <div class="vitrina-ctrl">
+        <button class="ic-btn js-v-ant" type="button" aria-label="Corte anterior"><svg><use href="#i-atras"/></svg></button>
+        <p class="js-vitrina-pie" aria-live="polite">Desliza para girar la vitrina</p>
+        <button class="ic-btn js-v-sig" type="button" aria-label="Corte siguiente"><svg><use href="#i-sig"/></svg></button>
+      </div>
+      <ol class="pasos" aria-label="Así cotizas tu evento">
+        <li class="paso"><b>1</b><span>Escoge los platos</span></li>
+        <li class="paso"><b>2</b><span>Di cuántas personas, desde <span class="js-minimo">20</span></span></li>
+        <li class="paso"><b>3</b><span>Mándalo por WhatsApp</span></li>
+      </ol>
+      <p class="viaticos"><svg aria-hidden="true"><use href="#i-ruta"/></svg><span><b>En Pereira no cobramos viáticos.</b> En el resto del Eje Cafetero se suman los peajes (ida y vuelta) y la gasolina desde Pereira: tu cotización los calcula sola. Fuera del Eje Cafetero, los cuadramos contigo por el chat.</span></p>
+      <a class="temporada js-temporada" href="#" hidden></a>
+    </section>
+
+    <div class="js-menu"></div>
+  </main>
+
+  <footer class="pie">
+    <img class="sello" src="marca/medalla.webp" alt="" width="640" height="640" loading="lazy">
+    <svg class="emblema" aria-hidden="true"><use href="#i-colombia"/></svg>
+    <h2 class="foil">Lleva el barril a tu evento</h2>
+    <p>Cumpleaños, matrimonios, empresas, el paseo de la familia o la novena: arma tu evento con los platos de la carta y mándalo por WhatsApp. Jonnier te confirma el valor final y la disponibilidad.</p>
+    <div class="wa">
+      <button class="btn-oro js-abrir-evento" type="button"><svg><use href="#i-wa"/></svg>Cotizar por WhatsApp</button>
+      <p class="numero"><span class="js-numero">301 857 0159</span><button class="js-copiar" type="button">Copiar</button></p>
+    </div>
+    <a class="ig-carta ig-pie" href="https://www.instagram.com/jonniercatering/" target="_blank" rel="noopener noreferrer" aria-label="Visita el Instagram de Jonnier Catering (se abre en una pestaña nueva)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.8" cy="6.3" r=".85" fill="currentColor" stroke="none"/></svg><span>Conoce más en Instagram · @jonniercatering</span></a>
+    <button class="link-suave js-ver-intro" type="button">Ver la historia del campeón</button>
+    <p class="creditos">Asados al barril desde 2015 · Pereira</p>
+    <p class="creditos">Carta hecha por Kodarify</p>
+  </footer>
+
+  <div class="barra-evento js-barra-evento" hidden>
+    <div class="be-info">
+      <span class="be-k">Tu evento</span>
+      <span class="be-t js-be-t">1 plato · 20 personas</span>
+    </div>
+    <button class="btn-oro js-abrir-evento" type="button">Cotizar<svg><use href="#i-sig"/></svg></button>
+  </div>
+</div>
+</div>
+
+<!-- ===================== Bienvenida ===================== -->
+<section id="bienvenida" class="pantalla" aria-label="Bienvenida a Jonnier">
+  <canvas class="lienzo js-brasas-bv" aria-hidden="true"></canvas>
+  <div class="bv">
+    <p class="chip-mesa"><span class="punto-brasa"></span>Carta de eventos</p>
+    <div class="bv-centro">
+      <div class="medalla-escena js-medalla" role="img" aria-label="Medalla dorada de Jonnier. Gírala con el dedo.">
+        <div class="medalla-halo"></div>
+      </div>
+      <p class="bv-pista js-bv-pista"><svg><use href="#i-dedo"/></svg>Gírala con el dedo</p>
+      <svg class="emblema" aria-hidden="true"><use href="#i-colombia"/></svg>
+      <p class="bv-lema">Asados al barril · desde 2015</p>
+      <p class="bv-texto">Hola, parce. Esta es la carta pa’ tu evento: mira cada plato de crudo a servido y arma tu cotización.</p>
+    </div>
+    <div class="bv-botones">
+      <button class="btn-oro js-entrar" type="button" data-sonido="si"><svg><use href="#i-sonido"/></svg>Entrar con sonido</button>
+      <button class="link-suave js-entrar" type="button" data-sonido="no">Entrar sin sonido</button>
+      <p class="bv-pie">Carta 3D de eventos · Pereira</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Intro de 15 s: la historia del campeón =====================
+     Datos del Instagram de @jonniercatering: 1.er puesto en el Gran Torneo de Parrilleros Ancestrales
+     (24 de agosto de 2024, Plaza de Ferias de Pereira) y 5.º puesto entre 45 equipos en el Torneo Mundial
+     de Asadores 2024 (Montevideo, Uruguay), representando a Colombia. Como las historias: tocar adelanta. -->
+<section id="intro" class="pantalla" hidden aria-label="La historia de Jonnier, campeón nacional de parrilleros">
+  <canvas class="lienzo js-brasas-in" aria-hidden="true"></canvas>
+  <div class="in-arriba">
+    <div class="barras" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <button class="ic-btn js-sonido" type="button" aria-label="Silenciar el sonido" aria-pressed="false"><svg><use href="#i-sonido"/></svg></button>
+    <button class="saltar js-saltar" type="button">Saltar <svg><use href="#i-sig"/></svg></button>
+  </div>
+  <div class="tiempos js-tiempos">
+    <article class="tiempo t-gancho" aria-label="Jonnier, Pereira, desde 2015">
+      <div class="in-logo"><img src="marca/logo.webp" alt="" width="512" height="512"></div>
+      <p class="in-lema" data-partir style="--d:650ms">Pereira · desde 2015</p>
+      <p class="frase" data-partir style="--d:950ms">Esta es la historia de un <em>campeón.</em></p>
+    </article>
+    <article class="tiempo t-nacional">
+      <p class="sello-fecha"><b>24 · ago · 2024</b><span>Plaza de Ferias de Pereira</span></p>
+      <div class="medalla-in" aria-hidden="true"><span class="cinta"></span><span class="destello"></span><img src="marca/medalla.webp" alt="" width="640" height="640"></div>
+      <p class="frase chica" data-partir style="--d:700ms"><em>Campeón Nacional</em> de Parrilleros Ancestrales.</p>
+      <p class="sub" data-partir style="--d:1400ms">Primer puesto, y jugando de local.</p>
+    </article>
+    <article class="tiempo t-mundial">
+      <p class="sello-fecha"><b>Mundial de Asadores</b><span>Montevideo, Uruguay · 2024</span></p>
+      <div class="marcador" role="img" aria-label="Quinto puesto entre 45 equipos"><b class="js-puesto">45</b><sup>º</sup></div>
+      <p class="marcador-pie">puesto entre 45 equipos</p>
+      <p class="frase chica" data-partir style="--d:1700ms"><em>Top 5</em> en el Mundial, con Colombia en el pecho.</p>
+    </article>
+    <article class="tiempo t-carta">
+      <p class="frase chica" data-partir>Hoy ese fuego llega a <em>tu evento.</em></p>
+      <div class="coccion" aria-hidden="true"><img class="js-in-crudo2" alt=""><img class="servido js-in-servido" alt=""><span class="rotulo"><b class="js-in-nombre">Churrasco</b><span class="sello3d"><span class="punto-brasa"></span>3D</span></span><span class="toque"></span></div>
+      <p class="sub" data-partir style="--d:900ms">Toca un plato y míralo de crudo a servido.</p>
+    </article>
+    <article class="tiempo t-cierre">
+      <div class="ticket-in" aria-hidden="true">
+        <p class="tk">Tu evento</p>
+        <p><span>Asado al barril</span><b>30</b></p>
+        <p><span>Churrasco</span><b>20</b></p>
+        <p class="tt"><span>Personas</span><b>50</b></p>
+      </div>
+      <p class="frase chica" data-partir>Escoge, di cuántos son y cotízalo por <em>WhatsApp.</em></p>
+      <p class="final" data-partir style="--d:1200ms">¡Lleva el barril campeón a tu evento!</p>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== Visor del plato ===================== -->
+<section id="visor" hidden role="dialog" aria-modal="true" aria-labelledby="v-nombre" data-estado="crudo">
+  <canvas class="lienzo v-brasas js-v-brasas" aria-hidden="true"></canvas>
+  <header class="v-top">
+    <div class="v-agarre js-v-agarre" aria-hidden="true"></div>
+    <div class="v-titulo">
+      <div><p class="ceja js-v-cat">Cortes</p><h2 id="v-nombre" class="v-nombre js-v-nombre">Churrasco</h2></div>
+      <div class="v-acciones">
+        <button class="ic-btn js-sonido" type="button" aria-label="Silenciar el sonido" aria-pressed="false"><svg><use href="#i-sonido"/></svg></button>
+        <button class="ic-btn v-cerrar js-v-cerrar" type="button" aria-label="Cerrar y volver a la carta"><svg><use href="#i-cerrar"/></svg></button>
+      </div>
+    </div>
+    <p class="v-estado" aria-live="polite"><span class="v-punto"></span><b class="js-v-estado">Crudo</b><span class="js-v-sub">así llega a la parrilla</span></p>
+  </header>
+  <div class="v-escena js-v-escena">
+    <div class="v-vitrina js-v-vitrina">
+      <video class="js-v-video" playsinline webkit-playsinline preload="auto" muted disablepictureinpicture></video>
+      <img class="v-poster js-v-poster" alt="" draggable="false">
+      <div class="v-destello js-v-destello"></div>
+      <div class="v-pendiente js-v-pendiente" hidden><img src="marca/medalla.webp" alt="" width="640" height="640"><p>Pronto en 3D</p></div>
+      <p class="v-carga js-v-carga">Prendiendo el fuego…</p>
+    </div>
+  </div>
+  <p class="v-pista js-v-pista"><svg><use href="#i-dedo"/></svg>Desliza para girarlo · pellizca para acercar</p>
+  <div class="v-linea js-v-linea" role="slider" tabindex="0" aria-label="Del crudo al plato servido" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="Crudo">
+    <div class="v-riel"><span class="v-lleno js-v-lleno"></span><span class="v-perilla js-v-perilla"></span></div>
+    <div class="v-paradas">
+      <button class="v-parada js-v-parada" type="button" data-parada="crudo">Crudo</button>
+      <button class="v-parada js-v-parada" type="button" data-parada="fuego">Al fuego</button>
+      <button class="v-parada js-v-parada" type="button" data-parada="servido">Servido</button>
+    </div>
+  </div>
+  <p class="v-desc js-v-desc"></p>
+  <div class="v-variantes js-v-variantes" role="radiogroup" aria-label="Escoge la proteína" hidden></div>
+  <div class="v-fila">
+    <div class="v-precio"><span class="js-v-precio">Precio por confirmar</span><small class="js-v-llamado">por persona · eventos desde 20 personas</small></div>
+    <button class="ic-btn js-v-otra" type="button" aria-label="Verlo otra vez desde crudo"><svg><use href="#i-repetir"/></svg></button>
+    <button class="agregar grande js-v-agregar" type="button" aria-pressed="false"><svg><use href="#i-mas"/></svg><span>Agregar</span></button>
+  </div>
+  <button class="v-volver js-v-cerrar" type="button">Volver a la carta</button>
+</section>
+
+<!-- ===================== Cotización del evento ===================== -->
+<section id="cotizador" hidden role="dialog" aria-modal="true" aria-labelledby="ev-titulo">
+  <header class="j-cab">
+    <button class="ic-btn js-ev-cerrar" type="button" aria-label="Volver a la carta"><svg><use href="#i-atras"/></svg></button>
+    <div><p class="ceja">Cotización por WhatsApp</p><h2 id="ev-titulo">Tu evento</h2></div>
+  </header>
+  <div class="j-cuerpo">
+    <div class="ev-vacio js-ev-vacio" hidden>
+      <img src="marca/medalla.webp" alt="" width="640" height="640">
+      <p>Todavía no has escogido platos. Toca <b>Agregar</b> en los que quieras pa’ tu evento.</p>
+      <button class="btn-linea js-ev-cerrar" type="button">Ver la carta</button>
+      <a class="link-suave js-ev-directo" href="#" target="_blank" rel="noopener">O escríbenos directo por WhatsApp</a>
+    </div>
+    <div class="ev-lleno js-ev-lleno">
+      <p class="como">Pon cuántas personas van por cada plato (el evento es desde <span class="js-minimo">20</span> personas) y cuántas unidades quieres de pasabocas y bebidas.</p>
+      <div class="ev-lista js-ev-lista"></div>
+      <button class="btn-linea ev-mas js-ev-cerrar" type="button"><svg><use href="#i-mas"/></svg>Agregar más de la carta</button>
+      <div class="campo ev-lugar">
+        <label for="ev-lugar">¿Dónde es el evento?</label>
+        <select id="ev-lugar" class="js-ev-lugar"></select>
+        <input id="ev-otro" class="js-ev-otro" type="text" autocomplete="address-level2" placeholder="¿En qué ciudad o municipio?" maxlength="60" aria-label="Ciudad o municipio del evento" hidden>
+        <p class="ev-lugar-nota">En Pereira no cobramos viáticos. En el resto del Eje Cafetero se suman los peajes (ida y vuelta) y la gasolina desde Pereira. Fuera del Eje Cafetero, se cuadran con el asesor.</p>
+      </div>
+      <div class="ev-resumen" aria-live="polite">
+        <div class="ev-fila js-ev-fila-personas"><span>Personas</span><b class="js-ev-personas">0</b></div>
+        <div class="ev-fila"><span>Viáticos</span><b class="js-ev-viat pendiente">Escoge el lugar</b></div>
+        <p class="ev-viat js-ev-viat-det" hidden></p>
+        <div class="ev-fila"><span>Total aproximado</span><b class="js-ev-total pendiente">Por confirmar</b></div>
+        <p class="ev-sin js-ev-sin" hidden></p>
+        <p class="ev-aviso js-ev-aviso" hidden></p>
+        <p class="ev-nota">Jonnier te confirma el valor final y la disponibilidad por WhatsApp.</p>
+      </div>
+      <fieldset class="ev-campos">
+        <legend class="ceja">Datos del evento · opcionales</legend>
+        <div class="campo"><span class="etq" id="ev-tipo-l">¿Qué celebran?</span><div class="tipos js-ev-tipos" role="group" aria-labelledby="ev-tipo-l"></div></div>
+        <div class="campo"><label for="ev-fecha">Fecha</label><input id="ev-fecha" class="js-ev-fecha" type="date"></div>
+        <div class="campo"><label for="ev-notas">¿Algún cambio o comentario?</label><textarea id="ev-notas" class="js-ev-notas" rows="2" maxlength="300" placeholder="Ej.: cambiar las guarniciones de los madurados"></textarea></div>
+      </fieldset>
+      <a class="btn-oro ev-enviar js-ev-enviar" href="#" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Enviar por WhatsApp</a>
+      <p class="ev-numero">O escríbenos al <b class="js-numero">301 857 0159</b></p>
+    </div>
+  </div>
+</section>
+
+<p class="aviso-flota js-aviso" role="status" aria-live="polite"><svg><use href="#i-listo"/></svg><span class="js-aviso-t"></span></p>
+</div>
+</div>
+<p class="leyenda-tel" aria-hidden="true">Vista de celular · Carta de eventos Jonnier</p>
+<div class="girar" role="alert">
+  <svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="20" y="8" width="24" height="44" rx="5"/><path d="M29 46h6"/><path d="M50 22a18 18 0 0 1 2 14"/><path d="M53 31l-1 5-5-2"/></g></svg>
+  <p class="girar-t">Pon el celular derecho</p>
+  <p class="girar-s">La carta de Jonnier está hecha pa’ verla así.</p>
+</div>
+
+<script>
+/* ================= Utilidades ================= */
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const rand = (a, b) => a + Math.random() * (b - a);
+const easeOut = t => 1 - Math.pow(1 - t, 3);
+const reduceMotion = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+const fmtCOP = n => '$' + Math.round(n).toLocaleString('es-CO');
+const vibrar = ms => { try { if (navigator.vibrate) navigator.vibrate(ms); } catch (e) {} };
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
+};
+function barajar(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function el(tag, attrs = {}, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (v === false || v == null) continue;
+    if (k === 'class') n.className = v;
+    else if (k === 'html') n.innerHTML = v;
+    else if (k === 'style') n.style.cssText = v;
+    else if (k.startsWith('on')) n.addEventListener(k.slice(2), v);
+    else n.setAttribute(k, v === true ? '' : v);
+  }
+  for (const k of kids.flat()) if (k != null && k !== false) n.append(k.nodeType ? k : document.createTextNode(k));
+  return n;
+}
+function svgUse(id, cls) {
+  const ns = 'http://www.w3.org/2000/svg', s = document.createElementNS(ns, 'svg'), u = document.createElementNS(ns, 'use');
+  if (cls) s.setAttribute('class', cls);
+  s.setAttribute('aria-hidden', 'true'); u.setAttribute('href', '#' + id); s.append(u);
+  return s;
+}
+function partirPalabras(node) {
+  let i = 0;
+  const walk = parent => Array.from(parent.childNodes).forEach(ch => {
+    if (ch.nodeType === 3) {
+      const frag = document.createDocumentFragment();
+      ch.textContent.split(/(\s+)/).forEach(part => {
+        if (!part) return;
+        if (/^\s+$/.test(part)) frag.append(part);
+        else { const s = document.createElement('span'); s.className = 'w'; s.style.setProperty('--i', i++); s.textContent = part; frag.append(s); }
+      });
+      parent.replaceChild(frag, ch);
+    } else if (ch.nodeType === 1) walk(ch);
+  });
+  walk(node);
+}
+
+/* Grano de fondo: se pinta una vez en canvas (más liviano que filtros SVG) */
+(function grano() {
+  try {
+    const c = document.createElement('canvas'); c.width = c.height = 220;
+    const g = c.getContext('2d'), img = g.createImageData(220, 220), d = img.data;
+    for (let i = 0; i < d.length; i += 4) {
+      const claro = Math.random() < 0.45;
+      d[i] = claro ? 242 : 0; d[i + 1] = claro ? 205 : 0; d[i + 2] = claro ? 140 : 0;
+      d[i + 3] = Math.random() * (claro ? 9 : 26);
+    }
+    g.putImageData(img, 0, 0);
+    document.documentElement.style.setProperty('--grano', `url(${c.toDataURL('image/png')})`);
+  } catch (e) {}
+})();
+
+/* ================= Sonido (Web Audio, sin archivos) ================= */
+const Sonido = (() => {
+  let ctx = null, master = null, ruido = null, mudo = false;
+  let chisporroteo = null, fondo = null, tono = null;
+  const oyentes = new Set();
+  function init() {
+    if (ctx) { if (ctx.state === 'suspended') ctx.resume(); return; }
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return;
+    try {
+      ctx = new AC();
+      master = ctx.createGain(); master.gain.value = 0.8; master.connect(ctx.destination);
+      const len = ctx.sampleRate * 2;
+      ruido = ctx.createBuffer(1, len, ctx.sampleRate);
+      const d = ruido.getChannelData(0);
+      for (let i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
+    } catch (e) { ctx = null; }
+  }
+  const ok = () => !!ctx && !mudo;
+  const now = () => ctx.currentTime;
+  function fuente(loop) { const s = ctx.createBufferSource(); s.buffer = ruido; s.loop = !!loop; return s; }
+  function env(g, t0, a, pico, hold, r) {
+    g.gain.setValueAtTime(0.0001, t0);
+    g.gain.exponentialRampToValueAtTime(pico, t0 + a);
+    g.gain.setValueAtTime(pico, t0 + a + hold);
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + a + hold + r);
+  }
+  function chasquido(nivel = 1) {
+    if (!ok()) return;
+    const t = now(), s = fuente(), f = ctx.createBiquadFilter(), g = ctx.createGain();
+    f.type = 'bandpass'; f.frequency.value = rand(900, 4200); f.Q.value = rand(1.2, 5);
+    env(g, t, 0.002, rand(0.05, 0.2) * nivel, 0.004, rand(0.02, 0.07));
+    s.connect(f); f.connect(g); g.connect(master); s.start(t, rand(0, 1.8), 0.12);
+  }
+  function apagar(nodo, seg) {
+    if (!nodo || !ctx) return;
+    const t = now();
+    nodo.g.gain.cancelScheduledValues(t);
+    nodo.g.gain.setValueAtTime(Math.max(0.0001, nodo.g.gain.value), t);
+    nodo.g.gain.exponentialRampToValueAtTime(0.0001, t + seg);
+    nodo.stop.forEach(s => { try { s.stop(t + seg + 0.05); } catch (e) {} });
+  }
+  return {
+    init,
+    get mudo() { return mudo; },
+    setMudo(m) { mudo = m; if (m) { this.pararFuego(); this.pararTono(); } oyentes.forEach(fn => fn(m)); },
+    alCambiar(fn) { oyentes.add(fn); },
+    fuego() {
+      if (!ok() || chisporroteo) return;
+      const tick = () => { if (!ok()) { chisporroteo = null; return; } chasquido(0.9); if (Math.random() < 0.25) setTimeout(() => chasquido(0.6), rand(10, 40)); chisporroteo = setTimeout(tick, rand(60, 240)); };
+      tick();
+      const s = fuente(true), f = ctx.createBiquadFilter(), g = ctx.createGain();
+      f.type = 'lowpass'; f.frequency.value = 240;
+      g.gain.setValueAtTime(0.0001, now()); g.gain.exponentialRampToValueAtTime(0.1, now() + 1.4);
+      s.connect(f); f.connect(g); g.connect(master); s.start();
+      fondo = { g, stop: [s] };
+    },
+    pararFuego() { clearTimeout(chisporroteo); chisporroteo = null; apagar(fondo, 0.8); fondo = null; },
+    tono() {
+      if (!ok() || tono) return;
+      const g = ctx.createGain(), lp = ctx.createBiquadFilter();
+      lp.type = 'lowpass'; lp.frequency.value = 900; lp.Q.value = 0.4;
+      g.gain.setValueAtTime(0.0001, now()); g.gain.exponentialRampToValueAtTime(0.045, now() + 3);
+      const oscs = [[98, 'triangle', 0], [146.83, 'sine', 3], [196, 'sine', -4]].map(([f, type, det]) => {
+        const o = ctx.createOscillator(); o.type = type; o.frequency.value = f; o.detune.value = det; o.connect(lp); o.start(); return o; });
+      lp.connect(g); g.connect(master);
+      tono = { g, stop: oscs };
+    },
+    pararTono() { apagar(tono, 1.2); tono = null; },
+    soplo() {
+      if (!ok()) return;
+      const t = now(), s = fuente(), f = ctx.createBiquadFilter(), g = ctx.createGain();
+      f.type = 'bandpass'; f.Q.value = 0.8;
+      f.frequency.setValueAtTime(260, t); f.frequency.exponentialRampToValueAtTime(2300, t + 0.35); f.frequency.exponentialRampToValueAtTime(700, t + 0.75);
+      env(g, t, 0.2, 0.18, 0.08, 0.45);
+      s.connect(f); f.connect(g); g.connect(master); s.start(t, rand(0, 1), 0.9);
+    },
+    chisporrotea(dur = 1.4, nivel = 0.6) {
+      if (!ok()) return;
+      const t = now(), s = fuente(true), hp = ctx.createBiquadFilter(), g = ctx.createGain();
+      hp.type = 'highpass'; hp.frequency.value = 2400;
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(0.22 * nivel, t + 0.08);
+      for (let k = 0.12; k < dur; k += 0.06) g.gain.setValueAtTime((0.1 + Math.random() * 0.15) * nivel, t + k);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + dur + 1);
+      s.connect(hp); hp.connect(g); g.connect(master); s.start(t); s.stop(t + dur + 1.1);
+    },
+    pop(alto = 1) {
+      if (!ok()) return;
+      const t = now(), o = ctx.createOscillator(), g = ctx.createGain();
+      o.type = 'sine'; o.frequency.setValueAtTime(560 * alto, t); o.frequency.exponentialRampToValueAtTime(190 * alto, t + 0.1);
+      env(g, t, 0.004, 0.2, 0.01, 0.1);
+      o.connect(g); g.connect(master); o.start(t); o.stop(t + 0.18);
+    },
+    tic(freq = 1500, vol = 0.1) {
+      if (!ok()) return;
+      const t = now(), o = ctx.createOscillator(), g = ctx.createGain(), f = ctx.createBiquadFilter();
+      o.type = 'square'; o.frequency.value = freq; f.type = 'lowpass'; f.frequency.value = 3000;
+      env(g, t, 0.002, vol, 0.01, 0.04);
+      o.connect(f); f.connect(g); g.connect(master); o.start(t); o.stop(t + 0.08);
+    },
+    zumbido() {
+      if (!ok()) return;
+      const t = now(), o = ctx.createOscillator(), o2 = ctx.createOscillator(), g = ctx.createGain(), f = ctx.createBiquadFilter();
+      o.type = 'sawtooth'; o.frequency.value = 146; o2.type = 'square'; o2.frequency.value = 220; f.type = 'lowpass'; f.frequency.value = 1400;
+      env(g, t, 0.01, 0.2, 0.35, 0.25);
+      o.connect(f); o2.connect(f); f.connect(g); g.connect(master); o.start(t); o2.start(t); o.stop(t + 0.7); o2.stop(t + 0.7);
+    },
+    campana() {
+      if (!ok()) return;
+      const t = now();
+      [[659.25, 0], [987.77, 0.07], [1318.5, 0.14]].forEach(([f, d]) => {
+        const o = ctx.createOscillator(), g = ctx.createGain();
+        o.type = 'sine'; o.frequency.value = f; env(g, t + d, 0.01, 0.08, 0.02, 1.4);
+        o.connect(g); g.connect(master); o.start(t + d); o.stop(t + d + 1.6);
+      });
+    },
+  };
+})();
+
+/* ================= Brasas y vapor (canvas 2D) ================= */
+function Brasas(canvas, { cantidad = 70, resplandor = true } = {}) {
+  const c2 = canvas.getContext('2d');
+  const halo = document.createElement('canvas'); halo.width = halo.height = 64;
+  (() => { const h = halo.getContext('2d'), gr = h.createRadialGradient(32, 32, 0, 32, 32, 32);
+    gr.addColorStop(0, 'rgba(255,170,90,0.9)'); gr.addColorStop(0.25, 'rgba(255,120,45,0.35)'); gr.addColorStop(1, 'rgba(255,90,30,0)');
+    h.fillStyle = gr; h.fillRect(0, 0, 64, 64); })();
+  const nube = document.createElement('canvas'); nube.width = nube.height = 96;
+  (() => { const h = nube.getContext('2d');
+    for (let i = 0; i < 9; i++) { const x = 48 + rand(-16, 16), y = 48 + rand(-16, 16), r = rand(16, 30), gr = h.createRadialGradient(x, y, 0, x, y, r);
+      gr.addColorStop(0, 'rgba(255,255,255,0.22)'); gr.addColorStop(1, 'rgba(255,255,255,0)'); h.fillStyle = gr; h.fillRect(0, 0, 96, 96); } })();
+  const llamaSpr = document.createElement('canvas'); llamaSpr.width = llamaSpr.height = 64;
+  (() => { const h = llamaSpr.getContext('2d'), gr = h.createRadialGradient(32, 38, 0, 32, 38, 32);
+    gr.addColorStop(0, 'rgba(255,238,175,0.95)'); gr.addColorStop(0.28, 'rgba(255,176,64,0.8)'); gr.addColorStop(0.62, 'rgba(232,86,22,0.32)'); gr.addColorStop(1, 'rgba(200,50,10,0)');
+    h.fillStyle = gr; h.fillRect(0, 0, 64, 64); })();
+  let W = 0, H = 0, fondo = [], extra = [], raf = 0, corriendo = false, ultimo = 0;
+  function medir() {
+    const dpr = Math.min(2, window.devicePixelRatio || 1);
+    W = canvas.clientWidth || window.innerWidth; H = canvas.clientHeight || window.innerHeight;
+    canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+    c2.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  function nacer(p, inicio) {
+    p.x = Math.random() * W; p.y = inicio ? Math.random() * H : H + rand(4, 30);
+    p.vy = rand(16, 56); p.vx = rand(-6, 6); p.r = rand(0.6, 2.2);
+    p.vida = 0; p.max = rand(4, 10); p.fase = rand(0, 6.28); p.caliente = Math.random() > 0.5;
+    return p;
+  }
+  function pintar(ts, dt) {
+    c2.clearRect(0, 0, W, H);
+    if (resplandor) {
+      const fl = 0.78 + 0.22 * Math.sin(ts * 0.0041) * Math.sin(ts * 0.0013 + 1.3);
+      const gr = c2.createRadialGradient(W / 2, H * 1.12, 0, W / 2, H * 1.12, Math.max(W, H) * 0.8);
+      gr.addColorStop(0, `rgba(242,120,42,${0.3 * fl})`); gr.addColorStop(0.35, `rgba(150,60,18,${0.15 * fl})`); gr.addColorStop(1, 'rgba(10,6,4,0)');
+      c2.fillStyle = gr; c2.fillRect(0, 0, W, H);
+    }
+    c2.globalCompositeOperation = 'lighter';
+    for (const p of fondo) {
+      p.vida += dt; p.y -= p.vy * dt; p.x += (p.vx + Math.sin(p.fase + p.vida * 1.7) * 12) * dt;
+      if (p.vida > p.max || p.y < -12) nacer(p, false);
+      const a = Math.min(1, p.vida * 1.4) * (1 - p.vida / p.max) * (0.55 + 0.45 * Math.sin(p.vida * 9 + p.fase));
+      if (a <= 0) continue;
+      const s = p.r * 7;
+      c2.globalAlpha = a * 0.55; c2.drawImage(halo, p.x - s, p.y - s, s * 2, s * 2);
+      c2.globalAlpha = a; c2.fillStyle = p.caliente ? '#FFC06A' : '#FF7A36';
+      c2.beginPath(); c2.arc(p.x, p.y, p.r * 0.8, 0, 6.283); c2.fill();
+    }
+    for (let i = extra.length - 1; i >= 0; i--) {
+      const p = extra[i];
+      p.vida += dt;
+      if (p.vida >= p.max) { extra.splice(i, 1); continue; }
+      const k = p.vida / p.max;
+      if (p.tipo === 'llama') {
+        p.x += (p.vx + Math.sin(p.vida * 11 + i) * 14) * dt; p.y += p.vy * dt;
+        const s = p.r * (1 - k * 0.55);
+        c2.globalCompositeOperation = 'lighter';
+        c2.globalAlpha = Math.sin(Math.PI * Math.min(1, k * 1.25 + 0.08)) * p.a;
+        c2.drawImage(llamaSpr, p.x - s * 0.8, p.y - s * 1.6, s * 1.6, s * 3.2);
+      } else if (p.tipo === 'chispa') {
+        p.vy += 260 * dt * -0.15; p.vx *= 0.99;
+        p.x += p.vx * dt; p.y += p.vy * dt;
+        const a = (1 - k) * (0.6 + 0.4 * Math.sin(p.vida * 30 + i));
+        const s = p.r * 6;
+        c2.globalCompositeOperation = 'lighter';
+        c2.globalAlpha = a * 0.6; c2.drawImage(halo, p.x - s, p.y - s, s * 2, s * 2);
+        c2.globalAlpha = a; c2.fillStyle = '#FFD08A'; c2.beginPath(); c2.arc(p.x, p.y, p.r * 0.7, 0, 6.283); c2.fill();
+      } else {
+        p.x += (p.vx + Math.sin(p.vida * 1.3 + i) * 6) * dt; p.y += p.vy * dt;
+        const s = p.r * (0.6 + k * 1.6);
+        c2.globalCompositeOperation = 'source-over';
+        c2.globalAlpha = Math.sin(Math.PI * k) * p.a; c2.drawImage(nube, p.x - s, p.y - s, s * 2, s * 2);
+      }
+    }
+    c2.globalCompositeOperation = 'source-over'; c2.globalAlpha = 1;
+  }
+  function cuadro(ts) {
+    if (!corriendo) return;
+    raf = requestAnimationFrame(cuadro);
+    const dt = Math.min(0.05, (ts - ultimo) / 1000 || 0.016); ultimo = ts;
+    pintar(ts, dt);
+  }
+  return {
+    iniciar() {
+      medir();
+      if (!fondo.length) fondo = Array.from({ length: cantidad }, () => nacer({}, true));
+      if (reduceMotion) { pintar(0, 0); return; }
+      if (corriendo) return;
+      corriendo = true; ultimo = performance.now(); cancelAnimationFrame(raf); raf = requestAnimationFrame(cuadro);
+    },
+    parar() { corriendo = false; cancelAnimationFrame(raf); extra = []; },
+    medir,
+    chispas(x, y, ancho, n = 40) {
+      if (reduceMotion) return;
+      for (let i = 0; i < n; i++) extra.push({ tipo: 'chispa', x: x + rand(-ancho / 2, ancho / 2), y: y + rand(-10, 10), vx: rand(-60, 60), vy: rand(-260, -90), r: rand(0.8, 2.2), vida: 0, max: rand(0.7, 1.6) });
+    },
+    llamas(x, y, ancho, n = 3) {
+      if (reduceMotion) return;
+      for (let i = 0; i < n; i++) extra.push({ tipo: 'llama', x: x + rand(-ancho / 2, ancho / 2), y: y + rand(-12, 8), vx: rand(-12, 12), vy: rand(-175, -90), r: rand(20, 42), a: rand(0.28, 0.58), vida: 0, max: rand(0.5, 1.05) });
+    },
+    vapor(x, y, ancho, n = 3) {
+      if (reduceMotion) return;
+      for (let i = 0; i < n; i++) extra.push({ tipo: 'vapor', x: x + rand(-ancho / 2, ancho / 2), y: y + rand(-6, 6), vx: rand(-6, 6), vy: rand(-34, -18), r: rand(22, 40), a: rand(0.18, 0.32), vida: 0, max: rand(2.2, 3.6) });
+    },
+  };
+}
+
+/* ================= Datos de la carta de eventos =================
+   Platos, precios y descripciones que dictó Jonnier por audio el 14 de noviembre de 2026
+   («podemos arrancar con esa carta así; luego le voy metiendo más cositas»), en su orden.
+   precio: valor POR PERSONA en pesos; null = «Por confirmar».
+   variantes: el mismo plato en cerdo, mixto o res, cada uno con su precio. Cada variante
+   se cotiza aparte (así un evento puede llevar, por ejemplo, filet de res y de cerdo).
+   media: carpeta de video a usar si no es la del id (el filet mignon usa el video del de res).
+   Las descripciones de los cuatro madurados salen de lo que se ve en su video.
+   Pasabocas, mesa y sangría (lo último que mandó Jonnier el 14 de noviembre):
+   unidad: cómo se cobra ('persona' si no se pone; 'unidad', 'mesa' o 'vaso', ver UNIDADES).
+   estilo: 'fila' = renglón de lista con precio (pasabocas y bebidas); 'caja' = recuadro (la mesa).
+   porConfirmar: se muestra aunque no tenga precio todavía. */
+const MARCA = {
+  borrador: false,
+  minimo: 15,                       // personas por evento (Jonnier, 14 de noviembre)
+  porPlato: { primero: 15, otros: 10, paso: 5 },
+  whatsapp: { numero: '573018570159', visible: '301 857 0159' },
+  tipos: ['Cumpleaños', 'Matrimonio', 'Empresa', 'Familiar', 'Fin de año', 'Otro'],
+  vitrinaInicio: 'punta-de-anca-madurada',
+  intro: 'churrasco',
+  destacado: 'mesa-navidena',       // aviso de temporada arriba de la carta (null = sin aviso)
+};
+
+const CATEGORIAS = [
+  { id: 'asados', ceja: 'Lo de la casa', titulo: 'Asados', nota: 'Pa’ que el evento huela a Jonnier desde que se prende el fuego.' },
+  { id: 'madurados', ceja: 'A la parrilla', titulo: 'Cortes madurados', nota: 'Vienen con papa y yuca. ¿Prefieres otra guarnición? Nos cuentas en la cotización.' },
+  { id: 'filet-mignon', ceja: 'Pa’ consentirse', titulo: 'Filet mignon', nota: 'Tres maneras de darse gusto: de cerdo, mixto o de res.' },
+  { id: 'navidad', ceja: 'Especial de temporada', titulo: 'Navidad', nota: 'Pa’ la novena, la fiesta de la empresa o el reencuentro de fin de año.' },
+  { id: 'pasabocas', ceja: 'Pa’ recibir a los invitados', titulo: 'Pasabocas', nota: 'Los pasabocas se cotizan por unidad. La mesa con su montaje va aparte.' },
+  { id: 'bebidas', ceja: 'Pa’ brindar', titulo: 'Bebidas', nota: '' },
+];
+
+/* Cómo se cobra cada cosa. inicio: con cuánto entra al agregarlo (si no hay, lo decide Evento.agregar);
+   paso: lo que suman − y +; corto: lo que dice al lado del número en la cotización (1 y varios). */
+const UNIDADES = {
+  persona: { uno: 'persona', varios: 'personas', precio: 'por persona', paso: 5, corto: ['pers.', 'pers.'] },
+  unidad: { uno: 'unidad', varios: 'unidades', precio: 'por unidad', paso: 5, corto: ['und.', 'und.'] },
+  mesa: { uno: 'mesa', varios: 'mesas', precio: 'la mesa', paso: 1, inicio: 1, corto: ['mesa', 'mesas'] },
+  vaso: { uno: 'vaso', varios: 'vasos', precio: 'el vaso', paso: 5, corto: ['vaso', 'vasos'] },
+};
+
+const PLATOS = [
+  { id: 'asado-al-barril', cat: 'asados', nombre: 'Asado al barril', precio: 45000,
+    desc: 'El sello de la casa: 400 g en cuatro cortes (costilla BBQ, ampolleta de res, bondiola de cerdo y chicharrón crocante de panceta). Con piña asada en canela al barril, plátano caramelizado con queso crema, papas criollas fritas y salsa de cilantro.' },
+  { id: 'asado-llanero', cat: 'asados', nombre: 'Asado llanero',
+    variantes: [
+      { id: 'asado-llanero-de-cerdo', nombre: 'De cerdo', precio: 60000 },
+      { id: 'asado-llanero-mixto', nombre: 'Mixto', precio: 70000 },
+      { id: 'asado-llanero-de-res', nombre: 'De res', precio: 80000 },
+    ],
+    desc: 'Con el sabor de los Llanos: 400 g de proteína con papa, yuca y guacamole.' },
+  { id: 'punta-de-anca-madurada', cat: 'madurados', nombre: 'Punta de anca madurada', precio: 55000,
+    desc: 'Con su capa de grasa que se dora en la parrilla y le da todo el sabor. Con papa y yuca.' },
+  { id: 'punta-en-posta', cat: 'madurados', nombre: 'Punta en posta madurada', precio: 55000,
+    desc: 'Un corte grueso y jugoso, con su franja de grasa bien doradita. Con papa y yuca.' },
+  { id: 'bife-de-chorizo', cat: 'madurados', nombre: 'Bife de chorizo madurado', precio: 55000,
+    desc: 'Grueso y jugoso, con su borde de grasa doradito: el corte argentino que ya es de la casa. Con papa y yuca.' },
+  { id: 'churrasco', cat: 'madurados', nombre: 'Churrasco madurado', precio: 55000,
+    desc: 'Con las marcas de la parrilla por fuera y el centro jugoso, como debe ser. Con papa y yuca.' },
+  { id: 'filet-mignon', cat: 'filet-mignon', nombre: 'Filet mignon', media: 'filet-mignon-de-res',
+    variantes: [
+      { id: 'filet-mignon-de-cerdo', nombre: 'De cerdo', precio: 60000 },
+      { id: 'filet-mignon-mixto', nombre: 'Mixto', precio: 70000 },
+      { id: 'filet-mignon-de-res', nombre: 'De res', precio: 80000 },
+    ],
+    desc: '400 g de proteína: dos aros de solomo envueltos en tocineta sobre puré de papa criolla, con plátano caramelizado y bañados en salsa de champiñones, con buen champiñón.' },
+  { id: 'mesa-navidena', cat: 'navidad', nombre: 'Mesa navideña', precio: 55000,
+    desc: 'Natilla y buñuelos, ceviche de chicharrón y la canastica navideña: chorizo, carne, chicharrón y costilla (unos 350 g de proteína), con papa cocinada en salsa de cilantro, arepa frita con ahogado y chifles de plátano.' },
+  { id: 'mesa-pasabocas', cat: 'pasabocas', nombre: 'Mesa de pasabocas', unidad: 'mesa', estilo: 'caja', precio: 300000,
+    incluye: ['Mesa', 'Mantel', 'Flores', 'Hielo de hidrogel'],
+    desc: 'Te alquilamos el montaje donde van los pasabocas. Los pasabocas van aparte.' },
+  { id: 'ceviche-de-chicharron', cat: 'pasabocas', nombre: 'Ceviche de chicharrón', unidad: 'unidad', estilo: 'fila', precio: 8000 },
+  { id: 'sandwich-de-pernil', cat: 'pasabocas', nombre: 'Sándwich de pernil', detalle: 'Pernil envinado al horno', unidad: 'unidad', estilo: 'fila', precio: 8000 },
+  { id: 'chip-de-atun', cat: 'pasabocas', nombre: 'Chip de atún', unidad: 'unidad', estilo: 'fila', precio: 8000 },
+  { id: 'langostinos-apanados', cat: 'pasabocas', nombre: 'Langostinos apanados', detalle: 'En salsa de maracuyá', unidad: 'unidad', estilo: 'fila', precio: 11000 },
+  { id: 'ceviche-de-camarones', cat: 'pasabocas', nombre: 'Ceviche de camarones', unidad: 'unidad', estilo: 'fila', precio: null, porConfirmar: true },
+  { id: 'sangria', cat: 'bebidas', nombre: 'Sangría', detalle: 'Vaso de 9 onzas', unidad: 'vaso', estilo: 'fila', precio: 9000 },
+];
+
+/* Videos: los seis platos con video son de IA (tabla en 3/4, vertical), procesados con ia/herramientas/procesar_ia.py
+   (media/hd/<plato>/). El asado al barril solo viene servido (la cámara va y viene sobre la tabla). El tomahawk y las hamburguesas son los reales de la sesión de fotos y no están en la carta. */
+const MEDIA = {"asado-al-barril":{"video":"media/hd/asado-al-barril/plato.mp4","crudo":"media/hd/asado-al-barril/crudo.webp","servido":"media/hd/asado-al-barril/servido.webp","cartel":{"crudo":"media/hd/asado-al-barril/cartel-crudo.webp","servido":"media/hd/asado-al-barril/cartel-servido.webp"},"tarjeta":{"crudo":"media/hd/asado-al-barril/tarjeta-crudo.webp","servido":"media/hd/asado-al-barril/tarjeta-servido.webp"},"w":1080,"h":1350,"formato":"vertical","dur":11.083,"etapas":["servido"],"ida":5.583,"inicio":2.583,"loopDesde":null},"bife-de-chorizo":{"video":"media/hd/bife-de-chorizo/plato.mp4","crudo":"media/hd/bife-de-chorizo/crudo.webp","servido":"media/hd/bife-de-chorizo/servido.webp","cartel":{"crudo":"media/hd/bife-de-chorizo/cartel-crudo.webp","servido":"media/hd/bife-de-chorizo/cartel-servido.webp"},"tarjeta":{"crudo":"media/hd/bife-de-chorizo/tarjeta-crudo.webp","servido":"media/hd/bife-de-chorizo/tarjeta-servido.webp"},"w":1080,"h":1350,"formato":"vertical","dur":5.625,"etapas":["crudo","fuego","servido"],"marcas":{"fuego":3.167,"servido":5.08},"loopDesde":null},"churrasco":{"video":"media/hd/churrasco/plato.mp4","crudo":"media/hd/churrasco/crudo.webp","servido":"media/hd/churrasco/servido.webp","cartel":{"crudo":"media/hd/churrasco/cartel-crudo.webp","servido":"media/hd/churrasco/cartel-servido.webp"},"tarjeta":{"crudo":"media/hd/churrasco/tarjeta-crudo.webp","servido":"media/hd/churrasco/tarjeta-servido.webp"},"w":1080,"h":1350,"formato":"vertical","dur":6.333,"etapas":["crudo","fuego","servido"],"marcas":{"fuego":1.958,"servido":3.08},"loopDesde":null},"filet-mignon-de-res":{"video":"media/hd/filet-mignon-de-res/plato.mp4","crudo":"media/hd/filet-mignon-de-res/crudo.webp","servido":"media/hd/filet-mignon-de-res/servido.webp","cartel":{"crudo":"media/hd/filet-mignon-de-res/cartel-crudo.webp","servido":"media/hd/filet-mignon-de-res/cartel-servido.webp"},"tarjeta":{"crudo":"media/hd/filet-mignon-de-res/tarjeta-crudo.webp","servido":"media/hd/filet-mignon-de-res/tarjeta-servido.webp"},"w":1080,"h":1350,"formato":"vertical","dur":8.375,"etapas":["crudo","fuego","servido"],"marcas":{"fuego":2.542,"servido":3.872},"loopDesde":null},"punta-de-anca-madurada":{"video":"media/hd/punta-de-anca-madurada/plato.mp4","crudo":"media/hd/punta-de-anca-madurada/crudo.webp","servido":"media/hd/punta-de-anca-madurada/servido.webp","cartel":{"crudo":"media/hd/punta-de-anca-madurada/cartel-crudo.webp","servido":"media/hd/punta-de-anca-madurada/cartel-servido.webp"},"tarjeta":{"crudo":"media/hd/punta-de-anca-madurada/tarjeta-crudo.webp","servido":"media/hd/punta-de-anca-madurada/tarjeta-servido.webp"},"w":1080,"h":1350,"formato":"vertical","dur":6.542,"etapas":["crudo","fuego","servido"],"marcas":{"fuego":2.167,"servido":3.497},"loopDesde":null},"punta-en-posta":{"video":"media/hd/punta-en-posta/plato.mp4","crudo":"media/hd/punta-en-posta/crudo.webp","servido":"media/hd/punta-en-posta/servido.webp","cartel":{"crudo":"media/hd/punta-en-posta/cartel-crudo.webp","servido":"media/hd/punta-en-posta/cartel-servido.webp"},"tarjeta":{"crudo":"media/hd/punta-en-posta/tarjeta-crudo.webp","servido":"media/hd/punta-en-posta/tarjeta-servido.webp"},"w":1080,"h":1350,"formato":"vertical","dur":5.333,"etapas":["crudo","fuego","servido"],"marcas":{"fuego":3.083,"servido":3.997},"loopDesde":null}};
+
+/* ================= Viáticos (18 de noviembre de 2026) =================
+   Pereira: sin viáticos. Resto del Eje Cafetero (Risaralda, Caldas y Quindío): peajes de ida y vuelta
+   (categoría I, carro o camioneta, tarifas 2026) + gasolina aproximada (km por carretera desde Pereira,
+   ida y vuelta). Fuera del Eje Cafetero, y en los municipios lejanos de Caldas, se consultan con el asesor.
+   Km: rutas de OpenStreetMap desde el centro de Pereira. Peajes: Autopistas del Café, Pacífico Tres e Invías.
+   Cada enero suben los peajes: se cambian aquí. */
+const VIATICOS = {
+  galon: 16276,          // gasolina corriente en Pereira, noviembre de 2026 (precio de referencia)
+  kmPorGalon: 30,        // consumo de la camioneta en carretera de montaña (ajustable)
+  peajes: {
+    tarapaca:    ['Tarapacá', 17800],
+    sanBernardo: ['San Bernardo', 16200],
+    circasia:    ['Circasia', 21200],
+    acapulco:    ['Acapulco', 17600],
+    sanClemente: ['San Clemente', 12800],
+  },
+  /* [municipio, departamento, km desde Pereira, peajes de ida, zona] · zona: pereira (sin viáticos) o lejos (se confirman) */
+  lugares: [
+    ['Pereira', 'Risaralda', 0, '', 'pereira'],
+    ['Dosquebradas', 'Risaralda', 6, ''], ['Santa Rosa de Cabal', 'Risaralda', 15, ''], ['La Virginia', 'Risaralda', 31, ''],
+    ['Marsella', 'Risaralda', 32, ''], ['Balboa', 'Risaralda', 48, ''], ['La Celia', 'Risaralda', 61, ''],
+    ['Santuario', 'Risaralda', 63, ''], ['Apía', 'Risaralda', 63, 'acapulco'], ['Belén de Umbría', 'Risaralda', 69, 'acapulco'],
+    ['Mistrató', 'Risaralda', 85, 'acapulco'], ['Pueblo Rico', 'Risaralda', 88, ''],
+    ['Guática', 'Risaralda', 89, 'acapulco sanClemente'], ['Quinchía', 'Risaralda', 102, 'acapulco sanClemente'],
+    ['Chinchiná', 'Caldas', 28, 'tarapaca'], ['Palestina', 'Caldas', 34, 'tarapaca'], ['Belalcázar', 'Caldas', 48, ''],
+    ['Viterbo', 'Caldas', 52, 'acapulco'], ['Manizales', 'Caldas', 52, 'tarapaca sanBernardo'],
+    ['Villamaría', 'Caldas', 56, 'tarapaca sanBernardo'], ['San José', 'Caldas', 64, ''], ['Risaralda', 'Caldas', 66, 'acapulco'],
+    ['Neira', 'Caldas', 71, 'tarapaca sanBernardo'], ['Anserma', 'Caldas', 77, 'acapulco'],
+    ['Filadelfia', 'Caldas', 98, 'tarapaca sanBernardo'], ['Aranzazu', 'Caldas', 101, 'tarapaca sanBernardo'],
+    ['Supía', 'Caldas', 104, 'acapulco sanClemente'], ['Riosucio', 'Caldas', 110, 'acapulco sanClemente'],
+    ['La Merced', 'Caldas', 111, 'tarapaca sanBernardo'], ['Marmato', 'Caldas', 115, 'acapulco sanClemente'],
+    ['Salamina', 'Caldas', 123, 'tarapaca sanBernardo'], ['Pácora', 'Caldas', 156, 'tarapaca sanBernardo'],
+    ['Aguadas', 'Caldas', 171, 'tarapaca sanBernardo'],
+    ['Manzanares', 'Caldas', 157, '', 'lejos'], ['Marulanda', 'Caldas', 177, '', 'lejos'], ['Marquetalia', 'Caldas', 182, '', 'lejos'],
+    ['Pensilvania', 'Caldas', 187, '', 'lejos'], ['Victoria', 'Caldas', 236, '', 'lejos'], ['La Dorada', 'Caldas', 267, '', 'lejos'],
+    ['Samaná', 'Caldas', 270, '', 'lejos'], ['Norcasia', 'Caldas', 311, '', 'lejos'],
+    ['Filandia', 'Quindío', 31, 'circasia'], ['Circasia', 'Quindío', 35, 'circasia'], ['Quimbaya', 'Quindío', 37, ''],
+    ['Salento', 'Quindío', 37, 'circasia'], ['Montenegro', 'Quindío', 46, ''], ['Armenia', 'Quindío', 47, 'circasia'],
+    ['Calarcá', 'Quindío', 48, 'circasia'], ['La Tebaida', 'Quindío', 66, 'circasia'], ['Córdoba', 'Quindío', 75, 'circasia'],
+    ['Buenavista', 'Quindío', 78, 'circasia'], ['Pijao', 'Quindío', 81, 'circasia'], ['Génova', 'Quindío', 102, 'circasia'],
+  ],
+};
+const normalizar = t => String(t || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+const LUGARES = VIATICOS.lugares.map(([nombre, dep, km, peajes, zona]) => ({
+  id: normalizar(nombre).replace(/ /g, '-') + (nombre === 'Risaralda' ? '-caldas' : ''), nombre, dep, km,
+  peajes: peajes ? peajes.split(' ') : [], zona: zona || 'eje',
+}));
+const LUGAR = Object.fromEntries(LUGARES.map(l => [l.id, l]));
+/* Pa’ reconocer lo que alguien ya había escrito a mano en «Ciudad» (versiones anteriores de la carta) */
+function buscarLugar(texto) {
+  const t = normalizar(texto);
+  if (!t) return null;
+  if (/\b(cerritos|combia|altagracia|arabia|tribunas|la florida|caimalito|puerto caldas|morelia|la bella)\b/.test(t)) return LUGAR.pereira;
+  if (t === 'santa rosa') return LUGAR['santa-rosa-de-cabal'];
+  return LUGARES.find(l => normalizar(l.nombre) === t || t.startsWith(normalizar(l.nombre) + ' ')) || null;
+}
+/* Lo que cuesta llevar el evento a ese lugar */
+function calcularViaticos(lugarId, otro) {
+  if (!lugarId) return { tipo: 'nada' };
+  if (lugarId === 'otro') return { tipo: 'fuera', nombre: String(otro || '').trim() };
+  const l = LUGAR[lugarId];
+  if (!l) return { tipo: 'nada' };
+  if (l.zona === 'pereira') return { tipo: 'pereira', lugar: l };
+  if (l.zona === 'lejos') return { tipo: 'lejos', lugar: l };
+  const peajes = l.peajes.map(k => VIATICOS.peajes[k]).filter(Boolean);
+  const peajesTotal = peajes.reduce((s, p) => s + p[1], 0) * 2;          // ida y vuelta
+  const km = l.km * 2;
+  const gasolina = Math.ceil(((km / VIATICOS.kmPorGalon) * VIATICOS.galon) / 1000) * 1000;
+  return { tipo: 'eje', lugar: l, peajes: peajes.map(p => p[0]), peajesTotal, km, gasolina, total: peajesTotal + gasolina };
+}
+
+/* PLATO tiene los platos de la carta y, aparte, cada variante como plato que se cotiza
+   (ej. «Filet mignon de cerdo»), con el video y la descripción del plato al que pertenece. */
+const PLATO = {};
+PLATOS.forEach(p => {
+  const categoria = CATEGORIAS.find(c => c.id === p.cat), media = MEDIA[p.media || p.id] || null;
+  const unidad = p.unidad || 'persona';
+  PLATO[p.id] = { ...p, unidad, categoria, media };
+  (p.variantes || []).forEach(v => {
+    PLATO[v.id] = { id: v.id, cat: p.cat, nombre: `${p.nombre} ${v.nombre.toLowerCase()}`, precio: v.precio, desc: p.desc, familia: p.id, unidad, categoria, media };
+  });
+});
+const pedible = id => !!PLATO[id] && !PLATO[id].variantes;     // lo que va en la cotización
+/* Orden de la carta, pa’ listar la cotización y el mensaje igual que la carta (platos, pasabocas, bebidas) */
+const ORDEN = {};
+PLATOS.forEach(p => (p.variantes ? p.variantes.map(v => v.id) : [p.id]).forEach(id => { ORDEN[id] = Object.keys(ORDEN).length; }));
+const porCarta = arr => [...arr].sort((a, b) => ORDEN[a.id] - ORDEN[b.id]);
+const uni = p => UNIDADES[p.unidad] || UNIDADES.persona;
+const esPersona = id => PLATO[id].unidad === 'persona';        // los platos; cuentan pa’l mínimo de personas
+const desde = p => (p.variantes ? Math.min(...p.variantes.map(v => v.precio)) : p.precio);
+const nombreCompleto = p => p.nombre;
+const precioTexto = p => { const d = desde(p); return d == null ? 'Por confirmar' : (p.variantes ? 'Desde ' : '') + fmtCOP(d); };
+const plural = (n, uno, varios) => `${n} ${n === 1 ? uno : varios}`;
+const listaY = a => (a.length < 2 ? a.join('') : `${a.slice(0, -1).join(', ')} y ${a[a.length - 1]}`);
+
+/* ================= Medalla 3D (CSS 3D, sin librerías) ================= */
+const BOMBILLOS = {"angulos":[-170,-150,-110,-86,-69,-31,-10,11,32,51,76,99,132,152,169],"radio":0.93};
+
+function Medalla(escena) {
+  const med = el('div', { class: 'medalla' });
+  const frente = el('div', { class: 'cara frente' },
+    el('img', { src: 'marca/medalla.webp', alt: '', draggable: 'false', width: 640, height: 640 }),
+    el('span', { class: 'brillo' }));
+  BOMBILLOS.angulos.forEach((a, i) => {
+    const r = BOMBILLOS.radio * 50, rad = (a * Math.PI) / 180;
+    frente.append(el('span', { class: 'bombillo', style: `left:${50 + r * Math.cos(rad)}%;top:${50 + r * Math.sin(rad)}%;--i:${i}` }));
+  });
+  const dorso = el('div', { class: 'cara dorso' }, el('img', { src: 'marca/logo.webp', alt: '', draggable: 'false', width: 512, height: 512 }));
+  med.append(frente, dorso);
+  escena.append(med);
+  const N = 44;
+  let cantos = [], d = 0, grosor = 0;
+  function armar() {
+    d = escena.clientWidth || 260;
+    grosor = Math.max(8, d * 0.055);
+    cantos.forEach(c => c.remove()); cantos = [];
+    const R = d / 2 - 0.5, w = 2 * R * Math.sin(Math.PI / N) + 1.2;
+    for (let i = 0; i < N; i++) {
+      const th = (i / N) * 360;
+      const c = el('span', { class: 'canto', style: `width:${w}px;height:${grosor}px;margin:${-grosor / 2}px 0 0 ${-w / 2}px;transform:rotateZ(${th}deg) translateY(${-R}px) rotateX(90deg)` });
+      c._th = (th * Math.PI) / 180;
+      cantos.push(c); med.append(c);
+    }
+    frente.style.transform = `translateZ(${grosor / 2}px)`;
+    dorso.style.transform = `rotateY(180deg) translateZ(${grosor / 2}px)`;
+  }
+  armar();
+  let ang = -18, vel = 0, arrastre = null, raf = 0, corriendo = false, ultimo = 0, cuadro = 0;
+  const base = a => (reduceMotion ? 0 : 16 + 46 * Math.abs(Math.sin((a * Math.PI) / 180)));
+  function pintar() {
+    med.style.transform = `rotateX(-9deg) rotateY(${ang}deg)`;
+    const s = Math.sin((ang * Math.PI) / 180);
+    frente.style.setProperty('--brillo', `${50 + s * 55}%`);
+    if (cuadro++ % 2) return;
+    const a = (ang * Math.PI) / 180, ca = Math.cos(a), sa = Math.sin(a);
+    for (const c of cantos) {
+      const nx = Math.sin(c._th) * ca, nz = -Math.sin(c._th) * sa, ny = -Math.cos(c._th);
+      const luz = 0.45 + 0.75 * Math.max(0, nx * -0.45 + ny * -0.6 + nz * 0.65);
+      c.style.setProperty('--luz', luz.toFixed(2));
+    }
+  }
+  function paso(ts) {
+    if (!corriendo) return;
+    raf = requestAnimationFrame(paso);
+    const dt = Math.min(0.05, (ts - ultimo) / 1000 || 0.016); ultimo = ts;
+    if (!arrastre) {
+      const objetivo = base(ang);
+      vel += (objetivo - vel) * Math.min(1, dt * 1.6);
+      ang += vel * dt;
+    }
+    pintar();
+  }
+  escena.addEventListener('pointerdown', e => {
+    arrastre = { x: e.clientX, t: performance.now(), mov: 0, v: 0 };
+    try { escena.setPointerCapture(e.pointerId); } catch (err) {}
+  });
+  escena.addEventListener('pointermove', e => {
+    if (!arrastre) return;
+    const dx = e.clientX - arrastre.x, now = performance.now(), dt = Math.max(1, now - arrastre.t);
+    ang += dx * 0.6; arrastre.v = (dx * 0.6) / (dt / 1000); arrastre.mov += Math.abs(dx);
+    arrastre.x = e.clientX; arrastre.t = now;
+    if (reduceMotion) pintar();
+  });
+  const soltar = () => {
+    if (!arrastre) return;
+    if (arrastre.mov < 6) { vel = 760; Sonido.pop(1.2); } else vel = clamp(arrastre.v, -1100, 1100);
+    arrastre = null;
+    escena.dispatchEvent(new CustomEvent('girada'));
+  };
+  escena.addEventListener('pointerup', soltar);
+  escena.addEventListener('pointercancel', soltar);
+  window.addEventListener('resize', () => { if (corriendo) armar(); });
+  pintar();
+  return {
+    iniciar() { if (corriendo) return; corriendo = true; ultimo = performance.now(); raf = requestAnimationFrame(paso); },
+    parar() { corriendo = false; cancelAnimationFrame(raf); },
+    impulso(v) { vel = v; },
+  };
+}
+
+/* ================= Visor del plato (crudo → fuego → servido) =================
+   Tres modos según el video:
+   - completo: la línea de tiempo entera. Con loopDesde, el servido se queda girando (loopDesde → fin);
+     sin loopDesde (los videos de IA), el video termina quieto y el plato queda flotando con vapor.
+   - crudo: solo hay crudo; gira en loop y el servido sale como «en camino».
+   - pendiente: el plato aún no tiene video; se muestra la medalla y se puede agregar igual. */
+const Visor = (() => {
+  const raiz = $('#visor');
+  const video = $('.js-v-video', raiz), poster = $('.js-v-poster', raiz), vitrina = $('.js-v-vitrina', raiz), escena = $('.js-v-escena', raiz);
+  const carga = $('.js-v-carga', raiz), destello = $('.js-v-destello', raiz), pista = $('.js-v-pista', raiz), pendiente = $('.js-v-pendiente', raiz);
+  const linea = $('.js-v-linea', raiz), lleno = $('.js-v-lleno', raiz), perilla = $('.js-v-perilla', raiz), paradas = $$('.js-v-parada', raiz);
+  const btnAgregar = $('.js-v-agregar', raiz), lienzo = $('.js-v-brasas', raiz), varBox = $('.js-v-variantes', raiz);
+  const brasas = Brasas(lienzo, { cantidad: 24, resplandor: false });
+  const TEXTOS = {
+    crudo: ['Crudo', 'así llega a la parrilla'],
+    fuego: ['Al fuego', 'un momentico…'],
+    servido: ['Servido', 'listo pa’ servir'],
+    soloCrudo: ['Crudo', 'el video servido viene en camino'],
+    soloServido: ['Servido', 'así llega a tu evento'],
+    pendiente: ['Muy pronto', 'lo estamos grabando'],
+  };
+  let cur = null, abierto = false, raf = 0, origenFoco = null, modo = 'completo', sel = null;
+  let dur = 1, marcas = null, loopDesde = null, estado = '', anterior = 0, terminado = false, sonando = false;
+  let arrastre = null, gesto = null, zoom = 1, inc = { x: 0, y: 0 }, incObj = { x: 0, y: 0 };
+  let pedido = null, buscando = false, tBusqueda = 0, toqueTimer = 0, ultimoToque = 0, cargaTimer = 0;
+  const punteros = new Map();
+  video.muted = true; video.defaultMuted = true;
+
+  function setEstado(e) {
+    if (e === estado) return;
+    estado = e; raiz.dataset.estado = e;
+    const tx = modo === 'pendiente' ? TEXTOS.pendiente : modo === 'crudo' ? TEXTOS.soloCrudo : modo === 'servido' ? TEXTOS.soloServido : TEXTOS[e];
+    $('.js-v-estado', raiz).textContent = tx[0];
+    $('.js-v-sub', raiz).textContent = tx[1];
+    paradas.forEach(p => p.classList.toggle('on', p.dataset.parada === e));
+    linea.setAttribute('aria-valuetext', tx[0]);
+  }
+  const estadoDe = t => (modo === 'servido' ? 'servido' : !marcas ? 'crudo' : t < marcas.fuego ? 'crudo' : t < marcas.servido ? 'fuego' : 'servido');
+
+  function buscar(t) { pedido = clamp(t, 0, dur - 0.04); if (!buscando) hacerBusqueda(); }
+  function hacerBusqueda() {
+    if (pedido == null) return;
+    buscando = true; tBusqueda = performance.now();
+    const t = pedido; pedido = null;
+    try { video.currentTime = t; } catch (e) { buscando = false; }
+  }
+  video.addEventListener('seeked', () => { buscando = false; if (pedido != null) hacerBusqueda(); });
+  video.addEventListener('playing', () => { sonando = true; poster.classList.add('ido'); carga.classList.add('ido'); clearTimeout(cargaTimer); });
+  video.addEventListener('pause', () => { sonando = false; });
+  video.addEventListener('ended', () => {
+    if (modo === 'completo' && loopDesde != null && abierto) { terminado = true; try { video.currentTime = loopDesde; } catch (e) {} anterior = loopDesde; video.play().catch(() => {}); }
+    else { terminado = true; sonando = false; }
+  });
+  video.addEventListener('loadeddata', () => { if (!sonando) { poster.classList.add('ido'); carga.classList.add('ido'); } });
+
+  function rectBanda() {
+    /* coordenadas del plato dentro del lienzo de chispas (en computador el visor va dentro del marco de celular) */
+    const r = vitrina.getBoundingClientRect(), c = lienzo.getBoundingClientRect();
+    return { left: r.left - c.left, top: r.top - c.top, width: r.width, height: r.height };
+  }
+  /* 18 de noviembre: sin llamas, chispas, destello ni humo dibujados encima del plato (se veían falsos).
+     El video ya trae el paso de crudo a servido y su vapor; aquí solo queda el sonido. */
+  function efectos(t, prev) {
+    if (!marcas) return;
+    if (prev < marcas.fuego && t >= marcas.fuego) {
+      Sonido.chisporrotea(Math.min(3, marcas.servido - marcas.fuego + 0.4), 0.55);
+      vibrar(25);
+    }
+    if (prev < marcas.servido && t >= marcas.servido) Sonido.campana();
+  }
+  function cuadro(ts) {
+    raf = requestAnimationFrame(cuadro);
+    if (modo !== 'pendiente') {
+      /* mientras carga el video de este plato, el elemento todavía tiene el anterior: se cuenta desde 0 */
+      const t = cur && video.dataset.id === cur.id ? video.currentTime || 0 : 0, p = clamp(t / dur);
+      lleno.style.width = p * 100 + '%'; perilla.style.left = p * 100 + '%';
+      linea.setAttribute('aria-valuenow', String(Math.round(p * 100)));
+      setEstado(estadoDe(t));
+      if (sonando && !arrastre) efectos(t, anterior);
+      anterior = t;
+      /* el servido se queda girando: antes del final vuelve al comienzo de su vuelta, sin salto */
+      if (modo === 'completo' && sonando && !arrastre && loopDesde != null && t >= dur - 0.07) {
+        terminado = true; try { video.currentTime = loopDesde; } catch (e) {} anterior = loopDesde;
+      }
+    }
+    let flota = 0;
+    if (terminado && !arrastre && !gesto && !reduceMotion) {
+      const k = ts / 1000; incObj.y = Math.sin(k * 0.7) * 5; incObj.x = Math.sin(k * 0.5) * 2.5; flota = Math.sin(k * 1.1) * 4;
+    }
+    inc.x += (incObj.x - inc.x) * 0.14; inc.y += (incObj.y - inc.y) * 0.14;
+    vitrina.style.transform = `translateY(${flota.toFixed(2)}px) rotateX(${inc.x.toFixed(2)}deg) rotateY(${inc.y.toFixed(2)}deg) scale(${zoom.toFixed(3)})`;
+    if (buscando && performance.now() - tBusqueda > 450) { buscando = false; hacerBusqueda(); }
+  }
+
+  function reproducir(desde) {
+    terminado = modo !== 'completo' || (desde != null && loopDesde != null && desde >= loopDesde);
+    if (desde != null) { try { video.currentTime = desde; } catch (e) {} anterior = desde; }
+    video.muted = true;
+    const pr = video.play();
+    if (pr && pr.catch) pr.catch(() => {});
+  }
+  function pausarEn(t) { video.pause(); terminado = modo !== 'completo'; buscar(t); }
+
+  /* El video se baja completo a memoria (blob): así deslizar con el dedo es instantáneo aunque la red sea lenta.
+     Si algo falla, se usa el archivo directo. */
+  const blobs = {}, bajando = {};
+  function bajar(id) {
+    const p = PLATO[id];
+    if (!p || !p.media || blobs[id] || bajando[id] || !window.fetch || !window.URL) return bajando[id] || Promise.resolve(blobs[id]);
+    bajando[id] = fetch(p.media.video).then(r => (r.ok ? r.blob() : Promise.reject(r.status)))
+      .then(b => { blobs[id] = URL.createObjectURL(b); return blobs[id]; })
+      .catch(() => null).finally(() => { delete bajando[id]; });
+    return bajando[id];
+  }
+  /* Los videos verticales traen su cartel 4:5 (primer y último cuadro); las miniaturas redondas son su centro. */
+  const cartelDe = (m, src) => (!m || !m.cartel ? src : src && m.servido && src.indexOf(m.servido) >= 0 ? m.cartel.servido : m.cartel.crudo);
+  const carteles = {};
+  function precargar(id) {
+    bajar(id);
+    const m = PLATO[id] && PLATO[id].media;
+    if (m && m.cartel && !carteles[m.video]) { carteles[m.video] = [m.cartel.crudo, m.cartel.servido].map(s => { const i = new Image(); i.src = s; return i; }); }
+  }
+  function ponerFuente(id, src) {
+    const m = PLATO[id].media;
+    video.dataset.id = id; video.dataset.src = src; video.poster = m.cartel ? m.cartel.crudo : m.crudo; video.src = src; video.load();
+  }
+  video.addEventListener('error', () => {
+    const id = video.dataset.id;
+    if (!abierto || !id) return;
+    if (video.dataset.src && video.dataset.src.startsWith('blob:')) { delete blobs[id]; ponerFuente(id, PLATO[id].media.video); reproducir(0); return; }
+    carga.textContent = 'No cargó el video. Revisa la señal e inténtalo otra vez.'; carga.classList.remove('ido');
+  });
+
+  /* Lo que se agrega desde el visor: el plato, o la variante escogida si el plato tiene varias */
+  const itemVisor = () => (cur && cur.variantes ? sel : cur && cur.id);
+  function pintarAgregar() {
+    if (!cur) return;
+    const id = itemVisor(), on = Evento.tiene(id), nombre = PLATO[id].nombre;
+    btnAgregar.setAttribute('aria-pressed', String(on));
+    btnAgregar.querySelector('use').setAttribute('href', on ? '#i-listo' : '#i-mas');
+    btnAgregar.querySelector('span').textContent = on ? 'En tu evento' : 'Agregar';
+    btnAgregar.setAttribute('aria-label', on ? `Quitar ${nombre} de tu evento` : `Agregar ${nombre} a tu evento`);
+    $$('.v-var', varBox).forEach(b => b.classList.toggle('en-evento', Evento.tiene(b.dataset.id)));
+  }
+  function pintarPrecio() {
+    const precio = $('.js-v-precio', raiz);
+    if (cur.variantes) {
+      precio.textContent = fmtCOP(PLATO[sel].precio);
+      precio.classList.remove('pendiente');
+      $$('.v-var', varBox).forEach(b => { const on = b.dataset.id === sel; b.setAttribute('aria-checked', String(on)); b.tabIndex = on ? 0 : -1; });
+    } else {
+      precio.textContent = precioTexto(cur);
+      precio.classList.toggle('pendiente', cur.precio == null);
+    }
+  }
+  function escoger(id) { if (!cur || !cur.variantes || sel === id) return; sel = id; Sonido.tic(1700, 0.05); pintarPrecio(); pintarAgregar(); }
+  varBox.addEventListener('click', e => { const b = e.target.closest('.v-var'); if (b) escoger(b.dataset.id); });
+  varBox.addEventListener('keydown', e => {
+    if (!cur || !cur.variantes || !['ArrowRight', 'ArrowLeft', 'ArrowDown', 'ArrowUp'].includes(e.key)) return;
+    e.preventDefault();
+    const ids = cur.variantes.map(v => v.id), k = ids.indexOf(sel) + (e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : -1);
+    escoger(ids[(k + ids.length) % ids.length]);
+    const b = $(`.v-var[data-id="${sel}"]`, varBox); if (b) b.focus();
+  });
+
+  async function abrir(id, origen) {
+    let p = PLATO[id];
+    if (abierto || !p) return;
+    let pedidoVar = null;
+    if (p.familia) { pedidoVar = p.id; p = PLATO[p.familia]; id = p.id; }   /* una variante abre su plato, ya escogida */
+    const m = p.media;
+    cur = p; abierto = true; origenFoco = origen || null;
+    modo = !m ? 'pendiente' : m.marcas ? 'completo' : m.etapas && m.etapas[0] === 'servido' ? 'servido' : 'crudo';
+    pista.lastChild.nodeValue = modo === 'servido' ? 'Desliza para recorrer la tabla · pellizca para acercar' : 'Desliza para girarlo · pellizca para acercar';
+    raiz.dataset.modo = modo;
+    dur = m ? m.dur : 1; marcas = m && m.marcas ? m.marcas : null; loopDesde = m ? m.loopDesde : null;
+    anterior = 0; terminado = modo !== 'completo'; zoom = 1; sonando = false;
+    inc = { x: 0, y: 0 }; incObj = { x: 0, y: 0 };
+    $('.js-v-cat', raiz).textContent = p.categoria.titulo.toLowerCase() === p.nombre.toLowerCase() ? p.categoria.ceja : p.categoria.titulo;
+    $('.js-v-nombre', raiz).textContent = p.nombre;
+    if (p.variantes) {
+      const ya = p.variantes.find(v => Evento.tiene(v.id));
+      sel = pedidoVar || (ya ? ya.id : p.variantes[0].id);
+      varBox.replaceChildren(...p.variantes.map(v => el('button', { class: 'v-var', type: 'button', role: 'radio', 'data-id': v.id, 'aria-checked': 'false', 'aria-label': `${v.nombre}, ${fmtCOP(v.precio)} por persona` },
+        el('b', {}, v.nombre), el('span', {}, fmtCOP(v.precio)))));
+      varBox.hidden = false;
+    } else { sel = null; varBox.replaceChildren(); varBox.hidden = true; }
+    pintarPrecio();
+    $('.js-v-llamado', raiz).textContent = 'por persona';
+    $('.js-v-desc', raiz).textContent = p.desc;
+    pintarAgregar();
+    paradas.forEach(b => {
+      const k = b.dataset.parada, t = k === 'crudo' ? 0 : k === 'fuego' ? (marcas ? marcas.fuego : 0) : dur;
+      b.style.left = (t / dur) * 100 + '%';
+    });
+    lleno.style.width = '0%'; perilla.style.left = '0%';
+    estado = ''; setEstado('crudo');
+    video.hidden = modo === 'pendiente'; pendiente.hidden = modo !== 'pendiente';
+    const img = origen ? (origen.tagName === 'IMG' ? origen : origen.querySelector('img')) : null;
+    const srcVuelo = img ? img.currentSrc || img.src : (m ? m.crudo : 'marca/medalla.webp');
+    clearTimeout(cargaTimer);
+    let posterListo = Promise.resolve();
+    if (modo === 'pendiente') {
+      poster.removeAttribute('src'); poster.classList.add('ido'); carga.classList.add('ido');
+    } else {
+      poster.src = cartelDe(m, srcVuelo); poster.classList.remove('ido');
+      if (poster.decode) posterListo = poster.decode().catch(() => {});
+      carga.textContent = 'Prendiendo el fuego…'; carga.classList.add('ido');
+      cargaTimer = setTimeout(() => { if (!sonando) carga.classList.remove('ido'); }, 900);
+    }
+    const listo = modo === 'pendiente' ? Promise.resolve(null)
+      : blobs[id] ? Promise.resolve(blobs[id]) : Promise.race([bajar(id), new Promise(r => setTimeout(() => r(null), 2500))]);
+    pista.classList.toggle('ido', modo === 'pendiente');
+    raiz.hidden = false; void raiz.offsetWidth;
+    raiz.classList.add('abierto');
+    Sonido.soplo();
+    brasas.iniciar();
+    cancelAnimationFrame(raf); raf = requestAnimationFrame(cuadro);
+    Nav.abrir('visor', cerrar);
+    if (img && !reduceMotion) {
+      /* La tarjeta alta de la vitrina (4:5) vuela y se vuelve el cuadro entero: la línea de la bandera se apaga en el camino.
+         La foto redonda de la lista aterriza en el cuadrado del centro (es justo lo que muestra) y el cuadro aparece alrededor. */
+      const r0 = img.getBoundingClientRect(), rv = vitrina.getBoundingClientRect(), lado = Math.min(rv.width, rv.height);
+      const alta = r0.height > r0.width * 1.1;
+      const r1 = alta ? { left: rv.left, top: rv.top, width: rv.width, height: rv.height }
+        : { left: rv.left + (rv.width - lado) / 2, top: rv.top + (rv.height - lado) / 2, width: lado, height: lado };
+      if (r0.width > 10 && r0.bottom > 0 && r0.top < innerHeight) {
+        const vuelo = el('div', { class: 'v-vuelo' + (alta ? ' tabla' : ''), style: `left:${r0.left}px;top:${r0.top}px;width:${r0.width}px;height:${r0.height}px;background-image:url("${srcVuelo}")` });
+        if (img.closest('.sin-video')) vuelo.style.backgroundSize = '60%';
+        document.body.append(vuelo);
+        vitrina.style.visibility = 'hidden';
+        const borde = alta ? [{ borderRadius: '18px', boxShadow: '0 0 0 2px #FCD116,0 0 0 3.5px #1747A6,0 0 0 5px #CE1126' },
+          { borderRadius: '8px', boxShadow: '0 0 0 2px rgba(252,209,22,0),0 0 0 3.5px rgba(23,71,166,0),0 0 0 5px rgba(206,17,38,0)' }] : [{}, {}];
+        try {
+          await vuelo.animate([
+            { left: r0.left + 'px', top: r0.top + 'px', width: r0.width + 'px', height: r0.height + 'px', transform: 'perspective(900px) rotateX(0deg) translateZ(0)', ...borde[0] },
+            { offset: 0.55, transform: 'perspective(900px) rotateX(14deg) translateZ(70px)' },
+            { left: r1.left + 'px', top: r1.top + 'px', width: r1.width + 'px', height: r1.height + 'px', transform: 'perspective(900px) rotateX(0deg) translateZ(0)', ...borde[1] },
+          ], { duration: 640, easing: 'cubic-bezier(.2,.8,.2,1)', fill: 'forwards' }).finished;
+        } catch (e) {}
+        await Promise.race([posterListo, new Promise(r => setTimeout(r, 700))]);
+        vitrina.style.visibility = '';
+        try {
+          vitrina.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 280, easing: 'ease-out' });
+          vuelo.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 280, easing: 'ease-out', fill: 'forwards' }).finished
+            .then(() => vuelo.remove(), () => vuelo.remove());
+        } catch (e) { vuelo.remove(); }
+      }
+    }
+    if (!abierto) return;
+    setTimeout(() => { const c = $('.js-v-cerrar', raiz); if (c && abierto) c.focus({ preventScroll: true }); }, 50);
+    if (modo === 'pendiente') return;
+    const fuente = (await listo) || m.video;
+    if (!abierto || cur !== p) return;
+    if (video.dataset.id !== id || video.dataset.src !== fuente) ponerFuente(id, fuente);
+    video.loop = modo === 'crudo' || modo === 'servido';
+    reproducir(modo === 'servido' ? m.inicio || 0 : 0);   /* el asado arranca donde está su foto, sin salto */
+  }
+
+  function cerrar() {
+    if (!abierto) return;
+    abierto = false;
+    video.pause();
+    raiz.classList.remove('abierto');
+    Sonido.soplo();
+    clearTimeout(toqueTimer); clearTimeout(cargaTimer);
+    setTimeout(() => {
+      if (abierto) return;
+      raiz.hidden = true; cancelAnimationFrame(raf); brasas.parar(); delete raiz.dataset.llamas;
+      vitrina.style.transform = ''; zoom = 1;
+      Nav.sincronizar();
+      if (origenFoco && origenFoco.focus) origenFoco.focus({ preventScroll: true });
+    }, 380);
+  }
+
+  /* Gestos sobre el plato: deslizar = avanzar o retroceder el video; pellizcar = acercar; doble toque = zoom */
+  escena.addEventListener('pointerdown', e => {
+    if (!abierto) return;
+    punteros.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    try { escena.setPointerCapture(e.pointerId); } catch (err) {}
+    if (punteros.size === 2) {
+      const [a, b] = [...punteros.values()];
+      gesto = { d0: Math.hypot(a.x - b.x, a.y - b.y), z0: zoom };
+      arrastre = null; return;
+    }
+    arrastre = modo === 'pendiente' ? null : { x0: e.clientX, y0: e.clientY, t0: video.currentTime || 0, activo: false, mov: 0 };
+  });
+  escena.addEventListener('pointermove', e => {
+    if (!punteros.has(e.pointerId)) return;
+    punteros.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (gesto && punteros.size >= 2) {
+      const [a, b] = [...punteros.values()];
+      zoom = clamp((gesto.z0 * Math.hypot(a.x - b.x, a.y - b.y)) / Math.max(20, gesto.d0), 1, 2.6);
+      return;
+    }
+    if (!arrastre) return;
+    const dx = e.clientX - arrastre.x0, dy = e.clientY - arrastre.y0;
+    arrastre.mov = Math.max(arrastre.mov, Math.hypot(dx, dy));
+    if (!arrastre.activo && Math.abs(dx) > 7) {
+      arrastre.activo = true; video.pause(); terminado = false;
+      pista.classList.add('ido');
+    }
+    if (arrastre.activo) {
+      let t = arrastre.t0 + (dx / (escena.clientWidth * 0.9)) * dur;
+      if (modo === 'crudo') t = ((t % dur) + dur) % dur;   /* el crudo da vueltas sin fin */
+      if (modo === 'servido') {
+        /* ida y vuelta en el mismo archivo: el dedo arrastra la tabla (a la izquierda, la cámara sigue la ida) */
+        const ida = (cur.media && cur.media.ida) || dur / 2, t0 = arrastre.t0, q0 = (t0 <= ida ? t0 : Math.max(0, dur - t0)) / ida;
+        t = clamp(q0 - dx / (escena.clientWidth * 0.9)) * ida;
+      }
+      buscar(t);
+      incObj.y = clamp(dx * 0.05, -14, 14); incObj.x = clamp(dy * -0.04, -8, 8);
+    }
+  });
+  function soltar(e) {
+    punteros.delete(e.pointerId);
+    if (gesto) { if (punteros.size < 2) gesto = null; return; }
+    if (!arrastre) return;
+    const a = arrastre; arrastre = null;
+    incObj = { x: 0, y: 0 };
+    if (a.activo) { terminado = modo !== 'completo'; return; }
+    if (a.mov > 10 || e.type === 'pointercancel') return;
+    const ahora = performance.now();
+    if (ahora - ultimoToque < 280) {
+      clearTimeout(toqueTimer); ultimoToque = 0;
+      zoom = zoom > 1.2 ? 1 : 1.8;
+      return;
+    }
+    ultimoToque = ahora;
+    toqueTimer = setTimeout(() => {
+      if (!abierto) return;
+      if (video.paused) reproducir(null); else video.pause();
+    }, 280);
+  }
+  escena.addEventListener('pointerup', soltar);
+  escena.addEventListener('pointercancel', soltar);
+
+  /* Línea de tiempo dorada */
+  let arrLinea = false;
+  const tDeX = x => { const r = $('.v-riel', linea).getBoundingClientRect(); return clamp((x - r.left) / r.width) * dur; };
+  linea.addEventListener('pointerdown', e => {
+    if (modo === 'pendiente' || e.target.closest('.js-v-parada')) return;
+    arrLinea = true; try { linea.setPointerCapture(e.pointerId); } catch (err) {}
+    video.pause(); pista.classList.add('ido'); pausaEnLinea(e.clientX);
+  });
+  linea.addEventListener('pointermove', e => { if (arrLinea) pausaEnLinea(e.clientX); });
+  const finLinea = () => { arrLinea = false; };
+  linea.addEventListener('pointerup', finLinea);
+  linea.addEventListener('pointercancel', finLinea);
+  function pausaEnLinea(x) { terminado = modo !== 'completo'; buscar(tDeX(x)); }
+  linea.addEventListener('keydown', e => {
+    if (modo === 'pendiente') return;
+    const t = video.currentTime || 0;
+    const mapa = { ArrowRight: t + 0.4, ArrowUp: t + 0.4, ArrowLeft: t - 0.4, ArrowDown: t - 0.4, Home: 0, End: dur };
+    if (e.key in mapa) { e.preventDefault(); pausarEn(clamp(mapa[e.key], 0, dur - 0.04)); }
+  });
+  paradas.forEach(b => b.addEventListener('click', () => {
+    const k = b.dataset.parada;
+    Sonido.pop(k === 'servido' ? 1.2 : 0.9);
+    if (k === 'crudo') pausarEn(0);
+    else if (k === 'fuego' && marcas) pausarEn(marcas.fuego + Math.min(0.6, (marcas.servido - marcas.fuego) / 2));
+    else if (k === 'servido') { if (loopDesde != null) reproducir(loopDesde); else if (marcas) reproducir(marcas.servido); }
+  }));
+  $('.js-v-otra', raiz).addEventListener('click', () => { Sonido.pop(1.1); zoom = 1; reproducir(0); });
+  btnAgregar.addEventListener('click', () => { if (cur) alternarPlato(itemVisor()); });
+  $$('.js-v-cerrar', raiz).forEach(b => b.addEventListener('click', () => Nav.atras()));
+  (() => {
+    const agarre = $('.js-v-agarre', raiz); let y0 = null;
+    agarre.addEventListener('pointerdown', e => { y0 = e.clientY; try { agarre.setPointerCapture(e.pointerId); } catch (err) {} });
+    agarre.addEventListener('pointermove', e => { if (y0 != null && e.clientY - y0 > 60) { y0 = null; Nav.atras(); } });
+    const fin = () => { y0 = null; };
+    agarre.addEventListener('pointerup', fin); agarre.addEventListener('pointercancel', fin);
+  })();
+
+  return { abrir, cerrar, precargar, pintarAgregar, desbloquear() {}, get abierto() { return abierto; } };
+})();
+
+let entro = false, introActiva = false;
+
+/* ================= Capas con el botón atrás del celular ================= */
+const Nav = (() => {
+  const pila = [];
+  let historial = true;
+  function sincronizar() { document.body.classList.toggle('quieto', pila.length > 0 || introActiva || !entro); }
+  window.addEventListener('popstate', () => { const top = pila.pop(); if (top) top.cerrar(); sincronizar(); });
+  return {
+    abrir(nombre, cerrar) {
+      pila.push({ nombre, cerrar });
+      try { history.pushState({ jonnier: nombre }, ''); } catch (e) { historial = false; }
+      sincronizar();
+    },
+    atras() {
+      if (!pila.length) return;
+      if (historial && history.state && history.state.jonnier) {
+        const antes = pila.length;
+        try { history.back(); } catch (e) {}
+        setTimeout(() => { if (pila.length === antes) { const top = pila.pop(); if (top) { top.cerrar(); sincronizar(); } } }, 450);
+        return;
+      }
+      const top = pila.pop(); top.cerrar(); sincronizar();
+    },
+    tiene(n) { return pila.some(s => s.nombre === n); },
+    sincronizar,
+  };
+})();
+document.addEventListener('keydown', e => { if (e.key === 'Escape') Nav.atras(); });
+
+/* ================= Botones de sonido ================= */
+function pintarSonido(m) {
+  $$('.js-sonido').forEach(b => {
+    b.setAttribute('aria-pressed', String(m));
+    b.setAttribute('aria-label', m ? 'Activar el sonido' : 'Silenciar el sonido');
+    const u = b.querySelector('use'); if (u) u.setAttribute('href', m ? '#i-mudo' : '#i-sonido');
+  });
+}
+Sonido.alCambiar(pintarSonido);
+$$('.js-sonido').forEach(b => b.addEventListener('click', () => {
+  Sonido.init(); Sonido.setMudo(!Sonido.mudo); Visor.desbloquear();
+  if (!Sonido.mudo) { Sonido.pop(1.2); if (introActiva) { Sonido.fuego(); Sonido.tono(); } }
+}));
+
+/* ================= Intro de 15 segundos: la historia del campeón =================
+   Cinco capítulos con su propia duración; tocar la pantalla adelanta (o devuelve, en el borde izquierdo). */
+const Intro = (() => {
+  const raiz = $('#intro'), tiempos = $$('.tiempo', raiz), barras = $$('.barras i', raiz);
+  const brasas = Brasas($('.js-brasas-in', raiz), { cantidad: 80 });
+  const pi = PLATO[MARCA.intro] || PLATO[PLATOS[0].id];
+  const DUR = [2600, 3400, 3600, 2600, 3000];   /* 15,2 s en total */
+  const marcador = $('.marcador', raiz), puesto = $('.js-puesto', raiz);
+  let timers = [], efectos = [], alTerminar = null, cargado = false, k = 0;
+  barras.forEach((b, i) => b.style.setProperty('--t', DUR[i] + 'ms'));
+  $$('[data-partir]', raiz).forEach(partirPalabras);
+  function cargar() {
+    if (cargado || !pi.media) return; cargado = true;
+    const c = pi.media.tarjeta || {};   /* las tarjetas altas usan la tabla entera (4:5, en 720) */
+    $('.js-in-nombre', raiz).textContent = nombreCompleto(pi);
+    $('.js-in-crudo2', raiz).src = c.crudo || pi.media.crudo;
+    $('.js-in-servido', raiz).src = c.servido || pi.media.servido;
+  }
+  const despues = (ms, fn) => efectos.push(setTimeout(fn, ms));
+  function contar() {   /* el marcador sube del puesto 45 al 5 */
+    marcador.classList.remove('fin');
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { puesto.textContent = '5'; return; }
+    puesto.textContent = '45';
+    const pasos = 40;
+    for (let i = 1; i <= pasos; i++) {
+      despues(650 + 1350 * (1 - Math.pow(1 - i / pasos, 2.2)), () => {
+        puesto.textContent = String(45 - i);
+        if (i % 4 === 0 || i > pasos - 4) Sonido.tic(1300 + i * 15, 0.035);
+        if (i === pasos) { marcador.classList.add('fin'); Sonido.campana(); vibrar(12); }
+      });
+    }
+  }
+  function mostrar(n) {
+    efectos.forEach(clearTimeout); efectos = [];
+    k = n;
+    tiempos.forEach((b, i) => b.classList.toggle('on', i === n));
+    barras.forEach((b, i) => { b.classList.remove('va'); b.classList.toggle('hecha', i < n); });
+    void raiz.offsetWidth;   /* así la barra vuelve a arrancar si el cliente se devuelve */
+    barras[n].classList.add('va');
+    if (n > 0) Sonido.soplo();
+    if (n === 1) despues(900, () => { Sonido.campana(); vibrar(10); });
+    if (n === 2) contar();
+    if (n === 3) despues(1000, () => Sonido.chisporrotea(1.3, 0.5));
+    if (n === 4) despues(450, () => Sonido.pop(1.1));
+  }
+  function ir(n) {
+    timers.forEach(clearTimeout); timers = [];
+    if (n >= tiempos.length) { terminar(); return; }
+    mostrar(Math.max(0, n));
+    timers.push(setTimeout(() => ir(k + 1), DUR[k]));
+  }
+  function reproducir(fin) {
+    cargar();
+    alTerminar = fin; introActiva = true; Nav.sincronizar();
+    raiz.hidden = false; raiz.classList.remove('fuera');
+    brasas.iniciar(); Sonido.fuego(); Sonido.tono();
+    ir(0);
+  }
+  function terminar() {
+    if (!introActiva) return;
+    introActiva = false; timers.forEach(clearTimeout); timers = []; efectos.forEach(clearTimeout); efectos = [];
+    Sonido.pararFuego(); Sonido.pararTono();
+    raiz.classList.add('fuera');
+    setTimeout(() => { raiz.hidden = true; brasas.parar(); tiempos.forEach(b => b.classList.remove('on')); barras.forEach(b => { b.className = ''; }); marcador.classList.remove('fin'); }, 760);
+    Nav.sincronizar();
+    if (alTerminar) alTerminar();
+  }
+  $('.js-tiempos', raiz).addEventListener('click', e => {
+    if (!introActiva) return;
+    const r = raiz.getBoundingClientRect();
+    ir(e.clientX - r.left < r.width * 0.28 ? k - 1 : k + 1);
+  });
+  $('.js-saltar', raiz).addEventListener('click', terminar);
+  window.addEventListener('resize', () => { if (introActiva) brasas.medir(); });
+  return { reproducir, terminar, cargar };
+})();
+
+/* ================= Bienvenida ================= */
+const Bienvenida = (() => {
+  const raiz = $('#bienvenida');
+  const brasas = Brasas($('.js-brasas-bv', raiz), { cantidad: 60 });
+  const escena = $('.js-medalla', raiz);
+  const medalla = Medalla(escena);
+  brasas.iniciar(); medalla.iniciar();
+  escena.addEventListener('girada', () => { $('.js-bv-pista', raiz).style.opacity = '0'; }, { once: true });
+  window.addEventListener('resize', () => { if (!entro) brasas.medir(); });
+  $$('.js-entrar', raiz).forEach(b => b.addEventListener('click', () => {
+    Sonido.init(); Sonido.setMudo(b.dataset.sonido !== 'si'); Visor.desbloquear();
+    entro = true; medalla.impulso(1400); Sonido.soplo();
+    raiz.classList.add('fuera');
+    setTimeout(() => { raiz.hidden = true; brasas.parar(); medalla.parar(); }, 720);
+    if (store.get('jonnier-intro-campeon')) mostrarCarta(); else Intro.reproducir(mostrarCarta);
+  }));
+  setTimeout(() => Intro.cargar(), 1200);
+})();
+function mostrarCarta() {
+  store.set('jonnier-intro-campeon', '1');
+  Nav.sincronizar();
+  Vitrina.iniciar();
+}
+
+/* ================= El evento que arma el cliente =================
+   Platos con cuántas personas van por cada uno. Se guarda en este celular (localStorage),
+   así si vuelve a abrir el enlace sigue donde iba. Nada sale del celular hasta que toca «Enviar». */
+const Evento = (() => {
+  const CLAVE = 'jonnier-evento';
+  let items = [], datos = { tipo: '', fecha: '', lugar: '', otro: '', notas: '' };
+  try {
+    const g = JSON.parse(store.get(CLAVE) || 'null');
+    if (g && Array.isArray(g.items)) items = g.items.filter(i => i && pedible(i.id)).map(i => ({ id: i.id, personas: Math.max(1, Math.min(999, i.personas | 0 || MARCA.porPlato.otros)), opcion: i.opcion || null }));
+    if (g && g.datos) datos = Object.assign(datos, g.datos);
+  } catch (e) {}
+  /* Antes el lugar se escribía a mano en «Ciudad»: si coincide con un municipio, queda escogido */
+  if (datos.ciudad && !datos.lugar) { const l = buscarLugar(datos.ciudad); datos.lugar = l ? l.id : 'otro'; if (!l) datos.otro = datos.ciudad; }
+  delete datos.ciudad;
+  if (datos.lugar && datos.lugar !== 'otro' && !LUGAR[datos.lugar]) datos.lugar = '';
+  const viaticos = () => calcularViaticos(datos.lugar, datos.otro);
+  const oyentes = new Set();
+  const avisar = motivo => { store.set(CLAVE, JSON.stringify({ items, datos })); oyentes.forEach(fn => fn(motivo)); };
+  const tiene = id => items.some(i => i.id === id);
+  /* En cada item, «personas» es la cantidad: personas en los platos, unidades, mesas o vasos en lo demás */
+  const personas = () => items.filter(i => esPersona(i.id)).reduce((s, i) => s + i.personas, 0);
+  const sinPrecio = () => items.filter(i => PLATO[i.id].precio == null);
+  /* Total aproximado: precio × cantidad de lo que ya tiene precio (lo que no, se avisa aparte). */
+  const total = () => {
+    const c = items.filter(i => PLATO[i.id].precio != null);
+    return c.length ? c.reduce((s, i) => s + PLATO[i.id].precio * i.personas, 0) : null;
+  };
+  /* El mínimo de personas es pa’ los platos; si solo piden pasabocas o bebidas, no aplica. */
+  const falta = () => (items.some(i => esPersona(i.id)) ? Math.max(0, MARCA.minimo - personas()) : 0);
+
+  function mensaje() {
+    const L = ['¡Hola, Jonnier! Vi la carta de eventos y quiero cotizar.', ''];
+    if (items.length) {
+      const grupos = [];
+      porCarta(items).forEach(i => {
+        const p = PLATO[i.id], u = uni(p), t = esPersona(i.id) ? 'Platos' : p.categoria.titulo;
+        let g = grupos.find(x => x.t === t);
+        if (!g) grupos.push(g = { t, L: [] });
+        g.L.push(`• ${p.nombre}${i.opcion ? ` (${i.opcion})` : ''}: ${plural(i.personas, u.uno, u.varios)}${p.precio != null ? ` × ${fmtCOP(p.precio)}` : ' (precio por confirmar)'}`);
+      });
+      grupos.forEach((g, k) => { if (k) L.push(''); L.push(`${g.t}:`, ...g.L); });
+      L.push('');
+      if (personas()) L.push(`Personas: ${personas()}`);
+    } else L.push('Personas:');
+    /* Lugar y viáticos: en Pereira no se cobran; en el Eje Cafetero, peajes (ida y vuelta) y gasolina aproximada */
+    const v = viaticos();
+    if (v.tipo === 'nada') L.push('Lugar:');
+    else if (v.tipo === 'pereira') L.push('Lugar: Pereira (sin viáticos)');
+    else if (v.tipo === 'fuera') L.push(`Lugar: ${v.nombre || 'otro lugar'} (fuera del Eje Cafetero)`, 'Viáticos: por consultar con el asesor');
+    else if (v.tipo === 'lejos') L.push(`Lugar: ${v.lugar.nombre} (${v.lugar.dep})`, 'Viáticos: por confirmar con el asesor');
+    else L.push(`Lugar: ${v.lugar.nombre} (${v.lugar.dep})`,
+      `Viáticos aprox.: ${fmtCOP(v.total)} (${v.peajes.length ? `peajes ida y vuelta ${fmtCOP(v.peajesTotal)}: ${listaY(v.peajes)}` : 'sin peajes'} · gasolina ${fmtCOP(v.gasolina)}, ${v.km} km ida y vuelta)`);
+    const t = total(), sp = sinPrecio();
+    if (items.length && t != null) {
+      const notas = [];
+      if (sp.length) notas.push(`sin contar ${listaY(sp.map(i => PLATO[i.id].nombre.toLowerCase()))}`);
+      if (v.tipo === 'fuera' || v.tipo === 'lejos') notas.push('sin contar viáticos');
+      L.push(`Total aproximado: ${fmtCOP(t + (v.tipo === 'eje' ? v.total : 0))}${v.tipo === 'eje' ? ' con viáticos' : ''}${notas.length ? ` (${notas.join('; ')})` : ''}`);
+    }
+    if (datos.tipo) L.push(`Evento: ${datos.tipo}`);
+    L.push(`Fecha: ${datos.fecha ? fechaLarga(datos.fecha) : ''}`);
+    if (datos.notas && datos.notas.trim()) L.push(`Comentarios: ${datos.notas.trim()}`);
+    return L.join('\n');
+  }
+  const enlace = (texto = mensaje()) => `https://wa.me/${MARCA.whatsapp.numero}?text=${encodeURIComponent(texto)}`;
+
+  return {
+    get items() { return items; }, get datos() { return datos; },
+    tiene, personas, total, sinPrecio, falta, viaticos, mensaje, enlace,
+    agregar(id) {
+      if (tiene(id) || !pedible(id)) return;
+      const p = PLATO[id], u = uni(p);
+      /* Platos: el primero entra con el mínimo y los demás con 10. Pasabocas y bebidas: uno por persona
+         de los platos que ya escogió (o el mínimo si aún no hay platos). La mesa entra con 1. */
+      const n = esPersona(id)
+        ? (items.some(i => esPersona(i.id)) ? MARCA.porPlato.otros : MARCA.porPlato.primero)
+        : (u.inicio || personas() || MARCA.minimo);
+      items.push({ id, personas: Math.min(999, n), opcion: p.opciones ? p.opciones[0] : null });
+      avisar('items');
+    },
+    quitar(id) { items = items.filter(i => i.id !== id); avisar('items'); },
+    alternar(id) { if (tiene(id)) this.quitar(id); else this.agregar(id); return tiene(id); },
+    poner(id, campos) { const i = items.find(x => x.id === id); if (!i) return; Object.assign(i, campos); avisar('cantidad'); },
+    ponerDato(k, v) { datos[k] = v; avisar('dato'); },
+    alCambiar(fn) { oyentes.add(fn); },
+  };
+})();
+
+function fechaLarga(s) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s || '');
+  if (!m) return s || '';
+  try { return new Date(+m[1], +m[2] - 1, +m[3]).toLocaleDateString('es-CO', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }); }
+  catch (e) { return s; }
+}
+
+/* Aviso que sube abajo un par de segundos */
+const Aviso = (() => {
+  const n = $('.js-aviso'), t = $('.js-aviso-t'); let reloj = 0;
+  return { mostrar(texto) { t.textContent = texto; n.classList.add('va'); clearTimeout(reloj); reloj = setTimeout(() => n.classList.remove('va'), 2200); } };
+})();
+
+function alternarPlato(id) {
+  const on = Evento.alternar(id), p = PLATO[id];
+  Sonido.pop(on ? 1.25 : 0.8); vibrar(on ? 14 : 8);
+  Aviso.mostrar(on ? `${p.nombre}: agregado a tu evento` : `${p.nombre}: quitado de tu evento`);
+}
+
+/* ================= Hoja de cotización ================= */
+const Cotizador = (() => {
+  const raiz = $('#cotizador'), lista = $('.js-ev-lista', raiz), vacio = $('.js-ev-vacio', raiz), lleno = $('.js-ev-lleno', raiz);
+  const enviar = $('.js-ev-enviar', raiz), aviso = $('.js-ev-aviso', raiz), totalN = $('.js-ev-total', raiz);
+  const fecha = $('.js-ev-fecha', raiz), tipos = $('.js-ev-tipos', raiz), notas = $('.js-ev-notas', raiz);
+  const lugar = $('.js-ev-lugar', raiz), otro = $('.js-ev-otro', raiz);
+  /* Municipios del Eje Cafetero por departamento; Pereira primero (sin viáticos) y al final «otro lugar» */
+  lugar.append(el('option', { value: '' }, 'Escoge el municipio'), el('option', { value: 'pereira' }, 'Pereira (sin viáticos)'));
+  ['Risaralda', 'Caldas', 'Quindío'].forEach(dep => lugar.append(el('optgroup', { label: dep },
+    ...LUGARES.filter(l => l.dep === dep && l.zona !== 'pereira').sort((a, b) => a.nombre.localeCompare(b.nombre, 'es'))
+      .map(l => el('option', { value: l.id }, l.nombre)))));
+  lugar.append(el('option', { value: 'otro' }, 'Otro lugar (fuera del Eje Cafetero)'));
+  let abierto = false;
+  const iso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  fecha.min = iso(new Date());
+  MARCA.tipos.forEach(t => tipos.append(el('button', { class: 'tipo-btn', type: 'button', 'aria-pressed': 'false', 'data-tipo': t }, t)));
+  $('.js-ev-directo', raiz).href = Evento.enlace('¡Hola, Jonnier! Quiero cotizar un evento.\nFecha:\nLugar:\nPersonas:');
+
+  function linea(i) {
+    const p = PLATO[i.id], m = p.media;
+    const foto = m
+      ? el('span', { class: 'ev-img' }, el('img', { src: m.servido || m.crudo, alt: '', width: 56, height: 56, loading: 'lazy' }))
+      : el('span', { class: 'ev-img sin' }, el('img', { src: 'marca/medalla.webp', alt: '', width: 56, height: 56 }));
+    const u = uni(p), k = u.paso;
+    const input = el('input', { type: 'number', inputmode: 'numeric', min: '1', max: '999', step: '1', value: String(i.personas), id: 'ev-n-' + p.id, 'aria-label': `${u.varios[0].toUpperCase() + u.varios.slice(1)} de ${p.nombre}` });
+    const paso = d => { const v = clamp((parseInt(input.value, 10) || 0) + d, 1, 999); input.value = String(v); Evento.poner(p.id, { personas: v }); Sonido.tic(1600, 0.05); };
+    input.addEventListener('input', () => { const v = parseInt(input.value, 10); if (v >= 1) Evento.poner(p.id, { personas: Math.min(999, v) }); });
+    input.addEventListener('change', () => { const v = clamp(parseInt(input.value, 10) || 1, 1, 999); input.value = String(v); Evento.poner(p.id, { personas: v }); });
+    const opcion = p.opciones
+      ? el('select', { class: 'ev-opcion', id: 'ev-o-' + p.id, 'aria-label': `Cuál ${p.nombre.toLowerCase()}`, onchange: e => Evento.poner(p.id, { opcion: e.target.value }) },
+        ...p.opciones.map(o => el('option', { value: o, selected: o === i.opcion }, o)))
+      : null;
+    return el('div', { class: 'ev-linea', 'data-id': p.id }, foto,
+      el('div', { class: 'ev-info' },
+        el('p', { class: 'ev-nombre' }, p.nombre),
+        opcion,
+        el('p', { class: 'ev-pp' }, ...(p.precio != null
+          ? [`${fmtCOP(p.precio)} ${u.precio} · `, el('b', { 'data-sub': p.id }, fmtCOP(p.precio * i.personas))]
+          : [`Precio ${u.precio}: por confirmar`]))),
+      el('div', { class: 'ev-ctrl' },
+        el('div', { class: 'ev-cant' },
+          el('button', { type: 'button', 'aria-label': `${plural(k, u.uno, u.varios)} menos`, onclick: () => paso(-k) }, svgUse('i-menos')),
+          input,
+          el('button', { type: 'button', 'aria-label': `${plural(k, u.uno, u.varios)} más`, onclick: () => paso(k) }, svgUse('i-mas')),
+          el('span', { class: 'ev-cant-l', 'aria-hidden': 'true', 'data-u': p.id }, u.corto[i.personas === 1 ? 0 : 1])),
+        el('button', { class: 'ev-quitar', type: 'button', onclick: () => alternarPlato(p.id) }, svgUse('i-cerrar'), 'Quitar')));
+  }
+  function render() {
+    const hay = Evento.items.length > 0;
+    vacio.hidden = hay; lleno.hidden = !hay;
+    lista.replaceChildren(...porCarta(Evento.items).map(linea));
+    fecha.value = Evento.datos.fecha || '';
+    lugar.value = Evento.datos.lugar || '';
+    otro.value = Evento.datos.otro || '';
+    otro.hidden = lugar.value !== 'otro';
+    notas.value = Evento.datos.notas || '';
+    $$('.tipo-btn', tipos).forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tipo === Evento.datos.tipo)));
+    resumen();
+  }
+  function resumen() {
+    const n = Evento.personas(), t = Evento.total(), faltan = Evento.falta(), sp = Evento.sinPrecio();
+    $('.js-ev-personas', raiz).textContent = String(n);
+    $('.js-ev-fila-personas', raiz).hidden = !Evento.items.some(i => esPersona(i.id));
+    $$('[data-sub]', lista).forEach(b => { const i = Evento.items.find(x => x.id === b.dataset.sub); if (i) b.textContent = fmtCOP(PLATO[i.id].precio * i.personas); });
+    $$('[data-u]', lista).forEach(s => { const i = Evento.items.find(x => x.id === s.dataset.u); if (i) s.textContent = uni(PLATO[i.id]).corto[i.personas === 1 ? 0 : 1]; });
+    /* Viáticos según el lugar: Pereira sin costo; Eje Cafetero, peajes y gasolina; lejos o fuera, con el asesor */
+    const v = Evento.viaticos(), vN = $('.js-ev-viat', raiz), vD = $('.js-ev-viat-det', raiz);
+    vN.textContent = v.tipo === 'eje' ? fmtCOP(v.total) : { nada: 'Escoge el lugar', pereira: 'Sin costo', fuera: 'Por consultar', lejos: 'Por confirmar' }[v.tipo];
+    vN.classList.toggle('pendiente', v.tipo !== 'eje');
+    vD.textContent = v.tipo === 'pereira' ? 'En Pereira no cobramos viáticos.'
+      : v.tipo === 'fuera' ? 'Fuera del Eje Cafetero, los viáticos se consultan con el asesor por el chat.'
+      : v.tipo === 'lejos' ? `${v.lugar.nombre} queda lejos de Pereira: los viáticos te los confirma el asesor por el chat.`
+      : v.tipo === 'eje' ? `${v.peajes.length ? `Peajes ida y vuelta (${listaY(v.peajes)}): ${fmtCOP(v.peajesTotal)}` : 'Sin peajes en el camino'} · gasolina aprox. (${v.km} km ida y vuelta): ${fmtCOP(v.gasolina)}.`
+      : '';
+    vD.hidden = !vD.textContent;
+    const tt = t != null ? t + (v.tipo === 'eje' ? v.total : 0) : null;
+    totalN.textContent = tt != null ? fmtCOP(tt) : 'Por confirmar';
+    totalN.classList.toggle('total', tt != null); totalN.classList.toggle('pendiente', tt == null);
+    const sin = $('.js-ev-sin', raiz), notasT = [];
+    if (t != null && sp.length) notasT.push(`Sin contar ${listaY(sp.map(i => PLATO[i.id].nombre.toLowerCase()))}: precio por confirmar.`);
+    if (t != null && v.tipo === 'eje') notasT.push('Incluye los viáticos aproximados.');
+    if (t != null && (v.tipo === 'fuera' || v.tipo === 'lejos')) notasT.push('Sin contar los viáticos.');
+    sin.textContent = notasT.join(' ');
+    sin.hidden = !notasT.length;
+    const corto = Evento.items.length > 0 && faltan > 0;
+    aviso.hidden = !corto;
+    aviso.textContent = corto ? `Faltan ${plural(faltan, 'persona', 'personas')} pa’l mínimo de ${MARCA.minimo} por evento.` : '';
+    enviar.setAttribute('aria-disabled', String(corto || !Evento.items.length));
+    enviar.href = Evento.enlace();
+  }
+  enviar.addEventListener('click', e => {
+    if (enviar.getAttribute('aria-disabled') === 'true') { e.preventDefault(); Sonido.zumbido(); aviso.hidden = false; return; }
+    Sonido.campana();
+    Aviso.mostrar('Abriendo WhatsApp con tu cotización…');
+  });
+  fecha.addEventListener('change', () => Evento.ponerDato('fecha', fecha.value));
+  lugar.addEventListener('change', () => {
+    Evento.ponerDato('lugar', lugar.value); Sonido.tic(1700, 0.05);
+    otro.hidden = lugar.value !== 'otro';
+    if (!otro.hidden) otro.focus({ preventScroll: true });
+  });
+  otro.addEventListener('input', () => Evento.ponerDato('otro', otro.value));
+  notas.addEventListener('input', () => Evento.ponerDato('notas', notas.value));
+  tipos.addEventListener('click', e => {
+    const b = e.target.closest('.tipo-btn'); if (!b) return;
+    const v = Evento.datos.tipo === b.dataset.tipo ? '' : b.dataset.tipo;
+    Evento.ponerDato('tipo', v); Sonido.tic(1700, 0.05);
+    $$('.tipo-btn', tipos).forEach(x => x.setAttribute('aria-pressed', String(x.dataset.tipo === v)));
+  });
+  Evento.alCambiar(motivo => { if (!abierto) return; if (motivo === 'items') render(); else resumen(); });
+  $$('.js-ev-cerrar', raiz).forEach(b => b.addEventListener('click', () => Nav.atras()));
+
+  function abrir() {
+    if (abierto) return;
+    abierto = true; render();
+    raiz.hidden = false; void raiz.offsetWidth; raiz.classList.add('abierto'); raiz.scrollTop = 0;
+    Nav.abrir('cotizador', cerrar); Sonido.soplo();
+    setTimeout(() => { const c = $('.js-ev-cerrar', raiz); if (c && abierto) c.focus({ preventScroll: true }); }, 60);
+  }
+  function cerrar() {
+    if (!abierto) return;
+    abierto = false; raiz.classList.remove('abierto'); Sonido.soplo();
+    setTimeout(() => { if (!abierto) raiz.hidden = true; Nav.sincronizar(); }, 520);
+  }
+  return { abrir, cerrar };
+})();
+
+/* ================= La carta ================= */
+function renderCarta() {
+  if (MARCA.borrador) $('.js-borrador').hidden = false;
+  $$('.js-minimo').forEach(n => { n.textContent = String(MARCA.minimo); });
+  const cats = $('.js-cats'), menu = $('.js-menu');
+  CATEGORIAS.forEach(cat => {
+    const platos = PLATOS.filter(p => p.cat === cat.id && (MARCA.borrador || desde(p) != null || p.porConfirmar));
+    if (!platos.length) return;
+    cats.append(el('a', { href: '#' + cat.id, 'data-sec': cat.id }, cat.titulo));
+    const s = el('section', { class: 'seccion', id: cat.id, 'aria-labelledby': cat.id + '-t' },
+      el('div', { class: 'seccion-cab' },
+        el('p', { class: 'ceja ceja-flag' }, svgUse('i-banderita'), cat.ceja),
+        el('h2', { id: cat.id + '-t', class: 'foil' }, cat.titulo),
+        cat.nota ? el('p', { class: 'nota' }, cat.nota) : null));
+    /* Platos con foto; la mesa en su recuadro; pasabocas y bebidas seguidos van en una sola lista */
+    let lista = null;
+    platos.forEach(p => {
+      const pl = PLATO[p.id];
+      if (pl.estilo === 'fila') {
+        if (!lista) s.append(lista = el('ul', { class: 'variantes lista', 'aria-label': cat.titulo }));
+        lista.append(filaLista(pl));
+        return;
+      }
+      lista = null;
+      s.append(pl.estilo === 'caja' ? cajaPlato(pl) : filaPlato(pl));
+    });
+    s.append(el('div', { class: 'filete', 'aria-hidden': 'true' }, el('span'), svgUse('i-llama'), el('span')));
+    menu.append(s);
+  });
+  /* Aviso de temporada: lleva directo al plato destacado */
+  const d = MARCA.destacado && PLATO[MARCA.destacado], aviso = $('.js-temporada');
+  if (d && $('#plato-' + d.id)) {
+    aviso.href = '#plato-' + d.id;
+    aviso.replaceChildren(svgUse('i-estrella'),
+      el('span', { class: 't-texto' }, el('span', { class: 't-k' }, d.categoria.ceja),
+        el('span', { class: 't-t' }, el('b', {}, d.nombre), ` · ${precioTexto(d)} ${uni(d).precio}`)),
+      svgUse('i-sig', 't-ir'));
+    aviso.addEventListener('click', e => {
+      e.preventDefault();
+      const fila = $('#plato-' + d.id);
+      fila.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+      Sonido.tic(1700, 0.05);
+    });
+    aviso.hidden = false;
+  }
+}
+function filaPlato(p) {
+  const m = p.media;
+  const foto = m
+    ? el('button', { class: 'plato-foto', type: 'button', 'data-plato': p.id, tabindex: '-1', 'aria-hidden': 'true' },
+      el('img', { src: m.servido || m.crudo, alt: '', width: 540, height: 540, loading: 'lazy', decoding: 'async', draggable: 'false' }),
+      el('span', { class: 'sello3d' }, el('span', { class: 'punto-brasa' }), 'Ver en 3D'))
+    : el('button', { class: 'plato-foto sin-video', type: 'button', 'data-plato': p.id, tabindex: '-1', 'aria-hidden': 'true' },
+      el('img', { src: 'marca/medalla.webp', alt: '', width: 640, height: 640, loading: 'lazy', decoding: 'async', draggable: 'false' }),
+      el('span', { class: 'pronto' }, 'Pronto', el('br'), 'en 3D'));
+  const precio = p.precio != null
+    ? el('span', { class: 'precio' }, fmtCOP(p.precio))
+    : el('span', { class: 'precio pendiente' }, 'Por confirmar');
+  /* Con variantes: una fila por opción (cerdo, mixto, res) con su precio y su botón */
+  const pie = p.variantes
+    ? [el('ul', { class: 'variantes', 'aria-label': `${p.nombre}: opciones` },
+        ...p.variantes.map(v => el('li', {},
+          el('span', { class: 'var-nombre' }, v.nombre),
+          el('span', { class: 'lider', 'aria-hidden': 'true' }),
+          el('span', { class: 'precio' }, fmtCOP(v.precio)),
+          el('button', { class: 'agregar mini', type: 'button', 'data-agregar': v.id, 'aria-pressed': 'false' }, svgUse('i-mas'))))),
+      el('p', { class: 'pp-nota' }, `Precios ${uni(p).precio}`)]
+    : [el('div', { class: 'plato-pie' },
+        el('p', { class: 'precio-pp' }, precio, el('small', {}, uni(p).precio)),
+        el('button', { class: 'agregar', type: 'button', 'data-agregar': p.id, 'aria-pressed': 'false' }, svgUse('i-mas'), el('span', {}, 'Agregar')))];
+  return el('article', { class: 'plato', id: 'plato-' + p.id }, foto,
+    el('div', { class: 'plato-info' },
+      el('h3', { class: 'plato-nombre' },
+        el('button', { type: 'button', 'data-plato': p.id, 'aria-label': `${p.nombre}: ${m ? 'ver de crudo a servido' : 'ver detalles'}` }, p.nombre)),
+      el('p', { class: 'plato-desc' }, p.desc),
+      p.opciones ? el('p', { class: 'opciones-p' }, ...p.opciones.map(o => el('span', {}, o))) : null,
+      ...pie));
+}
+/* Renglón de pasabocas o bebidas: nombre (y detalle), precio y botón redondo para agregar */
+function filaLista(p) {
+  return el('li', { id: 'plato-' + p.id },
+    el('span', { class: 'fl-nombre' }, el('b', {}, p.nombre), p.detalle ? el('small', {}, p.detalle) : null),
+    el('span', { class: 'lider', 'aria-hidden': 'true' }),
+    p.precio != null ? el('span', { class: 'precio' }, fmtCOP(p.precio)) : el('span', { class: 'precio pendiente' }, 'Por confirmar'),
+    el('button', { class: 'agregar mini', type: 'button', 'data-agregar': p.id, 'aria-pressed': 'false' }, svgUse('i-mas')));
+}
+/* Recuadro para lo que se alquila (la mesa de pasabocas): qué incluye, precio y Agregar */
+function cajaPlato(p) {
+  return el('article', { class: 'caja', id: 'plato-' + p.id },
+    el('p', { class: 'ceja' }, 'Alquiler'),
+    el('h3', { class: 'plato-nombre' }, p.nombre),
+    p.incluye ? el('ul', { class: 'chips', 'aria-label': 'Incluye' }, ...p.incluye.map(x => el('li', { class: 'chip' }, x))) : null,
+    el('p', { class: 'plato-desc' }, p.desc),
+    el('div', { class: 'plato-pie' },
+      el('p', { class: 'precio-pp' }, el('span', { class: 'precio' }, fmtCOP(p.precio)), el('small', {}, uni(p).precio)),
+      el('button', { class: 'agregar', type: 'button', 'data-agregar': p.id, 'aria-pressed': 'false' }, svgUse('i-mas'), el('span', {}, 'Agregar'))));
+}
+/* Botones «Agregar», contador del encabezado y barra de abajo */
+function pintarEvento() {
+  $$('[data-agregar]').forEach(b => {
+    const on = Evento.tiene(b.dataset.agregar), p = PLATO[b.dataset.agregar];
+    b.setAttribute('aria-pressed', String(on));
+    b.querySelector('use').setAttribute('href', on ? '#i-listo' : '#i-mas');
+    const s = b.querySelector('span'); if (s) s.textContent = on ? 'Agregado' : 'Agregar';
+    b.setAttribute('aria-label', on ? `Quitar ${p.nombre} de tu evento` : `Agregar ${p.nombre} a tu evento`);
+  });
+  const n = Evento.items.length, gente = Evento.personas();
+  const badge = $('.js-badge'); badge.hidden = n === 0; badge.textContent = String(n);
+  const barra = $('.js-barra-evento');
+  barra.hidden = n === 0;
+  const soloPlatos = Evento.items.every(i => esPersona(i.id));
+  $('.js-be-t').textContent = (soloPlatos ? plural(n, 'plato', 'platos') : plural(n, 'opción', 'opciones'))
+    + (gente ? ` · ${plural(gente, 'persona', 'personas')}` : '');
+  if (Visor.abierto) Visor.pintarAgregar();
+}
+Evento.alCambiar(pintarEvento);
+
+function vigilarSecciones() {
+  const links = $$('.js-cats a'), cats = $('.js-cats');
+  if (!('IntersectionObserver' in window)) return;
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(a => {
+        const on = a.dataset.sec === e.target.id;
+        a.classList.toggle('on', on);
+        if (on) cats.scrollTo({ left: a.offsetLeft - 14, behavior: reduceMotion ? 'auto' : 'smooth' });
+      });
+    });
+  }, { rootMargin: '-120px 0px -60% 0px' });
+  $$('.seccion').forEach(s => io.observe(s));
+  new IntersectionObserver(es => { if (es[0].isIntersecting) links.forEach(a => a.classList.remove('on')); }, { rootMargin: '-120px 0px -60% 0px' }).observe($('.portada'));
+}
+/* Las fotos de los platos se inclinan hacia el dedo y les pasa un brillo dorado */
+function inclinar(sel) {
+  const reset = n => { n.style.setProperty('--rx', '0deg'); n.style.setProperty('--ry', '0deg'); n.style.setProperty('--sheen', '130%'); n.classList.remove('presionada'); };
+  document.addEventListener('pointerdown', e => {
+    const n = e.target.closest(sel); if (!n) return;
+    const r = n.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+    n.classList.add('presionada');
+    n.style.setProperty('--ry', (x * 14).toFixed(1) + 'deg'); n.style.setProperty('--rx', (-y * 10).toFixed(1) + 'deg');
+    n.style.setProperty('--sheen', (50 - x * 80).toFixed(0) + '%');
+    const id = n.dataset.plato; if (id) Visor.precargar(id);
+    const fin = () => { reset(n); window.removeEventListener('pointerup', fin); window.removeEventListener('pointercancel', fin); };
+    window.addEventListener('pointerup', fin); window.addEventListener('pointercancel', fin);
+  });
+  document.addEventListener('pointermove', e => {
+    if (e.pointerType !== 'mouse') return;
+    const n = e.target.closest(sel);
+    $$(sel + '.flotando').forEach(o => { if (o !== n) { o.classList.remove('flotando'); reset(o); } });
+    if (!n) return;
+    const r = n.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+    n.classList.add('flotando');
+    n.style.setProperty('--ry', (x * 8).toFixed(1) + 'deg'); n.style.setProperty('--rx', (-y * 6).toFixed(1) + 'deg');
+    n.style.setProperty('--sheen', (50 - x * 80).toFixed(0) + '%');
+  });
+}
+
+/* ================= Vitrina giratoria (carrusel 3D de cortes crudos) ================= */
+const Vitrina = (() => {
+  const marco = $('.js-vitrina-marco'), anillo = $('.js-anillo');
+  const lista = PLATOS.filter(p => PLATO[p.id].media);
+  const n = lista.length, paso = 360 / n;
+  const inicio = Math.max(0, lista.findIndex(p => p.id === MARCA.vitrinaInicio));
+  const tarjetas = lista.map((p, i) => {
+    const m = PLATO[p.id].media;
+    const t = el('button', { class: 'tarjeta', type: 'button', 'data-i': i, 'data-id': p.id, 'aria-label': `${nombreCompleto(p)}: ver en 3D` },
+      el('span', { class: 'foto' },
+        el('img', { src: m.tarjeta ? m.tarjeta.crudo : m.crudo, alt: '', width: m.tarjeta ? 720 : 540, height: m.tarjeta ? 900 : 540, draggable: 'false', loading: Math.abs(i - inicio) <= 1 || Math.abs(i - inicio) >= n - 1 ? 'eager' : 'lazy', decoding: 'async' }),
+        el('span', { class: 'ver' }, el('span', { class: 'punto-brasa' }), 'Ver en 3D')),
+      el('span', { class: 'nombre' }, nombreCompleto(p)));
+    anillo.append(t);
+    return t;
+  });
+  let R = 300, ang = inicio * paso, vel = 0, objetivo = null, arr = null, pausaHasta = 0, raf = 0, ultimo = 0, visible = true, activo = false, recienArrastrada = 0;
+  function medir() {
+    const w = tarjetas[0].offsetWidth || 230;
+    R = (w + 44) / (2 * Math.tan(Math.PI / n));   /* aire pa’ los filetes dorados de los lados */
+    tarjetas.forEach((t, i) => { t.style.transform = `rotateY(${i * paso}deg) translateZ(${R.toFixed(1)}px)`; });
+  }
+  const relativo = i => ((((i * paso - ang) % 360) + 540) % 360) - 180;
+  function pintar() {
+    anillo.style.transform = `translateZ(${(-R).toFixed(1)}px) rotateY(${(-ang).toFixed(2)}deg)`;
+    const frente = ((Math.round(ang / paso) % n) + n) % n;
+    tarjetas.forEach((t, i) => {
+      const d = relativo(i), c = Math.cos((d * Math.PI) / 180);
+      t.style.setProperty('--op', clamp((c - 0.1) * 1.7).toFixed(3));
+      t.style.setProperty('--luz', (0.5 + 0.5 * clamp(c)).toFixed(3));
+      t.style.setProperty('--sheen', (50 + d * 2.2).toFixed(0) + '%');
+      const esFrente = i === frente;
+      if (t.classList.contains('frente') !== esFrente) { t.classList.toggle('frente', esFrente); t.tabIndex = esFrente ? 0 : -1; }
+      t.style.pointerEvents = Math.abs(d) < 75 ? '' : 'none';
+    });
+  }
+  function cuadro(ts) {
+    raf = requestAnimationFrame(cuadro);
+    const dt = Math.min(0.05, (ts - ultimo) / 1000 || 0.016); ultimo = ts;
+    if (arr && arr.captura) { /* el dedo manda */ }
+    else if (objetivo != null) { ang += (objetivo - ang) * Math.min(1, dt * 7); if (Math.abs(objetivo - ang) < 0.05) { ang = objetivo; objetivo = null; } }
+    else if (Math.abs(vel) > 1) { ang += vel * dt; vel *= Math.pow(0.05, dt); if (Math.abs(vel) < 35) { objetivo = Math.round(ang / paso) * paso; vel = 0; } }
+    else if (!reduceMotion && activo && performance.now() > pausaHasta) ang += 7 * dt;
+    pintar();
+  }
+  function correr() { if (raf || !visible) return; ultimo = performance.now(); raf = requestAnimationFrame(cuadro); }
+  function detener() { cancelAnimationFrame(raf); raf = 0; }
+  function irA(i) { const d = relativo(i); objetivo = ang + d; vel = 0; pausaHasta = performance.now() + 9000; correr(); }
+  function mover(k) { objetivo = (Math.round(ang / paso) + k) * paso; vel = 0; pausaHasta = performance.now() + 9000; Sonido.tic(1800, 0.05); correr(); }
+  marco.addEventListener('pointerdown', e => {
+    arr = { x: e.clientX, y: e.clientY, x0: e.clientX, mov: 0, ts: performance.now(), v: 0, captura: false, id: e.pointerId };
+    vel = 0; pausaHasta = Infinity;
+    const t = e.target.closest('.tarjeta'); if (t && Math.abs(relativo(+t.dataset.i)) < paso / 2) Visor.precargar(t.dataset.id);
+  });
+  marco.addEventListener('pointermove', e => {
+    if (!arr || e.pointerId !== arr.id) return;
+    const dx = e.clientX - arr.x, dy = e.clientY - arr.y;
+    if (!arr.captura) {
+      if (Math.abs(e.clientX - arr.x0) > 8 && Math.abs(e.clientX - arr.x0) > Math.abs(dy) * 1.2) {
+        arr.captura = true; objetivo = null;
+        try { marco.setPointerCapture(e.pointerId); } catch (err) {}
+      } else return;
+    }
+    const w = tarjetas[0].offsetWidth || 230, now = performance.now(), dt = Math.max(1, now - arr.ts);
+    const dAng = (-dx * paso) / w;
+    ang += dAng; arr.v = dAng / (dt / 1000); arr.mov += Math.abs(dx);
+    arr.x = e.clientX; arr.y = e.clientY; arr.ts = now;
+  });
+  const soltar = e => {
+    if (!arr || e.pointerId !== arr.id) return;
+    if (arr.captura) { vel = clamp(arr.v, -720, 720); recienArrastrada = performance.now(); if (Math.abs(vel) < 35) { objetivo = Math.round(ang / paso) * paso; vel = 0; } }
+    arr = null; pausaHasta = performance.now() + 9000;
+  };
+  marco.addEventListener('pointerup', soltar);
+  marco.addEventListener('pointercancel', soltar);
+  marco.addEventListener('click', e => {
+    const t = e.target.closest('.tarjeta'); if (!t) return;
+    if (performance.now() - recienArrastrada < 350) return;
+    const i = +t.dataset.i;
+    if (Math.abs(relativo(i)) < paso / 2) Visor.abrir(t.dataset.id, t.querySelector('.foto'));
+    else { irA(i); Sonido.tic(1800, 0.05); }
+  });
+  marco.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') { e.preventDefault(); mover(1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); mover(-1); }
+  });
+  $('.js-v-sig').addEventListener('click', () => mover(1));
+  $('.js-v-ant').addEventListener('click', () => mover(-1));
+  window.addEventListener('resize', medir);
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(es => { visible = es[0].isIntersecting; if (visible) correr(); else detener(); }).observe(marco);
+  }
+  medir(); pintar(); correr();
+  window.addEventListener('load', () => setTimeout(() => tarjetas.forEach(t => { const im = t.querySelector('img'); if (im) im.loading = 'eager'; }), 1500));
+  return { iniciar() { activo = true; pausaHasta = performance.now() + 2500; medir(); correr(); } };
+})();
+
+/* ================= Pie: WhatsApp ================= */
+(() => {
+  const wa = MARCA.whatsapp;
+  $$('.js-numero').forEach(n => { n.textContent = wa.visible; });
+  const btn = $('.js-copiar');
+  btn.addEventListener('click', () => {
+    const listo = () => { btn.textContent = 'Copiado'; setTimeout(() => { btn.textContent = 'Copiar'; }, 1600); };
+    const seleccionar = () => { const r = document.createRange(); r.selectNodeContents($('.pie .js-numero')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selecciónalo'; };
+    try { navigator.clipboard.writeText(wa.visible.replace(/\s/g, '')).then(listo, seleccionar); } catch (e) { seleccionar(); }
+  });
+  $$('.js-ver-intro').forEach(b => b.addEventListener('click', () => { Sonido.init(); $('#carta').scrollIntoView(); Intro.reproducir(() => {}); }));
+})();
+
+/* ================= Arranque ================= */
+renderCarta();
+pintarEvento();
+vigilarSecciones();
+inclinar('.plato-foto');
+Nav.sincronizar();
+document.addEventListener('click', e => {
+  const a = e.target.closest('[data-agregar]');
+  if (a) { alternarPlato(a.dataset.agregar); return; }
+  if (e.target.closest('.js-abrir-evento')) { Cotizador.abrir(); return; }
+  const b = e.target.closest('[data-plato]');
+  if (b) { const fila = b.closest('.plato'); Visor.abrir(b.dataset.plato, fila ? $('.plato-foto', fila) : b); }
+});
+
+</script>
+</body>
+</html>
