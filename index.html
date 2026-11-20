@@ -128,6 +128,72 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .lienzo{position:absolute;top:0;right:0;bottom:0;left:0;inset:0;width:100%;height:100%;display:block;pointer-events:none}
 .pantalla{position:fixed;top:0;right:0;bottom:0;left:0;inset:0;overflow:hidden;background:var(--hollin)}
 
+
+/* Intro con video y respaldo automático en la historia interactiva original. */
+const IntroVideo = (() => {
+  const raiz = $('#intro-video');
+  const video = $('.js-iv-video', raiz);
+  const barra = $('.js-iv-progreso', raiz);
+  const src = 'media/intro/jonnier-historia.mp4';
+  let activo = false, listo = false, alTerminar = null, espera = null;
+
+  function limpiar() {
+    clearTimeout(espera); espera = null;
+    video.pause();
+  }
+  function respaldo() {
+    if (!activo) return;
+    limpiar();
+    activo = false; introActiva = false;
+    raiz.classList.add('fuera'); raiz.hidden = true;
+    const fin = alTerminar; alTerminar = null;
+    Nav.sincronizar();
+    Intro.reproducir(fin);
+  }
+  function terminar() {
+    if (!activo) return;
+    limpiar();
+    activo = false; introActiva = false;
+    raiz.classList.add('fuera');
+    setTimeout(() => { if (!activo) raiz.hidden = true; }, 680);
+    Nav.sincronizar();
+    const fin = alTerminar; alTerminar = null;
+    if (fin) fin();
+  }
+  function reproducir(fin) {
+    if (new URLSearchParams(location.search).get('intro') === 'original') {
+      return Intro.reproducir(fin);
+    }
+    if (activo) return;
+    alTerminar = fin;
+    activo = true; listo = false; introActiva = true;
+    barra.style.transform = 'scaleX(0)';
+    video.currentTime = 0;
+    video.muted = Sonido.mudo;
+    video.volume = 1;
+    raiz.hidden = false;
+    raiz.classList.remove('fuera');
+    Nav.sincronizar();
+    video.src = src;
+    video.load();
+    espera = setTimeout(() => { if (activo && !listo) respaldo(); }, 8500);
+    const intento = video.play();
+    if (intento && intento.catch) intento.catch(() => { if (activo) respaldo(); });
+  }
+  video.addEventListener('playing', () => {
+    listo = true; clearTimeout(espera); espera = null;
+  });
+  video.addEventListener('timeupdate', () => {
+    const d = video.duration;
+    if (d > 0 && isFinite(d)) barra.style.transform = 'scaleX(' + Math.max(0,Math.min(1,video.currentTime/d)) + ')';
+  });
+  video.addEventListener('ended', terminar);
+  video.addEventListener('error', respaldo);
+  $('.js-iv-saltar', raiz).addEventListener('click', terminar);
+  Sonido.alCambiar(m => { video.muted = m; });
+  return { reproducir, terminar, get activo() { return activo; } };
+})();
+
 /* ================= Bienvenida ================= */
 #bienvenida{z-index:80;transition:opacity .7s ease,visibility 0s .7s;
   background:radial-gradient(90% 55% at 50% 42%,#2b1a0e 0%,#140D08 55%,#0A0604 100%)}
@@ -1118,6 +1184,26 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   .barra-evento{animation:none}
   .ticket-in{transition:none}
 }
+
+/* ================= Intro cinematografica: video integrado al carbon ================= */
+#intro-video{z-index:72;isolation:isolate;background:#100a07;opacity:1;transition:opacity .66s ease,visibility 0s .66s;overflow:hidden}
+#intro-video.fuera{opacity:0;visibility:hidden}
+#intro-video .iv-escena{position:absolute;inset:0;overflow:hidden;background:radial-gradient(ellipse 95% 62% at 50% 50%,#271810 0%,#140d08 55%,#090604 100%)}
+#intro-video .iv-video{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:contain;background:transparent;filter:saturate(1.04) contrast(1.025)}
+#intro-video .iv-escena:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to bottom,#100a07 0%,rgba(16,10,7,.62) 5%,transparent 17%,transparent 84%,rgba(16,10,7,.52) 94%,#100a07 100%),linear-gradient(to right,rgba(16,10,7,.55) 0%,transparent 13%,transparent 87%,rgba(16,10,7,.55) 100%)}
+#intro-video .iv-superior{position:absolute;z-index:3;top:0;left:0;right:0;padding:calc(env(safe-area-inset-top,0px) + 12px) 14px 0;pointer-events:none}
+#intro-video .iv-progreso{height:3px;border-radius:20px;overflow:hidden;background:rgba(255,229,169,.24);box-shadow:0 0 6px rgba(0,0,0,.24)}
+#intro-video .iv-progreso i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#a8762e,#f4d480);transform-origin:left center;transform:scaleX(0);will-change:transform}
+#intro-video .iv-cabecera{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-top:10px}
+#intro-video .iv-marca{font-family:var(--f-dato);color:#f4db9d;letter-spacing:.19em;font-size:.68rem;text-transform:uppercase;text-shadow:0 2px 10px #000;max-width:57%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#intro-video .iv-controles{display:flex;gap:7px;align-items:center;pointer-events:auto}
+#intro-video .iv-controles .ic-btn{background:rgba(15,10,6,.42);border:1px solid rgba(227,190,112,.25);backdrop-filter:blur(6px)}
+#intro-video .iv-saltar{border:1px solid rgba(227,190,112,.26);background:rgba(15,10,6,.52);padding:.64em .9em;color:#f4e8d5;border-radius:999px;font-family:var(--f-dato);font-size:.76rem;letter-spacing:.06em;cursor:pointer;backdrop-filter:blur(6px)}
+#intro-video .iv-saltar:focus-visible,#intro-video .iv-controles button:focus-visible{outline:2px solid #f4d480;outline-offset:3px}
+#intro-video .iv-inferior{position:absolute;z-index:3;bottom:calc(env(safe-area-inset-bottom,0px) + 14px);left:0;right:0;text-align:center;pointer-events:none}
+#intro-video .iv-inferior span{display:inline-block;font-family:var(--f-dato);font-size:.64rem;text-transform:uppercase;letter-spacing:.23em;color:rgba(242,212,148,.72);text-shadow:0 2px 8px #000}
+@media (prefers-reduced-motion:reduce){#intro-video{transition:none}#intro-video .iv-video{filter:none}}
+
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -1241,6 +1327,27 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
       <p class="bv-pie">Carta 3D de eventos · Pereira</p>
     </div>
   </div>
+</section>
+
+
+<!-- Video animado de Jonnier. Intro original conservada debajo como respaldo. -->
+<section id="intro-video" class="pantalla" hidden aria-label="Video animado: historia de Jonnier">
+  <div class="iv-escena">
+    <video class="iv-video js-iv-video" playsinline webkit-playsinline preload="none"
+      poster="media/intro/jonnier-poster.webp" disablepictureinpicture
+      aria-label="Jonnier cuenta su historia desde Pereira hasta el campeonato mundial"></video>
+  </div>
+  <div class="iv-superior">
+    <div class="iv-progreso" aria-hidden="true"><i class="js-iv-progreso"></i></div>
+    <div class="iv-cabecera">
+      <span class="iv-marca">Jonnier · Una historia a fuego</span>
+      <div class="iv-controles">
+        <button class="ic-btn js-sonido" type="button" aria-label="Silenciar el sonido" aria-pressed="false"><svg><use href="#i-sonido"/></svg></button>
+        <button class="iv-saltar js-iv-saltar" type="button" aria-label="Saltar video y abrir la carta">Saltar <svg style="width:13px;height:13px;vertical-align:middle"><use href="#i-sig"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="iv-inferior"><span>Parrillero desde el 2015</span></div>
 </section>
 
 <!-- ===================== Intro de 15 s: la historia del campeón =====================
@@ -2361,7 +2468,7 @@ function pintarSonido(m) {
 Sonido.alCambiar(pintarSonido);
 $$('.js-sonido').forEach(b => b.addEventListener('click', () => {
   Sonido.init(); Sonido.setMudo(!Sonido.mudo); Visor.desbloquear();
-  if (!Sonido.mudo) { Sonido.pop(1.2); if (introActiva) { Sonido.fuego(); Sonido.tono(); } }
+  if (!Sonido.mudo) { if (!IntroVideo.activo) Sonido.pop(1.2); if (introActiva && !IntroVideo.activo) { Sonido.fuego(); Sonido.tono(); } }
 }));
 
 /* ================= Intro de 15 segundos: la historia del campeón =================
@@ -2455,12 +2562,13 @@ const Bienvenida = (() => {
     entro = true; medalla.impulso(1400); Sonido.soplo();
     raiz.classList.add('fuera');
     setTimeout(() => { raiz.hidden = true; brasas.parar(); medalla.parar(); }, 720);
-    if (store.get('jonnier-intro-campeon')) mostrarCarta(); else Intro.reproducir(mostrarCarta);
+    if (!new URLSearchParams(location.search).has('intro') && store.get('jonnier-intro-video-v1')) mostrarCarta(); else IntroVideo.reproducir(mostrarCarta);
   }));
   setTimeout(() => Intro.cargar(), 1200);
 })();
 function mostrarCarta() {
   store.set('jonnier-intro-campeon', '1');
+  store.set('jonnier-intro-video-v1', '1');
   Nav.sincronizar();
   Vitrina.iniciar();
 }
@@ -2964,7 +3072,7 @@ const Vitrina = (() => {
     const seleccionar = () => { const r = document.createRange(); r.selectNodeContents($('.pie .js-numero')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = 'Selecciónalo'; };
     try { navigator.clipboard.writeText(wa.visible.replace(/\s/g, '')).then(listo, seleccionar); } catch (e) { seleccionar(); }
   });
-  $$('.js-ver-intro').forEach(b => b.addEventListener('click', () => { Sonido.init(); $('#carta').scrollIntoView(); Intro.reproducir(() => {}); }));
+  $$('.js-ver-intro').forEach(b => b.addEventListener('click', () => { Sonido.init(); $('#carta').scrollIntoView(); IntroVideo.reproducir(() => {}); }));
 })();
 
 /* ================= Arranque ================= */
