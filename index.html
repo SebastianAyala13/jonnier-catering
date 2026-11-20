@@ -1832,6 +1832,10 @@ function calcularViaticos(lugarId, otro) {
 
 /* PLATO tiene los platos de la carta y, aparte, cada variante como plato que se cotiza
    (ej. «Filet mignon de cerdo»), con el video y la descripción del plato al que pertenece. */
+/* Videos reales de Mesa Navideña y Asado Llanero. Archivos publicados en la raíz del repositorio. */
+MEDIA["asado-llanero"] = {"video":"asado-llanero/plato.mp4","crudo":"asado-llanero/miniatura.webp","servido":"asado-llanero/miniatura.webp","cartel":{"crudo":"asado-llanero/cartel.webp","servido":"asado-llanero/cartel.webp"},"tarjeta":{"crudo":"asado-llanero/cartel.webp","servido":"asado-llanero/cartel.webp"},"w":1080,"h":1920,"formato":"vertical","dur":8,"etapas":["servido"],"ida":4,"inicio":0,"loopDesde":null};
+MEDIA["mesa-navidena"] = {"video":"mesa-navidena/plato.mp4","crudo":"mesa-navidena/miniatura.webp","servido":"mesa-navidena/miniatura.webp","cartel":{"crudo":"mesa-navidena/cartel.webp","servido":"mesa-navidena/cartel.webp"},"tarjeta":{"crudo":"mesa-navidena/cartel.webp","servido":"mesa-navidena/cartel.webp"},"w":720,"h":1280,"formato":"vertical","dur":14,"etapas":["servido"],"ida":7,"inicio":0,"loopDesde":null};
+
 const PLATO = {};
 PLATOS.forEach(p => {
   const categoria = CATEGORIAS.find(c => c.id === p.cat), media = MEDIA[p.media || p.id] || null;
