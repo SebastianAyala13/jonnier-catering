@@ -448,6 +448,14 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .numero{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-dato);font-size:1.25rem;letter-spacing:.08em;color:var(--texto)}
 .numero button{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);border:1px solid var(--linea);border-radius:999px;padding:.3em .8em}
 .pie .creditos{font-family:var(--f-dato);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--texto-3)}
+/* Firma discreta de los creadores, siempre al final de la carta. */
+.pie .firma-creadores{width:min(100%,390px);margin-top:5px;padding-top:18px;border-top:1px solid rgba(212,161,42,.17);display:grid;justify-items:center;gap:8px}
+.pie .firma-creadores .firma-etiqueta{font-family:var(--f-dato);font-size:.62rem;letter-spacing:.23em;text-transform:uppercase;color:var(--texto-3)}
+.pie .firma-creadores .firma-nombres{display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;font-size:.8rem;font-weight:600}
+.pie .firma-creadores .firma-nombres a{color:var(--oro-brillo);text-underline-offset:4px;text-decoration-color:rgba(212,161,42,.5);transition:color .2s ease}
+.pie .firma-creadores .firma-nombres a:hover,.pie .firma-creadores .firma-nombres a:focus-visible{color:#fff0c4}
+.pie .firma-creadores .firma-union{font-family:var(--f-dato);color:var(--texto-3);font-weight:400}
+
 
 
 /* Enlace de Instagram integrado a la carta, sin dependencias externas. */
@@ -1230,6 +1238,14 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
     <button class="link-suave js-ver-intro" type="button">Ver la historia del campeón</button>
     <p class="creditos">Parrillero desde el 2015 · Pereira</p>
     <p class="creditos">Carta hecha por Kodarify</p>
+    <div class="firma-creadores" aria-label="Créditos de creación de la carta">
+      <span class="firma-etiqueta">Una experiencia creada por</span>
+      <div class="firma-nombres">
+        <a href="https://www.instagram.com/valenrios.ads/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Valen Ríos">Valen Ríos</a>
+        <span class="firma-union" aria-hidden="true">&amp;</span>
+        <a href="https://github.com/SebastianAyala13" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Sebas Ayala">Sebas Ayala</a>
+      </div>
+    </div>
   </footer>
 
   <div class="barra-evento js-barra-evento" hidden>
