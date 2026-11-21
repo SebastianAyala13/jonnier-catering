@@ -2563,7 +2563,7 @@ const Bienvenida = (() => {
     entro = true; medalla.impulso(1400); Sonido.soplo();
     raiz.classList.add('fuera');
     setTimeout(() => { raiz.hidden = true; brasas.parar(); medalla.parar(); }, 720);
-    if (!new URLSearchParams(location.search).has('intro') && store.get('jonnier-intro-video-v1')) mostrarCarta(); else IntroVideo.reproducir(mostrarCarta);
+    IntroVideo.reproducir(mostrarCarta);  /* Video oficial en cada entrada; ?intro=original conserva la opción clásica */
   }));
   setTimeout(() => Intro.cargar(), 1200);
 })();
