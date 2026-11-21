@@ -129,71 +129,6 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .pantalla{position:fixed;top:0;right:0;bottom:0;left:0;inset:0;overflow:hidden;background:var(--hollin)}
 
 
-/* Intro con video y respaldo automático en la historia interactiva original. */
-const IntroVideo = (() => {
-  const raiz = $('#intro-video');
-  const video = $('.js-iv-video', raiz);
-  const barra = $('.js-iv-progreso', raiz);
-  const src = 'jonnier-historia.mp4';
-  let activo = false, listo = false, alTerminar = null, espera = null;
-
-  function limpiar() {
-    clearTimeout(espera); espera = null;
-    video.pause();
-  }
-  function respaldo() {
-    if (!activo) return;
-    limpiar();
-    activo = false; introActiva = false;
-    raiz.classList.add('fuera'); raiz.hidden = true;
-    const fin = alTerminar; alTerminar = null;
-    Nav.sincronizar();
-    Intro.reproducir(fin);
-  }
-  function terminar() {
-    if (!activo) return;
-    limpiar();
-    activo = false; introActiva = false;
-    raiz.classList.add('fuera');
-    setTimeout(() => { if (!activo) raiz.hidden = true; }, 680);
-    Nav.sincronizar();
-    const fin = alTerminar; alTerminar = null;
-    if (fin) fin();
-  }
-  function reproducir(fin) {
-    if (new URLSearchParams(location.search).get('intro') === 'original') {
-      return Intro.reproducir(fin);
-    }
-    if (activo) return;
-    alTerminar = fin;
-    activo = true; listo = false; introActiva = true;
-    barra.style.transform = 'scaleX(0)';
-    video.currentTime = 0;
-    video.muted = Sonido.mudo;
-    video.volume = 1;
-    raiz.hidden = false;
-    raiz.classList.remove('fuera');
-    Nav.sincronizar();
-    video.src = src;
-    video.load();
-    espera = setTimeout(() => { if (activo && !listo) respaldo(); }, 8500);
-    const intento = video.play();
-    if (intento && intento.catch) intento.catch(() => { if (activo) respaldo(); });
-  }
-  video.addEventListener('playing', () => {
-    listo = true; clearTimeout(espera); espera = null;
-  });
-  video.addEventListener('timeupdate', () => {
-    const d = video.duration;
-    if (d > 0 && isFinite(d)) barra.style.transform = 'scaleX(' + Math.max(0,Math.min(1,video.currentTime/d)) + ')';
-  });
-  video.addEventListener('ended', terminar);
-  video.addEventListener('error', respaldo);
-  $('.js-iv-saltar', raiz).addEventListener('click', terminar);
-  Sonido.alCambiar(m => { video.muted = m; });
-  return { reproducir, terminar, get activo() { return activo; } };
-})();
-
 /* ================= Bienvenida ================= */
 #bienvenida{z-index:80;transition:opacity .7s ease,visibility 0s .7s;
   background:radial-gradient(90% 55% at 50% 42%,#2b1a0e 0%,#140D08 55%,#0A0604 100%)}
@@ -2547,6 +2482,72 @@ const Intro = (() => {
   window.addEventListener('resize', () => { if (introActiva) brasas.medir(); });
   return { reproducir, terminar, cargar };
 })();
+
+/* Intro con video y respaldo automático en la historia interactiva original. */
+const IntroVideo = (() => {
+  const raiz = $('#intro-video');
+  const video = $('.js-iv-video', raiz);
+  const barra = $('.js-iv-progreso', raiz);
+  const src = 'jonnier-historia.mp4';
+  let activo = false, listo = false, alTerminar = null, espera = null;
+
+  function limpiar() {
+    clearTimeout(espera); espera = null;
+    video.pause();
+  }
+  function respaldo() {
+    if (!activo) return;
+    limpiar();
+    activo = false; introActiva = false;
+    raiz.classList.add('fuera'); raiz.hidden = true;
+    const fin = alTerminar; alTerminar = null;
+    Nav.sincronizar();
+    Intro.reproducir(fin);
+  }
+  function terminar() {
+    if (!activo) return;
+    limpiar();
+    activo = false; introActiva = false;
+    raiz.classList.add('fuera');
+    setTimeout(() => { if (!activo) raiz.hidden = true; }, 680);
+    Nav.sincronizar();
+    const fin = alTerminar; alTerminar = null;
+    if (fin) fin();
+  }
+  function reproducir(fin) {
+    if (new URLSearchParams(location.search).get('intro') === 'original') {
+      return Intro.reproducir(fin);
+    }
+    if (activo) return;
+    alTerminar = fin;
+    activo = true; listo = false; introActiva = true;
+    barra.style.transform = 'scaleX(0)';
+    video.currentTime = 0;
+    video.muted = Sonido.mudo;
+    video.volume = 1;
+    raiz.hidden = false;
+    raiz.classList.remove('fuera');
+    Nav.sincronizar();
+    video.src = src;
+    video.load();
+    espera = setTimeout(() => { if (activo && !listo) respaldo(); }, 8500);
+    const intento = video.play();
+    if (intento && intento.catch) intento.catch(() => { if (activo) respaldo(); });
+  }
+  video.addEventListener('playing', () => {
+    listo = true; clearTimeout(espera); espera = null;
+  });
+  video.addEventListener('timeupdate', () => {
+    const d = video.duration;
+    if (d > 0 && isFinite(d)) barra.style.transform = 'scaleX(' + Math.max(0,Math.min(1,video.currentTime/d)) + ')';
+  });
+  video.addEventListener('ended', terminar);
+  video.addEventListener('error', respaldo);
+  $('.js-iv-saltar', raiz).addEventListener('click', terminar);
+  Sonido.alCambiar(m => { video.muted = m; });
+  return { reproducir, terminar, get activo() { return activo; } };
+})();
+
 
 /* ================= Bienvenida ================= */
 const Bienvenida = (() => {
