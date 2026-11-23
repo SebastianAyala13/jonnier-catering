@@ -92,7 +92,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 [hidden]{display:none!important}
 
 .ceja{
-  font-family:var(--f-dato);font-weight:500;font-size:.74rem;
+  font-family:var(--f-dato);font-weight:500;font-size:.75rem;
   letter-spacing:.2em;text-transform:uppercase;color:var(--oro);
 }
 .foil{
@@ -100,7 +100,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
 .mano{font-family:var(--f-mano);color:var(--oro-brillo);font-size:1.55rem;line-height:1.1;transform:rotate(-4deg)}
-.punto-brasa{width:7px;height:7px;border-radius:50%;background:var(--brasa);box-shadow:0 0 10px 2px rgba(196,82,30,.75);flex:none}
+.punto-brasa{width:7px;height:7px;border-radius:50%;background:var(--brasa);box-shadow:0 0 0 3px rgba(196,82,30,.22);flex:none}
 .ic-btn{
   width:40px;height:40px;border-radius:50%;display:grid;place-items:center;flex:none;
   border:1px solid var(--linea);color:var(--oro-brillo);background:rgba(10,6,4,.5);
@@ -112,7 +112,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   padding:.95em 1.6em;border-radius:999px;
   background:var(--foil-boton);color:#1A0F06;
   font-family:var(--f-dato);font-weight:600;font-size:1.02rem;letter-spacing:.08em;text-transform:uppercase;
-  box-shadow:0 1px 0 rgba(255,240,200,.6) inset,0 -2px 0 rgba(90,55,10,.45) inset,0 14px 40px -12px rgba(212,161,42,.55);
+  box-shadow:0 1px 0 rgba(255,240,200,.6) inset,0 -2px 0 rgba(90,55,10,.45) inset,0 10px 20px -12px rgba(0,0,0,.8);
   transition:transform .2s var(--ease);
 }
 .btn-oro:active{transform:scale(.97)}
@@ -154,7 +154,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .bv-pista{display:inline-flex;align-items:center;gap:.5em;color:var(--texto-3);font-size:.8rem;transition:opacity .6s ease}
 .bv-pista svg{width:16px;height:16px}
 .bv-botones{display:grid;justify-items:center;gap:10px}
-.bv-pie{font-family:var(--f-dato);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(241,230,210,.35)}
+.bv-pie{font-family:var(--f-dato);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(241,230,210,.35)}
 
 /* ================= Medalla 3D ================= */
 .medalla-escena{
@@ -309,7 +309,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   padding:calc(env(safe-area-inset-top,0px) + 7px) 16px 7px;
   background:repeating-linear-gradient(135deg,#2a1a0d 0 14px,#24160b 14px 28px);
   border-bottom:1px solid var(--linea);
-  font-family:var(--f-dato);font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--oro);
+  font-family:var(--f-dato);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--oro);
 }
 .barra{
   position:sticky;top:env(safe-area-inset-top,0px);z-index:20;height:var(--bar-h);
@@ -317,7 +317,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   background:rgba(14,9,5,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
   border-bottom:1px solid var(--linea);
 }
-.barra .mesa{display:inline-flex;align-items:center;gap:.5em;font-family:var(--f-dato);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--texto-2)}
+.barra .mesa{display:inline-flex;align-items:center;gap:.5em;font-family:var(--f-dato);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--texto-2)}
 .barra .mesa b{color:var(--oro-brillo);font-weight:600}
 .barra .marca{height:30px;width:auto}
 .barra .herr{justify-self:end;display:flex;gap:8px}
@@ -347,13 +347,13 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   padding:.45em .7em .45em .6em;border-radius:999px;border:1px solid var(--linea);
   background:linear-gradient(90deg,rgba(212,161,42,.16),rgba(212,161,42,.04));
   box-shadow:inset 0 1px 0 rgba(242,205,107,.12);
-  font-family:var(--f-dato);font-weight:500;font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--texto-2);
+  font-family:var(--f-dato);font-weight:500;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--texto-2);
 }
 .palmares b{font-weight:600;color:var(--oro-brillo)}
 .palmares span{min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .palmares .copa{width:17px;height:17px;flex:none;color:var(--oro-brillo)}
 .palmares .ver{width:13px;height:13px;flex:none;color:var(--oro)}
-@media (max-width:360px){.palmares{letter-spacing:.08em;font-size:.7rem}}
+@media (max-width:360px){.palmares{letter-spacing:.08em;font-size:.75rem}}
 
 /* Vitrina giratoria (carrusel 3D) */
 .vitrina-marco{
@@ -383,7 +383,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .tarjeta .ver{
   position:absolute;right:10px;bottom:10px;display:inline-flex;align-items:center;gap:.4em;
   padding:.32em .7em;border-radius:999px;background:rgba(10,6,4,.82);color:var(--oro-brillo);
-  font-family:var(--f-dato);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
+  font-family:var(--f-dato);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;
   opacity:0;transform:translateY(6px);transition:opacity .3s ease,transform .3s var(--ease);
 }
 .tarjeta.frente .ver{opacity:1;transform:none}
@@ -395,7 +395,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .sello3d{
   display:inline-flex;align-items:center;gap:.45em;flex:none;
   padding:.3em .72em .3em .6em;border-radius:999px;background:rgba(10,6,4,.82);border:1px solid var(--linea);
-  font-family:var(--f-dato);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-brillo);
+  font-family:var(--f-dato);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro-brillo);
 }
 .sello3d .punto-brasa{width:6px;height:6px;position:relative}
 .sello3d .punto-brasa::after{content:"";position:absolute;top:-1px;right:-1px;bottom:-1px;left:-1px;inset:-1px;border-radius:50%;border:2px solid var(--brasa);opacity:0;animation:aro 2.4s ease-out infinite}
@@ -431,11 +431,11 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .plato-nombre small{display:block;font-weight:400;font-size:.72em;letter-spacing:.1em;color:var(--texto-2)}
 .lider{flex:1;min-width:1rem;border-bottom:2px dotted rgba(212,161,42,.45);transform:translateY(-.3em)}
 .precio{font-family:var(--f-dato);font-weight:500;font-size:1.12rem;letter-spacing:.04em;color:var(--oro-brillo);white-space:nowrap;font-variant-numeric:tabular-nums}
-.precio.pendiente{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro);opacity:.85}
+.precio.pendiente{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--oro);opacity:.85}
 .plato-desc{color:var(--texto-2);font-size:.95rem}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{padding:.28em .75em;border-radius:999px;border:1px solid var(--linea);font-size:.78rem;color:var(--texto)}
-.chip b{font-family:var(--f-dato);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.7rem;color:var(--oro);margin-right:.35em}
+.chip b{font-family:var(--f-dato);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.75rem;color:var(--oro);margin-right:.35em}
 
 .pie{
   max-width:var(--col);margin:34px auto 0;padding-inline:18px;padding-block:26px calc(env(safe-area-inset-bottom,0px) + 40px);
@@ -446,11 +446,11 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .pie p{color:var(--texto-2);font-size:.92rem;max-width:28rem}
 .wa{display:grid;gap:10px;justify-items:center}
 .numero{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-dato);font-size:1.25rem;letter-spacing:.08em;color:var(--texto)}
-.numero button{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);border:1px solid var(--linea);border-radius:999px;padding:.3em .8em}
-.pie .creditos{font-family:var(--f-dato);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--texto-3)}
+.numero button{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--oro);border:1px solid var(--linea);border-radius:999px;padding:.3em .8em}
+.pie .creditos{font-family:var(--f-dato);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--texto-3)}
 /* Firma discreta de los creadores, siempre al final de la carta. */
 .pie .firma-creadores{width:min(100%,390px);margin-top:5px;padding-top:18px;border-top:1px solid rgba(212,161,42,.17);display:grid;justify-items:center;gap:8px}
-.pie .firma-creadores .firma-etiqueta{font-family:var(--f-dato);font-size:.62rem;letter-spacing:.23em;text-transform:uppercase;color:var(--texto-3)}
+.pie .firma-creadores .firma-etiqueta{font-family:var(--f-dato);font-size:.68rem;letter-spacing:.23em;text-transform:uppercase;color:var(--texto-3)}
 .pie .firma-creadores .firma-nombres{display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap;font-size:.8rem;font-weight:600}
 .pie .firma-creadores .firma-nombres a{color:var(--oro-brillo);text-underline-offset:4px;text-decoration-color:rgba(212,161,42,.5);transition:color .2s ease}
 .pie .firma-creadores .firma-nombres a:hover,.pie .firma-creadores .firma-nombres a:focus-visible{color:#fff0c4}
@@ -485,11 +485,11 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .v-estado{
   justify-self:start;display:inline-flex;align-items:center;gap:.6em;padding:.38em .85em;border-radius:999px;
   border:1px solid var(--linea);background:rgba(10,6,4,.5);
-  font-family:var(--f-dato);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;
+  font-family:var(--f-dato);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;
 }
 .v-estado span{font-family:var(--f-texto);letter-spacing:0;text-transform:none;font-size:.84rem;color:var(--texto-2)}
 .v-punto{width:8px;height:8px;border-radius:50%;background:#D2453F;transition:background .4s ease;flex:none}
-#visor[data-estado="fuego"] .v-punto{background:var(--brasa);box-shadow:0 0 10px 2px rgba(196,82,30,.8)}
+#visor[data-estado="fuego"] .v-punto{background:var(--brasa);box-shadow:0 0 0 3px rgba(196,82,30,.25)}
 #visor[data-estado="servido"] .v-punto{background:var(--oro-brillo)}
 .v-escena{position:relative;z-index:1;display:grid;place-items:center;perspective:1000px;touch-action:none;cursor:ew-resize;min-height:0}
 .v-vitrina{
@@ -523,7 +523,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .v-paradas{position:relative;height:30px;margin-top:8px}
 .v-parada{
   position:absolute;top:0;transform:translateX(-50%);white-space:nowrap;
-  font-family:var(--f-dato);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--texto-3);padding:.3em .4em;
+  font-family:var(--f-dato);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--texto-3);padding:.3em .4em;
 }
 .v-parada::before{content:"";position:absolute;left:50%;top:-12px;width:1px;height:8px;background:rgba(241,230,210,.35)}
 .v-parada:first-child{transform:none;left:-6px!important}
@@ -570,7 +570,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   .marco-tel{
     position:relative;padding:11px;border-radius:56px;
     background:linear-gradient(155deg,#2d2219 0%,#120d09 45%,#070504 100%);
-    box-shadow:0 0 0 1px rgba(242,205,107,.55),0 0 0 2px #050302,0 0 70px -10px rgba(212,161,42,.28),0 50px 120px -30px rgba(0,0,0,.95);
+    box-shadow:0 0 0 1px rgba(242,205,107,.55),0 0 0 2px #050302,0 50px 120px -30px rgba(0,0,0,.95);
   }
   .marco-tel::before{
     content:"";position:absolute;right:-3px;top:150px;width:3px;height:70px;border-radius:0 3px 3px 0;
@@ -593,7 +593,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   body.quieto .desliza{overflow:hidden}
   #carta{min-height:100%}
   .leyenda-tel{
-    display:block;font-family:var(--f-dato);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(242,205,107,.55);
+    display:block;font-family:var(--f-dato);font-size:.75rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(242,205,107,.55);
   }
 }
 
@@ -667,7 +667,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .badge{
   position:absolute;top:-5px;right:-5px;min-width:19px;height:19px;padding:0 5px;border-radius:999px;
   background:var(--brasa);color:#fff;box-shadow:0 0 0 2px var(--carbon);
-  font-family:var(--f-dato);font-weight:600;font-size:.72rem;line-height:19px;text-align:center;font-variant-numeric:tabular-nums;
+  font-family:var(--f-dato);font-weight:600;font-size:.75rem;line-height:19px;text-align:center;font-variant-numeric:tabular-nums;
 }
 
 /* Vitrina (18 de noviembre): los cortes en tarjetas altas 4:5, como el visor, con las esquinas redondeadas,
@@ -694,8 +694,9 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .tarjeta.frente .ver{transform:translate(-50%,0)}
 
 /* Así cotizas: los tres pasos, en orden */
-.pasos{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-.paso{display:grid;align-content:start;gap:6px;padding:12px 10px 13px;border-radius:14px;border:1px solid var(--linea-suave);background:rgba(241,230,210,.03)}
+.pasos{list-style:none;margin:22px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-block:1px solid var(--linea-suave)}
+.paso{display:grid;align-content:start;gap:6px;padding:14px 12px 15px}
+.paso+.paso{border-left:1px solid var(--linea-suave)}
 .paso b{font-family:var(--f-titulo);font-weight:400;font-size:1.35rem;line-height:1;color:var(--oro-brillo)}
 .paso span{font-size:.78rem;line-height:1.3;color:var(--texto-2)}
 
@@ -707,7 +708,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   background:radial-gradient(circle at 50% 42%,#2a1b0f 0%,var(--carbon-2) 72%);box-shadow:var(--aro);
 }
 .plato-foto img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}
-.plato-foto .sello3d{left:50%;bottom:7px;transform:translateX(-50%);padding:.24em .6em .24em .5em;font-size:.6rem;letter-spacing:.12em;white-space:nowrap}
+.plato-foto .sello3d{left:50%;bottom:7px;transform:translateX(-50%);padding:.24em .6em .24em .5em;font-size:.66rem;letter-spacing:.1em;white-space:nowrap}
 .plato-foto.sin-video img{object-fit:contain;padding:17%;opacity:.2;-webkit-mask-image:none;mask-image:none}
 .plato-foto .pronto{
   position:absolute;left:8%;right:8%;top:50%;transform:translateY(-50%);text-align:center;
@@ -717,10 +718,10 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .plato-nombre{font-size:1.14rem}
 .plato-desc{font-size:.88rem;line-height:1.45}
 .opciones-p{display:flex;flex-wrap:wrap;gap:6px}
-.opciones-p span{padding:.16em .62em;border-radius:999px;border:1px solid var(--linea);font-size:.74rem;color:var(--texto-2)}
+.opciones-p span{padding:.16em .62em;border-radius:999px;border:1px solid var(--linea);font-size:.75rem;color:var(--texto-2)}
 .plato-pie{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px 10px;margin-top:4px}
 .precio-pp{display:grid;line-height:1.2}
-.precio-pp small{font-size:.7rem;color:var(--texto-3);letter-spacing:.03em}
+.precio-pp small{font-size:.75rem;color:var(--texto-3);letter-spacing:.03em}
 .agregar{
   display:inline-flex;align-items:center;gap:.42em;padding:.52em .95em;border-radius:999px;
   border:1px solid rgba(212,161,42,.6);color:var(--oro-brillo);white-space:nowrap;
@@ -741,7 +742,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 }
 @keyframes subeBarra{from{transform:translateY(100%)}to{transform:none}}
 .be-info{flex:1;min-width:0;display:grid;gap:1px}
-.be-k{font-family:var(--f-dato);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--oro)}
+.be-k{font-family:var(--f-dato);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--oro)}
 .be-t{font-size:.9rem;color:var(--texto);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}
 .barra-evento .btn-oro{flex:none;padding:.78em 1.25em;font-size:.9rem}
 
@@ -773,7 +774,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   opacity:0;transform:rotate(-2deg) translateY(18px);transition:transform .8s var(--ease) .25s,opacity .6s ease .25s;
 }
 .tiempo.on .ticket-in{opacity:1;transform:rotate(-2deg)}
-.ticket-in .tk{font-family:var(--f-dato);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--oro)}
+.ticket-in .tk{font-family:var(--f-dato);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--oro)}
 .ticket-in p{display:flex;justify-content:space-between;gap:10px;font-size:.95rem;color:var(--texto-2)}
 .ticket-in b{font-family:var(--f-dato);font-weight:600;color:var(--texto);font-variant-numeric:tabular-nums}
 .ticket-in .tt{border-top:1px dashed rgba(212,161,42,.4);padding-top:9px;color:var(--texto)}
@@ -796,7 +797,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   opacity:0;transform:rotate(-2.5deg);
 }
 .sello-fecha b{font-weight:600;font-size:1rem;letter-spacing:.2em;color:var(--oro-brillo)}
-.sello-fecha span{font-size:.68rem;letter-spacing:.22em;color:var(--texto-2)}
+.sello-fecha span{font-size:.75rem;letter-spacing:.22em;color:var(--texto-2)}
 .tiempo.on .sello-fecha{animation:sellar .55s cubic-bezier(.3,1.5,.5,1) .1s forwards}
 @media (max-width:360px){.sello-fecha b{font-size:.92rem;letter-spacing:.16em}.sello-fecha span{letter-spacing:.16em}}
 @keyframes sellar{0%{opacity:0;transform:rotate(-2.5deg) scale(1.5)}60%{opacity:1}100%{opacity:1;transform:rotate(-2.5deg) scale(1)}}
@@ -879,7 +880,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   --d:min(calc(84 * var(--vw)),calc(46 * var(--vh)),400px);
   width:var(--d);height:var(--d);aspect-ratio:auto;padding-top:0;max-height:none;border-radius:50%;
   background:radial-gradient(circle at 50% 42%,#2a1b0f 0%,var(--carbon-2) 72%);
-  box-shadow:0 0 0 1px rgba(212,161,42,.4),0 0 70px -12px rgba(212,161,42,.28),0 40px 60px -30px #000;
+  box-shadow:0 0 0 1px rgba(212,161,42,.4),0 40px 60px -30px #000;
 }
 .v-vuelo{border-radius:50%}
 /* Platos sin clip de parrilla: brillo de brasa que titila mientras pasan por el fuego */
@@ -897,7 +898,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 #visor[data-modo="crudo"] .v-parada[data-parada="fuego"],#visor[data-modo="crudo"] .v-parada[data-parada="servido"]{display:none}
 .v-fila{align-items:center}
 .v-fila .ic-btn{flex:none}
-.v-precio small{font-size:.74rem}
+.v-precio small{font-size:.75rem}
 
 /* Visor con los videos de IA (18 de noviembre): vienen en vertical, con la tabla en 3/4 y las guarniciones
    alrededor, así que el plato se ve entero en un cuadro 4:5, sin aro, con los bordes fundidos en el carbón
@@ -970,7 +971,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   box-shadow:inset 0 0 0 5px #120b06,inset 0 0 0 6px rgba(212,161,42,.4);
 }
 .ev-fila{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
-.ev-fila span{font-family:var(--f-dato);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--texto-2)}
+.ev-fila span{font-family:var(--f-dato);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--texto-2)}
 .ev-fila b{font-family:var(--f-dato);font-weight:600;font-size:1.35rem;color:var(--texto);font-variant-numeric:tabular-nums;text-align:right}
 .ev-fila b.total{color:var(--oro-brillo);font-size:1.6rem}
 .ev-fila b.pendiente{font-size:.82rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--oro)}
@@ -979,7 +980,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .ev-campos{border:0;margin:0;padding:0;min-width:0;display:grid;gap:14px}
 .ev-campos legend{padding:0;margin-bottom:12px}
 .campo{display:grid;gap:7px;min-width:0}
-.campo > label,.campo > .etq{font-family:var(--f-dato);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--texto-2)}
+.campo > label,.campo > .etq{font-family:var(--f-dato);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--texto-2)}
 .campo input{
   width:100%;min-width:0;min-height:46px;padding:.75em .95em;border-radius:12px;border:1px solid var(--linea);
   background:rgba(241,230,210,.04);color:var(--texto);font-family:var(--f-texto);font-size:16px;
@@ -996,8 +997,8 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .ev-viat{font-size:.8rem;line-height:1.4;color:var(--texto-2);margin-top:-4px}
 /* Nota de viáticos en la portada */
 .viaticos{
-  display:flex;align-items:flex-start;gap:10px;margin-top:12px;padding:12px 14px;border-radius:14px;
-  border:1px solid var(--linea-suave);background:rgba(241,230,210,.03);font-size:.84rem;line-height:1.45;color:var(--texto-2);
+  display:flex;align-items:flex-start;gap:10px;margin-top:16px;padding:0 2px;
+  font-size:.86rem;line-height:1.5;color:var(--texto-2);
 }
 .viaticos svg{width:20px;height:20px;flex:none;color:var(--oro-brillo);margin-top:1px}
 .viaticos b{color:var(--texto);font-weight:600}
@@ -1044,7 +1045,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
   .plato-foto{--t:88px}
   .var-nombre{white-space:normal;line-height:1.1}
 }
-.pp-nota{font-size:.7rem;color:var(--texto-3);letter-spacing:.03em}
+.pp-nota{font-size:.75rem;color:var(--texto-3);letter-spacing:.03em}
 
 /* Visor: escoger la proteína */
 .v-variantes{position:relative;z-index:3;display:flex;justify-content:center;flex-wrap:wrap;gap:8px;padding:12px 18px 0}
@@ -1072,7 +1073,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 }
 .temporada > svg{width:24px;height:24px;flex:none;color:var(--oro-brillo)}
 .t-texto{flex:1;min-width:0;display:grid;gap:2px}
-.t-k{font-family:var(--f-dato);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--oro)}
+.t-k{font-family:var(--f-dato);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--oro)}
 .t-t{font-size:.92rem;color:var(--texto);line-height:1.3}
 .t-t b{font-family:var(--f-dato);font-weight:600;letter-spacing:.04em;color:var(--oro-brillo)}
 .temporada .t-ir{width:18px;height:18px;color:var(--oro-brillo)}
@@ -1094,7 +1095,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 .fl-nombre b{font-family:var(--f-dato);font-weight:600;font-size:1.04rem;letter-spacing:.05em;text-transform:uppercase;line-height:1.2;color:var(--texto)}
 .fl-nombre small{font-size:.8rem;line-height:1.3;color:var(--texto-2)}
 .lista .precio{font-size:1.04rem}
-.lista .precio.pendiente{font-size:.72rem}
+.lista .precio.pendiente{font-size:.75rem}
 
 /* La mesa de pasabocas: recuadro de alquiler */
 .caja{
@@ -1118,7 +1119,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 @media (max-width:360px){
   .pasos{gap:6px}
   .paso{padding:10px 8px 11px}
-  .paso span{font-size:.72rem}
+  .paso span{font-size:.75rem}
   .plato{column-gap:12px}
   .agregar{padding:.5em .8em;letter-spacing:.08em}
 }
@@ -1138,7 +1139,7 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
 #intro-video .iv-progreso{height:3px;border-radius:20px;overflow:hidden;background:rgba(255,229,169,.24);box-shadow:0 0 6px rgba(0,0,0,.24)}
 #intro-video .iv-progreso i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#a8762e,#f4d480);transform-origin:left center;transform:scaleX(0);will-change:transform}
 #intro-video .iv-cabecera{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-top:10px}
-#intro-video .iv-marca{font-family:var(--f-dato);color:#f4db9d;letter-spacing:.19em;font-size:.68rem;text-transform:uppercase;text-shadow:0 2px 10px #000;max-width:57%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#intro-video .iv-marca{font-family:var(--f-dato);color:#f4db9d;letter-spacing:.19em;font-size:.75rem;text-transform:uppercase;text-shadow:0 2px 10px #000;max-width:57%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #intro-video .iv-controles{display:flex;gap:7px;align-items:center;pointer-events:auto}
 #intro-video .iv-controles .ic-btn{background:rgba(15,10,6,.42);border:1px solid rgba(227,190,112,.25);backdrop-filter:blur(6px)}
 #intro-video .iv-saltar{border:1px solid rgba(227,190,112,.26);background:rgba(15,10,6,.52);padding:.64em .9em;color:#f4e8d5;border-radius:999px;font-family:var(--f-dato);font-size:.76rem;letter-spacing:.06em;cursor:pointer;backdrop-filter:blur(6px)}
@@ -1198,7 +1199,6 @@ h1,h2,h3{font-weight:400;text-wrap:balance}
         <span><b>Campeón Nacional</b> · Top 5 Mundial</span>
         <svg class="ver" aria-hidden="true"><use href="#i-sig"/></svg>
       </button>
-      <p class="ceja ceja-flag"><svg aria-hidden="true"><use href="#i-banderita"/></svg>Carta de eventos</p>
       <h1 id="portada-t" class="foil">Arma tu evento</h1>
       <p class="entrada">Gira la vitrina y toca el corte que te antoje: lo ves crudo, pasando por el fuego y llegando servido. Agrega los platos que quieras y cotiza por WhatsApp.</p>
       <a class="ig-carta ig-portada" href="https://www.instagram.com/jonniercatering/" target="_blank" rel="noopener noreferrer" aria-label="Visita el Instagram de Jonnier Catering (se abre en una pestaña nueva)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.8" cy="6.3" r=".85" fill="currentColor" stroke="none"/></svg><span>Conoce más en Instagram · @jonniercatering</span></a>
